@@ -27,7 +27,7 @@
 - updates install themselves.
 - no ads, no tracking.
 
-![now playing](screenshots/now-playing.png)
+![lyrics](screenshots/lyrics.png)
 
 ## install
 
@@ -40,8 +40,6 @@ don't want an installer? `999player-ptb.zip` is the same app as a folder. unzip 
 windows 10 or 11, 64 bit. nothing else to install.
 
 ![setup](screenshots/setup.png)
-
-![lyrics](screenshots/lyrics.png)
 
 ## iphone
 
@@ -62,6 +60,8 @@ there is an ios app too. it still needs sideloading, so it only goes out to test
 | like | `h` |
 | search | `ctrl` + `k` |
 | shuffle / repeat | `s` / `r` |
+
+![now playing](screenshots/now-playing.png)
 
 ## problems
 
