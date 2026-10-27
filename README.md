@@ -27,7 +27,7 @@
 - updates install themselves.
 - no ads, no tracking.
 
-![lyrics](screenshots/lyrics.png)
+![now playing](screenshots/now-playing.png)
 
 ## install
 
@@ -60,8 +60,6 @@ there is an ios app too. it still needs sideloading, so it only goes out to test
 | like | `h` |
 | search | `ctrl` + `k` |
 | shuffle / repeat | `s` / `r` |
-
-![now playing](screenshots/now-playing.png)
 
 ## problems
 
