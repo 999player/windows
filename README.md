@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://999player.com">999player.com</a>
   ·
-  <a href="https://github.com/999player/999player/releases/latest">download for windows</a>
+  <a href="https://github.com/999player/windows/releases/latest">download for windows</a>
   ·
   <a href="https://discord.gg/yhK8zSH8T3">discord</a>
 </p>
@@ -31,7 +31,7 @@
 
 ## install
 
-1. download `999player-setup.exe` from the [latest release](https://github.com/999player/999player/releases/latest).
+1. download `999player-setup.exe` from the [latest release](https://github.com/999player/windows/releases/latest).
 2. run it. no admin needed. default folder is `C:\999player`.
 3. smartscreen will probably warn you because the exe is not signed. click "more info", then "run anyway".
 

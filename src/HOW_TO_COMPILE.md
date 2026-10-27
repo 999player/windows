@@ -54,7 +54,7 @@ fills `C:\Projects\JuicePlayer\` with `app-src.zip`, `installer-src.zip`, `999pl
 
 ## release (auto-updates)
 
-The app checks `https://api.github.com/repos/999player/999player/releases/latest` half a minute after launch and every
+The app checks `https://api.github.com/repos/999player/windows/releases/latest` half a minute after launch and every
 six hours (`updater.py`). A newer tag (`vX.Y.Z`) with a `999player-setup.exe` asset is downloaded into
 `%localappdata%\999player\updates`, checked against github's sha256 digest, and installed the next time the app opens
 (or right away from settings → updates → restart to update): the app starts the setup with `--update <install dir>`,
