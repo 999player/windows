@@ -69,6 +69,10 @@ there is an ios app too. it still needs sideloading, so it only goes out to test
 
 your likes, playlists and settings are in `%localappdata%\999player`. uninstalling keeps them unless you tick "wipe my data".
 
+## source
+
+the windows app and its installer live in [`src/`](src). python, pyside6 and a web ui. `src/HOW_TO_COMPILE.md` has the build steps.
+
 ## credits
 
 all music and metadata come from [juicewrldvault.com](https://juicewrldvault.com). this is a fan project, not affiliated with grade a, interscope or the estate.

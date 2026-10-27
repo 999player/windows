@@ -1,0 +1,12186 @@
+{
+"synced": 1792332779,
+"count": 1740,
+"songs": {
+"1": {
+"t": "I Swear",
+"a": "Juice WRLD",
+"e": "jute",
+"d": 251,
+"w": true
+},
+"5": {
+"t": "Woah",
+"a": "Juice WRLD",
+"e": "jute",
+"d": 240,
+"w": true
+},
+"6": {
+"t": "Golden X Get Away 3 Interlude",
+"a": "Juice WRLD",
+"e": null,
+"d": 288,
+"w": true
+},
+"9": {
+"t": "Fall Back",
+"a": "Juice WRLD",
+"e": "HIH 999",
+"d": 258,
+"w": true
+},
+"10": {
+"t": "Hollywood Dreams Come True 9 9 9",
+"a": "Juice WRLD",
+"e": "HIH 999",
+"d": 256,
+"w": true
+},
+"14": {
+"t": "pop-punkstar (with SYKI)",
+"a": "Juice WRLD & SYKI",
+"e": "KILL'S WRLD",
+"d": 135,
+"w": true
+},
+"15": {
+"t": "my x was poison 999",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 273,
+"w": true
+},
+"16": {
+"t": "let me know (I wonder why freestyle)",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 215,
+"w": true
+},
+"17": {
+"t": "don't care (with SYKI)",
+"a": "Juice WRLD & SYKI",
+"e": "KILL'S WRLD",
+"d": 120,
+"w": true
+},
+"18": {
+"t": "cali girl... where are you? </3",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 140,
+"w": true
+},
+"19": {
+"t": "autograph (on my line)",
+"a": "Juice WRLD",
+"e": null,
+"d": 227,
+"w": true
+},
+"21": {
+"t": "Yacht Club (feat. Juice WRLD)",
+"a": "Lil Yachty",
+"e": "Mainstream",
+"d": 166,
+"w": true
+},
+"22": {
+"t": "World Tour (Aquafina)",
+"a": "Juice WRLD",
+"e": "TPP",
+"d": 155,
+"w": true
+},
+"27": {
+"t": "Wasted (feat. Lil Uzi Vert)",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 258,
+"w": true
+},
+"32": {
+"t": "Titanic",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 176,
+"w": true
+},
+"33": {
+"t": "The Way (with XXXTENTACION)",
+"a": "Juice WRLD & XXXTENTACION",
+"e": "LND (5YAE)",
+"d": 230,
+"w": true
+},
+"36": {
+"t": "The Man, The Myth, The Legend (Interlude)",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 136,
+"w": true
+},
+"40": {
+"t": "Telepathy (Pt. 2)",
+"a": "JuiceTheKidd",
+"e": null,
+"d": 203,
+"w": true
+},
+"42": {
+"t": "TURKEY BURGERS",
+"a": "JuiceTheKidd",
+"e": "Smule",
+"d": 66,
+"w": true
+},
+"43": {
+"t": "TOO MUCH CASH",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 193,
+"w": true
+},
+"46": {
+"t": "Stay High",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 168,
+"w": true
+},
+"47": {
+"t": "Spend It",
+"a": "Juice WRLD",
+"e": "The Party Never Ends",
+"d": 180,
+"w": true
+},
+"48": {
+"t": "Smile (with The Weeknd)",
+"a": "Juice WRLD & The Weeknd",
+"e": "Mainstream",
+"d": 196,
+"w": true
+},
+"51": {
+"t": "SOMETHING NEW",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 240,
+"w": true
+},
+"54": {
+"t": "Roses (feat. Brendon Urie)",
+"a": "Juice WRLD & Benny Blanco",
+"e": "Mainstream",
+"d": 223,
+"w": true
+},
+"57": {
+"t": "Robbery",
+"a": "Juice WRLD",
+"e": null,
+"d": 241,
+"w": true
+},
+"61": {
+"t": "Rich Nigga Shit (with Young Thug)",
+"a": "Juice WRLD & Young Thug",
+"e": "Mainstream",
+"d": 177,
+"w": true
+},
+"62": {
+"t": "Rich And Blind",
+"a": "Juice WRLD",
+"e": "FD (DDE)",
+"d": 228,
+"w": true
+},
+"63": {
+"t": "Reminds Me Of You (with The Kid LAROI)",
+"a": "Juice WRLD & The Kid LAROI",
+"e": "Mainstream",
+"d": 158,
+"w": true
+},
+"68": {
+"t": "RUN",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 186,
+"w": true
+},
+"70": {
+"t": "PTSD (feat. Juice WRLD, Chance The Rapper & Lil Uzi Vert)",
+"a": "G Herbo",
+"e": "Mainstream",
+"d": 232,
+"w": true
+},
+"72": {
+"t": "Oxycodone",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 160,
+"w": true
+},
+"75": {
+"t": "OLD ME </3",
+"a": "Juice WRLD",
+"e": null,
+"d": 183,
+"w": true
+},
+"76": {
+"t": "Nuketown (feat. Juice WRLD) [Vinyl Mix]",
+"a": "Ski Mask The Slump God",
+"e": "Vinyl",
+"d": 166,
+"w": false
+},
+"77": {
+"t": "Nuketown (feat. Juice WRLD)",
+"a": "Ski Mask The Slump God",
+"e": "Mainstream",
+"d": 166,
+"w": true
+},
+"78": {
+"t": "Not Enough",
+"a": "Juice WRLD",
+"e": "FD",
+"d": 171,
+"w": true
+},
+"80": {
+"t": "No Me Ame (with Anuel AA)",
+"a": "Juice WRLD, Anuel AA & Rvssian",
+"e": "Mainstream",
+"d": 180,
+"w": true
+},
+"81": {
+"t": "No Good",
+"a": "Juice WRLD",
+"e": "GB&GR (5YAE)",
+"d": 252,
+"w": true
+},
+"82": {
+"t": "Never Scared (feat. Juice WRLD)",
+"a": "G Herbo",
+"e": "Mainstream",
+"d": 200,
+"w": true
+},
+"83": {
+"t": "NO BYSTANDERS (feat. Juice WRLD & Sheck Wes)",
+"a": "Travis Scott",
+"e": "Mainstream",
+"d": 218,
+"w": true
+},
+"84": {
+"t": "My Zone",
+"a": "JuiceTheKidd",
+"e": "TTZ",
+"d": 252,
+"w": true
+},
+"86": {
+"t": "My Life In A Nutshell",
+"a": "Juice WRLD",
+"e": "FD",
+"d": 190,
+"w": true
+},
+"87": {
+"t": "My Fault </3",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 222,
+"w": true
+},
+"88": {
+"t": "MoshPit (feat. Juice WRLD)",
+"a": "Kodak Black",
+"e": "Mainstream",
+"d": 164,
+"w": true
+},
+"89": {
+"t": "Money (feat. Juice WRLD & Nicki Minaj)",
+"a": "Young Thug",
+"e": "Mainstream",
+"d": 266,
+"w": true
+},
+"90": {
+"t": "Mmmmm",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 184,
+"w": true
+},
+"91": {
+"t": "Misfit",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 159,
+"w": true
+},
+"93": {
+"t": "Midnight",
+"a": "JuiceTheKidd",
+"e": "TTZ",
+"d": 243,
+"w": true
+},
+"94": {
+"t": "Melody",
+"a": "Juice WRLD & Edsclusive",
+"e": "WTLA",
+"d": 186,
+"w": true
+},
+"96": {
+"t": "Matt Hardy 999 (feat. Juice WRLD)",
+"a": "Trippie Redd",
+"e": "Mainstream",
+"d": 188,
+"w": true
+},
+"97": {
+"t": "Mannequin Challenge (feat. Juice WRLD)",
+"a": "Young Thug",
+"e": "Mainstream",
+"d": 162,
+"w": true
+},
+"98": {
+"t": "Man Of The Year",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 136,
+"w": true
+},
+"99": {
+"t": "Make It There",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 288,
+"w": true
+},
+"101": {
+"t": "MOVES",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 223,
+"w": true
+},
+"102": {
+"t": "ME & U",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 288,
+"w": true
+},
+"103": {
+"t": "Lucid Dreams (Remix) [feat. Lil Uzi Vert]",
+"a": "Juice WRLD",
+"e": "GB&GR (AE)",
+"d": 240,
+"w": true
+},
+"104": {
+"t": "Lucid Dreams (Live)",
+"a": "Juice WRLD",
+"e": "UNS: JW",
+"d": 232,
+"w": false
+},
+"105": {
+"t": "Love Letter",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 159,
+"w": false
+},
+"106": {
+"t": "Lost My Mind (Freestyle)",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 261,
+"w": true
+},
+"107": {
+"t": "Lightyears (with Young Thug)",
+"a": "Juice WRLD & Young Thug",
+"e": "TPP",
+"d": 192,
+"w": true
+},
+"108": {
+"t": "Life's A Mess II (with Clever & Post Malone)",
+"a": "Juice WRLD, Clever & Post Malone",
+"e": "Mainstream",
+"d": 207,
+"w": true
+},
+"109": {
+"t": "Life's A Mess (feat. Halsey)",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 202,
+"w": true
+},
+"110": {
+"t": "Let 'Em Know",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 148,
+"w": true
+},
+"111": {
+"t": "Legends",
+"a": "Juice WRLD",
+"e": "Fighting Demons",
+"d": 191,
+"w": true
+},
+"113": {
+"t": "Lean Wit' Me",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 175,
+"w": true
+},
+"114": {
+"t": "Lace It (with Eminem)",
+"a": "Juice WRLD, Benny Blanco & Eminem",
+"e": "Mainstream",
+"d": 217,
+"w": true
+},
+"115": {
+"t": "LET'S GET IT",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 277,
+"w": true
+},
+"116": {
+"t": "KTM Drip",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 240,
+"w": true
+},
+"117": {
+"t": "KNOW US",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 268,
+"w": true
+},
+"118": {
+"t": "KNIGHT CRAWLER (feat. Juice WRLD)",
+"a": "Trippie Redd",
+"e": "Mainstream",
+"d": 177,
+"w": true
+},
+"119": {
+"t": "Just Letting You Know",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 198,
+"w": true
+},
+"121": {
+"t": "Juice WRLD Speaks From Heaven (Outro)",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 30,
+"w": true
+},
+"122": {
+"t": "Juice WRLD Speaks 2",
+"a": "Juice WRLD",
+"e": "FD",
+"d": 191,
+"w": true
+},
+"123": {
+"t": "Juice WRLD Speaks",
+"a": "Juice WRLD",
+"e": "FD",
+"d": 89,
+"w": true
+},
+"124": {
+"t": "Juice WRLD DID (feat. Juice WRLD)",
+"a": "DJ Khaled",
+"e": "Mainstream",
+"d": 207,
+"w": true
+},
+"125": {
+"t": "Juice Never Have To Flex",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 222,
+"w": true
+},
+"126": {
+"t": "Jeffrey",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 175,
+"w": true
+},
+"127": {
+"t": "In My Head",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 192,
+"w": true
+},
+"129": {
+"t": "I Want It (feat. Halsey)",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 173,
+"w": true
+},
+"130": {
+"t": "I Know One Thing </3",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 250,
+"w": true
+},
+"131": {
+"t": "I Hate Her Friends",
+"a": "Juice WRLD & Edsclusive",
+"e": "WTLA",
+"d": 108,
+"w": true
+},
+"133": {
+"t": "Honestly (feat. Juice WRLD)",
+"a": "G Herbo & Southside",
+"e": "Mainstream",
+"d": 214,
+"w": true
+},
+"134": {
+"t": "Hold Me Down",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 240,
+"w": true
+},
+"135": {
+"t": "Hide (feat. Seezyn)",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 205,
+"w": true
+},
+"136": {
+"t": "Hell (feat. DMG Mthang)",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 256,
+"w": true
+},
+"140": {
+"t": "Hear Me Calling",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 190,
+"w": true
+},
+"142": {
+"t": "Hate The Other Side (with Polo G) [feat. The Kid LAROI]",
+"a": "Juice WRLD, Marshmello & Polo G",
+"e": "LND",
+"d": 160,
+"w": true
+},
+"143": {
+"t": "Hate Me (with Ellie Goulding)",
+"a": "Juice WRLD & Ellie Goulding",
+"e": "Mainstream",
+"d": 186,
+"w": false
+},
+"146": {
+"t": "Graduation",
+"a": "Juice WRLD & Benny Blanco",
+"e": null,
+"d": 178,
+"w": true
+},
+"147": {
+"t": "Goodbye",
+"a": "The Kid LAROI",
+"e": "TPNE",
+"d": 162,
+"w": false
+},
+"148": {
+"t": "Godzilla (feat. Juice WRLD)",
+"a": "Eminem",
+"e": "Mainstream",
+"d": 211,
+"w": true
+},
+"149": {
+"t": "Go Hard 2.0",
+"a": "Juice WRLD",
+"e": "FD (CE)",
+"d": 214,
+"w": true
+},
+"151": {
+"t": "Glo'd Up",
+"a": "Juice WRLD",
+"e": "GB&GR (5YAE)",
+"d": 150,
+"w": true
+},
+"152": {
+"t": "Girl Of My Dreams (with SUGA)",
+"a": "Juice WRLD & SUGA",
+"e": "FD",
+"d": 226,
+"w": true
+},
+"154": {
+"t": "Get Through It (Interlude)",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 21,
+"w": true
+},
+"155": {
+"t": "GO (feat. Juice WRLD)",
+"a": "The Kid LAROI",
+"e": "Mainstream",
+"d": 184,
+"w": false
+},
+"157": {
+"t": "From My Window",
+"a": "Juice WRLD",
+"e": "FD",
+"d": 187,
+"w": true
+},
+"159": {
+"t": "Forever",
+"a": "JuiceTheKidd",
+"e": null,
+"d": 283,
+"w": true
+},
+"160": {
+"t": "For You",
+"a": "Juice WRLD & Edsclusive",
+"e": "WTLA",
+"d": 174,
+"w": true
+},
+"161": {
+"t": "Floor It",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 192,
+"w": true
+},
+"162": {
+"t": "Flex (feat. Juice WRLD)",
+"a": "Polo G",
+"e": "Mainstream",
+"d": 164,
+"w": true
+},
+"164": {
+"t": "Flavor (feat. Juice WRLD)",
+"a": "Noah's Art",
+"e": "SoundCloud",
+"d": 208,
+"w": true
+},
+"165": {
+"t": "Fine China (with Future)",
+"a": "Juice WRLD & Future",
+"e": "Mainstream",
+"d": 141,
+"w": true
+},
+"166": {
+"t": "Fighting Demons (Extended Outro)",
+"a": "Juice WRLD",
+"e": "LND (EOV)",
+"d": 217,
+"w": true
+},
+"167": {
+"t": "Feline (with Polo G & Trippie Redd)",
+"a": "Juice WRLD, Polo G & Trippie Redd",
+"e": "FD",
+"d": 212,
+"w": true
+},
+"170": {
+"t": "Feel Alone",
+"a": "Juice WRLD",
+"e": "FD",
+"d": 230,
+"w": true
+},
+"171": {
+"t": "Face 2 Face",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 124,
+"w": true
+},
+"172": {
+"t": "Eye Contact, Mind Control",
+"a": "Juice WRLD & Edsclusive",
+"e": "WTLA",
+"d": 182,
+"w": true
+},
+"174": {
+"t": "Empty Out Your Pockets",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 135,
+"w": true
+},
+"176": {
+"t": "Eminem Speaks (feat. Eminem)",
+"a": "Juice WRLD",
+"e": "FD",
+"d": 133,
+"w": false
+},
+"177": {
+"t": "Dream$",
+"a": "JuiceTheKidd",
+"e": "TTZ",
+"d": 279,
+"w": true
+},
+"178": {
+"t": "Doomsday (with Cordae)",
+"a": "Juice WRLD, Cordae & Lyrical Lemonade",
+"e": "Mainstream",
+"d": 151,
+"w": true
+},
+"179": {
+"t": "Doom",
+"a": "Juice WRLD",
+"e": "FD",
+"d": 217,
+"w": true
+},
+"183": {
+"t": "Demons And Angels (feat. Juice WRLD)",
+"a": "A Boogie Wit' Da Hoodie",
+"e": "Mainstream",
+"d": 215,
+"w": true
+},
+"184": {
+"t": "DEMO WRECK",
+"a": "Juice WRLD",
+"e": null,
+"d": 192,
+"w": true
+},
+"185": {
+"t": "Cuffed",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 244,
+"w": true
+},
+"186": {
+"t": "Cruising",
+"a": "JuiceTheKidd",
+"e": "TTZ",
+"d": 255,
+"w": true
+},
+"187": {
+"t": "Cross The Globe (feat. Juice WRLD)",
+"a": "Lil Durk",
+"e": "Mainstream",
+"d": 124,
+"w": true
+},
+"189": {
+"t": "Conversations",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 181,
+"w": true
+},
+"190": {
+"t": "Condone It",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 180,
+"w": true
+},
+"192": {
+"t": "Cigarettes",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 227,
+"w": true
+},
+"193": {
+"t": "Celebrate (with Offset)",
+"a": "Juice WRLD & Offset",
+"e": "TPNE",
+"d": 180,
+"w": true
+},
+"194": {
+"t": "Cavalier",
+"a": "Juice WRLD",
+"e": "TPP (EE)",
+"d": 152,
+"w": true
+},
+"195": {
+"t": "Can't Leave You Alone (feat. Juice WRLD)",
+"a": "Maroon 5",
+"e": "Mainstream",
+"d": 196,
+"w": true
+},
+"197": {
+"t": "Can't Die",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 182,
+"w": true
+},
+"198": {
+"t": "COMING OVER",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 220,
+"w": true
+},
+"199": {
+"t": "Bye Bye",
+"a": "Juice WRLD & Marshmello",
+"e": "Mainstream",
+"d": 108,
+"w": true
+},
+"200": {
+"t": "Buck 50 (feat. Juice WRLD & Carlton McDowell)",
+"a": "DJ Scheme",
+"e": "Mainstream",
+"d": 217,
+"w": false
+},
+"201": {
+"t": "Both Ways",
+"a": "Juice WRLD",
+"e": "TPP (EE)",
+"d": 197,
+"w": true
+},
+"203": {
+"t": "Blood On My Jeans",
+"a": "Juice WRLD",
+"e": "Legends Never Die",
+"d": 154,
+"w": true
+},
+"204": {
+"t": "Blastoff (feat. Juice WRLD & Trippie Redd)",
+"a": "Internet Money",
+"e": "Mainstream",
+"d": 174,
+"w": true
+},
+"206": {
+"t": "Best Friend (with Fall Out Boy)",
+"a": "Juice WRLD & Fall Out Boy",
+"e": "TPNE",
+"d": 156,
+"w": true
+},
+"207": {
+"t": "Barbarian",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 150,
+"w": true
+},
+"208": {
+"t": "Bandit (with YoungBoy Never Broke Again)",
+"a": "Juice WRLD & YoungBoy Never Broke Again",
+"e": "Mainstream",
+"d": 189,
+"w": true
+},
+"210": {
+"t": "Bad Energy",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 186,
+"w": true
+},
+"211": {
+"t": "Armed And Dangerous",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 170,
+"w": true
+},
+"212": {
+"t": "Arctic Tundra (feat. Juice WRLD)",
+"a": "Nicki Minaj",
+"e": "Mainstream",
+"d": 269,
+"w": true
+},
+"214": {
+"t": "Anxiety (Intro)",
+"a": "Juice WRLD",
+"e": "LND",
+"d": 70,
+"w": true
+},
+"215": {
+"t": "Antisocial (feat. Juice WRLD)",
+"a": "Migos",
+"e": "Mainstream",
+"d": 262,
+"w": true
+},
+"216": {
+"t": "Already Dead",
+"a": "Juice WRLD",
+"e": "Mainstream",
+"d": 231,
+"w": true
+},
+"217": {
+"t": "All Night (with BTS)",
+"a": "Juice WRLD & BTS",
+"e": "Mainstream",
+"d": 217,
+"w": true
+},
+"218": {
+"t": "All Life Long",
+"a": "Juice WRLD",
+"e": "Legends Never Die (5 Year Anniversary Edition)",
+"d": 208,
+"w": true
+},
+"223": {
+"t": "All Girls Are The Same 2 (Insecure) [with Nicki Minaj]",
+"a": "Juice WRLD & Nicki Minaj",
+"e": "Mainstream",
+"d": 199,
+"w": false
+},
+"225": {
+"t": "Adore You",
+"a": "Juice WRLD",
+"e": "TPNE",
+"d": 167,
+"w": true
+},
+"226": {
+"t": "AYE AYEEE",
+"a": "JuiceTheKidd",
+"e": "YouTube",
+"d": 202,
+"w": true
+},
+"227": {
+"t": "734",
+"a": "Juice WRLD",
+"e": "GB&GR (AE)",
+"d": 196,
+"w": true
+},
+"228": {
+"t": "6 Kiss (feat. Juice WRLD & YNW Melly)",
+"a": "Trippie Redd",
+"e": "Mainstream",
+"d": 199,
+"w": true
+},
+"229": {
+"t": "5 A.M. Outro (I'm Cool)",
+"a": "JuiceTheKidd",
+"e": "TTZ",
+"d": 340,
+"w": true
+},
+"230": {
+"t": "30 HRS FREESTYLE",
+"a": "JuiceTheKidd",
+"e": "SoundCloud",
+"d": 212,
+"w": false
+},
+"231": {
+"t": "2K17 Goosebumps (feat. Juice WRLD, Freejay & Teddystax)",
+"a": "Illuminate Productions",
+"e": "SoundCloud",
+"d": 259,
+"w": true
+},
+"232": {
+"t": "1400 / 999 Freestyle (feat. Juice WRLD)",
+"a": "Trippie Redd",
+"e": "Mainstream",
+"d": 176,
+"w": true
+},
+"248": {
+"t": "Worth It (v4)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 143,
+"w": false
+},
+"249": {
+"t": "Wishing Well (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 195,
+"w": false
+},
+"251": {
+"t": "Wandered To L.A. (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 130,
+"w": false
+},
+"252": {
+"t": "Wake Up! (feat. Juice WRLD) [v2]",
+"a": "Ski Mask The Slump God",
+"e": null,
+"d": 135,
+"w": true
+},
+"254": {
+"t": "Up Up And Away",
+"a": "Juice WRLD",
+"e": "Legends Never Die",
+"d": 147,
+"w": true
+},
+"261": {
+"t": "Tonight (feat. Valee) [v2]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 199,
+"w": false
+},
+"262": {
+"t": "Together (with G Herbo) [v1]",
+"a": "Juice WRLD & G Herbo",
+"e": null,
+"d": 169,
+"w": true
+},
+"266": {
+"t": "Thousand Times (feat. Miley Cyrus)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 196,
+"w": true
+},
+"270": {
+"t": "The Man, The Myth, The Legend - Interlude",
+"a": "Juice WRLD",
+"e": "POST",
+"d": 136,
+"w": true
+},
+"303": {
+"t": "Righteous",
+"a": "Juice WRLD",
+"e": "POST",
+"d": 242,
+"w": true
+},
+"305": {
+"t": "Repo (feat. Juice WRLD) [v3]",
+"a": "Internet Money",
+"e": null,
+"d": 120,
+"w": true
+},
+"309": {
+"t": "Rain Dance (v4)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 128,
+"w": true
+},
+"312": {
+"t": "PTSD (feat. Juice WRLD, Chance The Rapper & Lil Uzi Vert) (1)",
+"a": "G Herbo",
+"e": "POST",
+"d": 232,
+"w": true
+},
+"313": {
+"t": "Outta Pocket (feat. Valee) [v2]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 264,
+"w": true
+},
+"316": {
+"t": "Oh Yeah I Did (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 103,
+"w": true
+},
+"327": {
+"t": "Murder Scene (v8)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 227,
+"w": true
+},
+"328": {
+"t": "Murder Scene (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 230,
+"w": true
+},
+"330": {
+"t": "Minus (with Trevor Daniel)",
+"a": "Juice WRLD & Trevor Daniel",
+"e": "Posthumous",
+"d": 165,
+"w": true
+},
+"331": {
+"t": "Minus (v3)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 175,
+"w": false
+},
+"335": {
+"t": "Meagan Good (v6)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 156,
+"w": false
+},
+"340": {
+"t": "Matt Hardy 999 (feat. Juice WRLD) (1)",
+"a": "Trippie Redd",
+"e": "POST",
+"d": 188,
+"w": true
+},
+"341": {
+"t": "Mannequin Challenge (feat. Juice WRLD) (1)",
+"a": "Young Thug",
+"e": "POST",
+"d": 162,
+"w": true
+},
+"342": {
+"t": "Man Of The Year (v16)",
+"a": "Juice WRLD",
+"e": null,
+"d": 134,
+"w": true
+},
+"343": {
+"t": "Man Of The Year (v14)",
+"a": "Juice WRLD",
+"e": null,
+"d": 134,
+"w": true
+},
+"344": {
+"t": "Lucid Dreams (Remix) [feat. Lil Uzi Vert] {v2}",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 240,
+"w": true
+},
+"345": {
+"t": "Love You Always (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 260,
+"w": true
+},
+"346": {
+"t": "Lose You (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 189,
+"w": false
+},
+"348": {
+"t": "Life's A Mess II (with Clever & Post Malone) (1)",
+"a": "Juice WRLD, Clever & Post Malone",
+"e": "POST",
+"d": 206,
+"w": true
+},
+"365": {
+"t": "Juice WRLD Speaks From Heaven - Outro",
+"a": "Juice WRLD",
+"e": "POST",
+"d": 31,
+"w": true
+},
+"372": {
+"t": "I Want It",
+"a": "Juice WRLD",
+"e": "POST",
+"d": 173,
+"w": true
+},
+"373": {
+"t": "Hurt Me",
+"a": "Juice WRLD",
+"e": "POST",
+"d": 122,
+"w": true
+},
+"382": {
+"t": "Hate The Other Side (with Marshmello & The Kid Laroi)",
+"a": "Juice WRLD, Marshmello & Polo G",
+"e": "POST",
+"d": 160,
+"w": true
+},
+"383": {
+"t": "Ha Ha (v3)",
+"a": "Juice WRLD",
+"e": null,
+"d": 115,
+"w": true
+},
+"384": {
+"t": "Goyard (v2)",
+"a": "Juice WRLD",
+"e": null,
+"d": 160,
+"w": true
+},
+"388": {
+"t": "Godzilla (feat. Juice WRLD) (1)",
+"a": "Eminem",
+"e": "POST",
+"d": 210,
+"w": true
+},
+"389": {
+"t": "GoPro (v8)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 212,
+"w": true
+},
+"392": {
+"t": "Girl Of My Dreams (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 212,
+"w": false
+},
+"393": {
+"t": "Get Through It - Interlude",
+"a": "Juice WRLD",
+"e": "POST",
+"d": 21,
+"w": true
+},
+"404": {
+"t": "Forever (feat. Juice WRLD)",
+"a": "Ty Dolla $ign",
+"e": "Posthumous",
+"d": 197,
+"w": true
+},
+"405": {
+"t": "Fighting Demons",
+"a": "Juice WRLD",
+"e": "POST",
+"d": 200,
+"w": true
+},
+"406": {
+"t": "Fenty (v3)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 210,
+"w": false
+},
+"407": {
+"t": "Feline (with Polo G)",
+"a": "Juice WRLD & Polo G",
+"e": "Posthumous",
+"d": 245,
+"w": true
+},
+"409": {
+"t": "Feline (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 245,
+"w": false
+},
+"410": {
+"t": "Fall (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 179,
+"w": false
+},
+"415": {
+"t": "Day 1 (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 211,
+"w": true
+},
+"416": {
+"t": "Day 1 (feat. Seezyn)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 213,
+"w": true
+},
+"418": {
+"t": "Compromised (with Ski Mask The Slump God) [v1]",
+"a": "Juice WRLD, Ski Mask The Slump God",
+"e": null,
+"d": 207,
+"w": true
+},
+"419": {
+"t": "Compromised (v2)",
+"a": "Juice WRLD",
+"e": null,
+"d": 236,
+"w": true
+},
+"420": {
+"t": "Come & Go (with Marshmello)",
+"a": "Juice WRLD",
+"e": "POST",
+"d": 240,
+"w": true
+},
+"423": {
+"t": "Choppa Sang (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 193,
+"w": false
+},
+"425": {
+"t": "Cavalier (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 151,
+"w": true
+},
+"426": {
+"t": "Can't Let Go (with NAV)",
+"a": "Juice WRLD & NAV",
+"e": "Posthumous",
+"d": 203,
+"w": false
+},
+"427": {
+"t": "Burn (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 237,
+"w": true
+},
+"428": {
+"t": "Burn",
+"a": "Juice WRLD",
+"e": null,
+"d": 217,
+"w": true
+},
+"434": {
+"t": "Big Swag (v2)",
+"a": "Juice WRLD",
+"e": null,
+"d": 243,
+"w": false
+},
+"442": {
+"t": "Bad Boy (with Young Thug)",
+"a": "Juice WRLD & Young Thug",
+"e": "POST",
+"d": 157,
+"w": false
+},
+"443": {
+"t": "Anxiety - Intro",
+"a": "Juice WRLD",
+"e": "POST",
+"d": 70,
+"w": true
+},
+"444": {
+"t": "Antisocial (feat. Juice WRLD) (1)",
+"a": "Migos",
+"e": "POST",
+"d": 262,
+"w": true
+},
+"446": {
+"t": "Another One (feat. SAFE)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 182,
+"w": false
+},
+"450": {
+"t": "All Life Long (feat. Kid Cudi) [v6]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 212,
+"w": false
+},
+"454": {
+"t": "734 (v2)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 195,
+"w": true
+},
+"457": {
+"t": "Your Mom",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 144,
+"w": false
+},
+"458": {
+"t": "Xmas List",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 204,
+"w": false
+},
+"460": {
+"t": "Who Can You Tell?",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 111,
+"w": false
+},
+"461": {
+"t": "Where To Go",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 166,
+"w": true
+},
+"463": {
+"t": "What's Brakkin'? (with Offset) [v2]",
+"a": "Juice WRLD & Offset",
+"e": "Outsiders",
+"d": 223,
+"w": false
+},
+"464": {
+"t": "We Don't Get Along",
+"a": "Juice WRLD & Marshmello",
+"e": null,
+"d": 149,
+"w": true
+},
+"465": {
+"t": "Watch Your Step",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 162,
+"w": false
+},
+"466": {
+"t": "Wake Up! (feat. Juice WRLD) [v1]",
+"a": "Ski Mask The Slump God",
+"e": "Outsiders",
+"d": 135,
+"w": true
+},
+"467": {
+"t": "Wait 4 Me",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 191,
+"w": true
+},
+"468": {
+"t": "Vegetarians",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 217,
+"w": true
+},
+"473": {
+"t": "Unexplainable (with The Kid LAROI)",
+"a": "Juice WRLD & The Kid LAROI",
+"e": "Outsiders",
+"d": 182,
+"w": true
+},
+"475": {
+"t": "Uncanny",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 207,
+"w": true
+},
+"476": {
+"t": "USD",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 216,
+"w": true
+},
+"477": {
+"t": "Turns Me On",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 193,
+"w": true
+},
+"478": {
+"t": "Tropical Storm 2",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 142,
+"w": true
+},
+"479": {
+"t": "Tropical Storm",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 111,
+"w": true
+},
+"481": {
+"t": "Too Many (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 333,
+"w": true
+},
+"482": {
+"t": "Toe To Toe",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 144,
+"w": true
+},
+"484": {
+"t": "Time With You",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 91,
+"w": true
+},
+"485": {
+"t": "Charcoal (v1.1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 229,
+"w": true
+},
+"489": {
+"t": "Thankfully",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 131,
+"w": false
+},
+"490": {
+"t": "Tempted",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 227,
+"w": true
+},
+"492": {
+"t": "Swerve",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 132,
+"w": false
+},
+"494": {
+"t": "Substance",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 199,
+"w": false
+},
+"502": {
+"t": "Soda Pop (with Roddy Ricch)",
+"a": "Juice WRLD, Marshmello & Roddy Ricch",
+"e": null,
+"d": 187,
+"w": false
+},
+"503": {
+"t": "Slam Poet Juice",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 271,
+"w": false
+},
+"504": {
+"t": "Simp'",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 234,
+"w": true
+},
+"505": {
+"t": "Sick (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 219,
+"w": false
+},
+"506": {
+"t": "Shot 'Em Down",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 176,
+"w": true
+},
+"507": {
+"t": "Send Away",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 185,
+"w": true
+},
+"513": {
+"t": "Same To Me",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 301,
+"w": true
+},
+"514": {
+"t": "Rob & Scam",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 163,
+"w": true
+},
+"517": {
+"t": "Rifle",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 178,
+"w": false
+},
+"518": {
+"t": "Rich Nigga Shit (with Young Thug) [v1]",
+"a": "Juice WRLD & Young Thug",
+"e": "Outsiders",
+"d": 177,
+"w": true
+},
+"528": {
+"t": "RNG",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 152,
+"w": true
+},
+"529": {
+"t": "Came Up",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 154,
+"w": false
+},
+"530": {
+"t": "Priceless",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 188,
+"w": true
+},
+"532": {
+"t": "Party In My Mind (v2)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 156,
+"w": false
+},
+"533": {
+"t": "Party In My Mind (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 283,
+"w": true
+},
+"535": {
+"t": "Paranoid (with G Herbo)",
+"a": "Juice WRLD & G Herbo",
+"e": "Outsiders",
+"d": 143,
+"w": true
+},
+"542": {
+"t": "Out The Projects",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 179,
+"w": true
+},
+"544": {
+"t": "On Your Mind",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 274,
+"w": true
+},
+"545": {
+"t": "On Time",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 195,
+"w": true
+},
+"546": {
+"t": "On My Own",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 233,
+"w": true
+},
+"549": {
+"t": "Not My Fault (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 186,
+"w": true
+},
+"550": {
+"t": "Not Ashamed",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 194,
+"w": true
+},
+"551": {
+"t": "No Trespassing",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 178,
+"w": true
+},
+"552": {
+"t": "No Stopping Us",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 86,
+"w": true
+},
+"553": {
+"t": "No Me Ame (with Anuel AA) [v1]",
+"a": "Juice WRLD & Anuel AA",
+"e": "Outsiders",
+"d": 173,
+"w": true
+},
+"554": {
+"t": "No Limit No Hook (v2)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 111,
+"w": true
+},
+"555": {
+"t": "No Limit No Hook (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 111,
+"w": true
+},
+"556": {
+"t": "No Laces",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 197,
+"w": true
+},
+"559": {
+"t": "NLMB Oh Dear",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 160,
+"w": true
+},
+"560": {
+"t": "My Way Home (Pt. 2) [v3]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 250,
+"w": true
+},
+"564": {
+"t": "Keep Save",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 208,
+"w": true
+},
+"565": {
+"t": "Motor Boat",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 194,
+"w": false
+},
+"566": {
+"t": "Moment",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 172,
+"w": false
+},
+"571": {
+"t": "Make Myself Clear",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 198,
+"w": true
+},
+"572": {
+"t": "Made It Work",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 215,
+"w": true
+},
+"573": {
+"t": "Macaroni Sound (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 181,
+"w": false
+},
+"574": {
+"t": "Long Time Coming",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 191,
+"w": false
+},
+"575": {
+"t": "Long Live The Hustle",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 154,
+"w": true
+},
+"576": {
+"t": "Long Gone (Pt. 2)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 221,
+"w": true
+},
+"577": {
+"t": "London Interlude",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 144,
+"w": true
+},
+"578": {
+"t": "London",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 195,
+"w": false
+},
+"579": {
+"t": "Lock 'N Load",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 127,
+"w": true
+},
+"581": {
+"t": "Let Me Be",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 266,
+"w": false
+},
+"582": {
+"t": "Let It Off",
+"a": "Juice WRLD & Marshmello",
+"e": "Outsiders",
+"d": 204,
+"w": true
+},
+"584": {
+"t": "LOL",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 264,
+"w": false
+},
+"585": {
+"t": "Kill All My Troubles",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 246,
+"w": true
+},
+"587": {
+"t": "Karate Kid",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 159,
+"w": true
+},
+"588": {
+"t": "K Like A Russian",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 253,
+"w": true
+},
+"589": {
+"t": "Jetta",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 150,
+"w": false
+},
+"590": {
+"t": "Jet Lag",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 155,
+"w": true
+},
+"591": {
+"t": "Infrared (with Trippie Redd)",
+"a": "Juice WRLD & Trippie Redd",
+"e": "Outsiders",
+"d": 103,
+"w": true
+},
+"592": {
+"t": "In The Woods",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 93,
+"w": true
+},
+"593": {
+"t": "In My Head (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 203,
+"w": true
+},
+"594": {
+"t": "Hourglass",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 203,
+"w": false
+},
+"595": {
+"t": "Hit Licks",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 125,
+"w": false
+},
+"596": {
+"t": "Higher",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 169,
+"w": false
+},
+"597": {
+"t": "High Tide",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 123,
+"w": true
+},
+"600": {
+"t": "Heist",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 197,
+"w": true
+},
+"601": {
+"t": "Heartbreak Kid",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 277,
+"w": false
+},
+"603": {
+"t": "Hate Me (with Ellie Goulding) [v2]",
+"a": "Juice WRLD & Ellie Goulding",
+"e": "Outsiders",
+"d": 201,
+"w": true
+},
+"604": {
+"t": "Hate Me (with Ellie Goulding) [v1]",
+"a": "Juice WRLD & Ellie Goulding",
+"e": "Outsiders",
+"d": 200,
+"w": true
+},
+"605": {
+"t": "Hard To Digest",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 161,
+"w": false
+},
+"606": {
+"t": "Happy Home",
+"a": "Juice WRLD & Benny Blanco",
+"e": "Outsiders",
+"d": 150,
+"w": true
+},
+"607": {
+"t": "GoPro (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 184,
+"w": true
+},
+"609": {
+"t": "Strong Minds",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 104,
+"w": true
+},
+"611": {
+"t": "Glock Handler (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 108,
+"w": true
+},
+"612": {
+"t": "Part Of (with G Herbo)",
+"a": "Juice WRLD & G Herbo",
+"e": "Outsiders",
+"d": 137,
+"w": false
+},
+"613": {
+"t": "Get Excited",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 157,
+"w": true
+},
+"614": {
+"t": "Galore",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 157,
+"w": false
+},
+"615": {
+"t": "GO GO",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 184,
+"w": true
+},
+"617": {
+"t": "Fresh Air",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 219,
+"w": false
+},
+"620": {
+"t": "For The Taking",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 168,
+"w": true
+},
+"622": {
+"t": "Flex (feat. Juice WRLD) [v1]",
+"a": "Polo G",
+"e": "Outsiders",
+"d": 175,
+"w": true
+},
+"623": {
+"t": "Fire In My Lungs",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 240,
+"w": true
+},
+"626": {
+"t": "On The Pills",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 139,
+"w": false
+},
+"628": {
+"t": "Everywhere You Go",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 202,
+"w": true
+},
+"630": {
+"t": "Double R",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 216,
+"w": true
+},
+"631": {
+"t": "Double Date",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 164,
+"w": true
+},
+"633": {
+"t": "Don't Play (v2)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 249,
+"w": false
+},
+"635": {
+"t": "Don't Forget Me",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 174,
+"w": true
+},
+"636": {
+"t": "Do It",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 204,
+"w": true
+},
+"637": {
+"t": "Dime Piece",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 221,
+"w": true
+},
+"638": {
+"t": "Die To Live",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 232,
+"w": false
+},
+"639": {
+"t": "Demise",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 172,
+"w": true
+},
+"640": {
+"t": "Day 1 (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 204,
+"w": true
+},
+"641": {
+"t": "Dark Side",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 276,
+"w": true
+},
+"642": {
+"t": "Cross The Globe",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 111,
+"w": true
+},
+"644": {
+"t": "Coraline (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 158,
+"w": true
+},
+"647": {
+"t": "Compromised (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 158,
+"w": true
+},
+"650": {
+"t": "Timid Half (v1.1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 195,
+"w": true
+},
+"651": {
+"t": "Cold Summer",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 145,
+"w": true
+},
+"652": {
+"t": "Clout",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 129,
+"w": true
+},
+"653": {
+"t": "Classy",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 122,
+"w": true
+},
+"654": {
+"t": "Chrome",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 254,
+"w": true
+},
+"655": {
+"t": "Christian Mingle (with G Herbo)",
+"a": "Juice WRLD & G Herbo",
+"e": "Outsiders",
+"d": 199,
+"w": true
+},
+"657": {
+"t": "Check",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 144,
+"w": false
+},
+"658": {
+"t": "Cheat Code",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 162,
+"w": false
+},
+"659": {
+"t": "Chase The Dragon",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 162,
+"w": true
+},
+"660": {
+"t": "Challenger",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 198,
+"w": true
+},
+"661": {
+"t": "Carry It",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 193,
+"w": false
+},
+"662": {
+"t": "Can't Be Saved",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 205,
+"w": true
+},
+"663": {
+"t": "Bury Me Alive",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 187,
+"w": false
+},
+"664": {
+"t": "Burner",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 164,
+"w": true
+},
+"665": {
+"t": "Burn Alive",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 143,
+"w": true
+},
+"666": {
+"t": "Burn (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 216,
+"w": true
+},
+"669": {
+"t": "Broke Boys",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 198,
+"w": true
+},
+"677": {
+"t": "Blastoff (feat. Juice WRLD & Trippie Redd) [v2]",
+"a": "Internet Money",
+"e": "Outsiders",
+"d": 220,
+"w": false
+},
+"679": {
+"t": "Blade",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 163,
+"w": true
+},
+"680": {
+"t": "Black Out (with G Herbo)",
+"a": "Juice WRLD & G Herbo",
+"e": "Outsiders",
+"d": 174,
+"w": true
+},
+"681": {
+"t": "Bity (with Trippie Redd)",
+"a": "Juice WRLD & Trippie Redd",
+"e": "Outsiders",
+"d": 137,
+"w": true
+},
+"682": {
+"t": "Bigger (v1.5)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 225,
+"w": false
+},
+"683": {
+"t": "Big Fan",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 127,
+"w": false
+},
+"686": {
+"t": "Best Friend",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 126,
+"w": true
+},
+"687": {
+"t": "Been Through Hell",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 187,
+"w": false
+},
+"688": {
+"t": "Barry Bonds",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 181,
+"w": true
+},
+"689": {
+"t": "Bandit (with YoungBoy Never Broke Again) [v4]",
+"a": "Juice WRLD & YoungBoy Never Broke Again",
+"e": "Outsiders",
+"d": 192,
+"w": true
+},
+"690": {
+"t": "Bandit (with YoungBoy Never Broke Again) [v2]",
+"a": "Juice WRLD & YoungBoy Never Broke Again",
+"e": "Outsiders",
+"d": 193,
+"w": true
+},
+"691": {
+"t": "Bandit (with YoungBoy Never Broke Again) [v1]",
+"a": "Juice WRLD & YoungBoy Never Broke Again",
+"e": "Outsiders",
+"d": 192,
+"w": true
+},
+"692": {
+"t": "Bandit (v2)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 202,
+"w": false
+},
+"699": {
+"t": "Attachments (with Young Thug)",
+"a": "Juice WRLD & Young Thug",
+"e": "Outsiders",
+"d": 241,
+"w": true
+},
+"700": {
+"t": "All Life Long (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 211,
+"w": false
+},
+"701": {
+"t": "Air Guitar",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 247,
+"w": true
+},
+"702": {
+"t": "Adore You (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 174,
+"w": true
+},
+"703": {
+"t": "6 Kiss (with Trippie Red & YNW Melly) [v2]",
+"a": "Juice WRLD, Trippie Redd & YNW Melly",
+"e": "Outsiders",
+"d": 198,
+"w": false
+},
+"705": {
+"t": "2 Seat (feat. G Herbo)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 130,
+"w": false
+},
+"706": {
+"t": "100 Band Jugg (with ILOVEMAKONNEN)",
+"a": "Juice WRLD & ILOVEMAKONNEN",
+"e": "Outsiders",
+"d": 203,
+"w": true
+},
+"707": {
+"t": "You're Not The Boss",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 214,
+"w": true
+},
+"708": {
+"t": "You Wouldn't Understand (v1)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 197,
+"w": false
+},
+"709": {
+"t": "Wrong Lyrics, Right Song",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 151,
+"w": true
+},
+"710": {
+"t": "Worth It (v1)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 143,
+"w": false
+},
+"714": {
+"t": "Won't Let Go",
+"a": "Juice WRLD",
+"e": "DRFL",
+"d": 201,
+"w": true
+},
+"721": {
+"t": "Who Shot Cupid? (v4)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 214,
+"w": false
+},
+"724": {
+"t": "Where I Need To Be (v3)",
+"a": "Juice WRLD",
+"e": null,
+"d": 235,
+"w": false
+},
+"726": {
+"t": "For A Tee",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 224,
+"w": true
+},
+"727": {
+"t": "Western",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 197,
+"w": true
+},
+"729": {
+"t": "Wake Up",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 273,
+"w": true
+},
+"730": {
+"t": "Vinci (with The Kid LAROI)",
+"a": "Juice WRLD & The Kid LAROI",
+"e": "Death Race For Love",
+"d": 351,
+"w": false
+},
+"731": {
+"t": "Vinci",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 270,
+"w": true
+},
+"733": {
+"t": "VLONE Thugs (feat. Young Lord)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 227,
+"w": false
+},
+"734": {
+"t": "Under Her Skin",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 239,
+"w": true
+},
+"735": {
+"t": "Tsunami Soul",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 148,
+"w": false
+},
+"736": {
+"t": "Trifling (with Lil Yachty)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "Death Race For Love",
+"d": 211,
+"w": true
+},
+"739": {
+"t": "Thousand Times (v2)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 197,
+"w": true
+},
+"745": {
+"t": "The Bee's Knees",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 331,
+"w": true
+},
+"746": {
+"t": "Take 2",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 293,
+"w": true
+},
+"749": {
+"t": "Syphilis",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 132,
+"w": true
+},
+"750": {
+"t": "Stuck In My Ways",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 163,
+"w": true
+},
+"751": {
+"t": "Stick Talk",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 228,
+"w": true
+},
+"752": {
+"t": "Starstruck (feat. Mark Hoppus)",
+"a": "Juice WRLD & Mark Hoppus",
+"e": "Death Race For Love",
+"d": 239,
+"w": false
+},
+"754": {
+"t": "Speed Demon",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 163,
+"w": true
+},
+"755": {
+"t": "Sour",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 202,
+"w": false
+},
+"757": {
+"t": "Something Ain't Right",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 129,
+"w": false
+},
+"759": {
+"t": "Soda Pop",
+"a": "Juice WRLD & Marshmello",
+"e": "Death Race For Love",
+"d": 187,
+"w": false
+},
+"760": {
+"t": "Slide (feat. Juice WRLD)",
+"a": "Rich The Kid",
+"e": "Death Race For Love",
+"d": 250,
+"w": true
+},
+"766": {
+"t": "Sexual Healing (v1)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 152,
+"w": true
+},
+"769": {
+"t": "Road Runners",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 164,
+"w": true
+},
+"770": {
+"t": "Road Rage",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 142,
+"w": true
+},
+"775": {
+"t": "Ring Ring",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 191,
+"w": true
+},
+"776": {
+"t": "Rider (v3)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 193,
+"w": true
+},
+"777": {
+"t": "Rider (v1)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 192,
+"w": true
+},
+"778": {
+"t": "Rider",
+"a": "Juice WRLD",
+"e": "DRFL",
+"d": 193,
+"w": true
+},
+"779": {
+"t": "Rental (v1.4)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 253,
+"w": true
+},
+"780": {
+"t": "Remind Me Of The Summer (v2)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 198,
+"w": true
+},
+"782": {
+"t": "Red Dead Redemption",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 227,
+"w": true
+},
+"784": {
+"t": "Racks Out",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 182,
+"w": true
+},
+"786": {
+"t": "Purple Moncler",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 211,
+"w": true
+},
+"788": {
+"t": "Problem",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 274,
+"w": false
+},
+"792": {
+"t": "Pesos",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 166,
+"w": true
+},
+"796": {
+"t": "On The Low",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 240,
+"w": true
+},
+"800": {
+"t": "ON GOD (feat. Young Thug)",
+"a": "Juice WRLD",
+"e": "DRFL",
+"d": 250,
+"w": true
+},
+"801": {
+"t": "Nuts Itch",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 214,
+"w": true
+},
+"808": {
+"t": "No Jumper",
+"a": "Juice WRLD & Marshmello",
+"e": "Death Race For Love",
+"d": 184,
+"w": true
+},
+"809": {
+"t": "No Issues (feat. G Herbo)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 215,
+"w": true
+},
+"810": {
+"t": "No Hands",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 238,
+"w": true
+},
+"812": {
+"t": "No Coaster",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 227,
+"w": false
+},
+"813": {
+"t": "Nightmare",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 369,
+"w": true
+},
+"817": {
+"t": "Must Be Nice",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 149,
+"w": false
+},
+"818": {
+"t": "Mula",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 301,
+"w": false
+},
+"821": {
+"t": "Morning Again",
+"a": "Juice WRLD & The Chainsmokers",
+"e": "Death Race For Love",
+"d": 186,
+"w": true
+},
+"822": {
+"t": "Moncler Year",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 167,
+"w": true
+},
+"825": {
+"t": "Miles Away",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 247,
+"w": false
+},
+"827": {
+"t": "McLaren Drive",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 197,
+"w": true
+},
+"831": {
+"t": "Maze",
+"a": "Juice WRLD",
+"e": null,
+"d": 144,
+"w": true
+},
+"833": {
+"t": "Mama Said",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 182,
+"w": true
+},
+"834": {
+"t": "Make No Noise",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 184,
+"w": true
+},
+"838": {
+"t": "Make Believe",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 141,
+"w": true
+},
+"839": {
+"t": "Lurkin'",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 128,
+"w": false
+},
+"840": {
+"t": "Lost In My Head",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 167,
+"w": true
+},
+"841": {
+"t": "Look",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 214,
+"w": true
+},
+"843": {
+"t": "Lock Box",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 141,
+"w": true
+},
+"844": {
+"t": "Lesson",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 108,
+"w": true
+},
+"846": {
+"t": "Late Night Thoughts",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 217,
+"w": true
+},
+"849": {
+"t": "Late Night",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 224,
+"w": false
+},
+"850": {
+"t": "Pokémon",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 233,
+"w": true
+},
+"851": {
+"t": "Lair",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 175,
+"w": true
+},
+"852": {
+"t": "Kurtis Blow",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 126,
+"w": true
+},
+"853": {
+"t": "Key Card",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 207,
+"w": false
+},
+"855": {
+"t": "Keep That",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 193,
+"w": true
+},
+"856": {
+"t": "Karma",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 215,
+"w": false
+},
+"858": {
+"t": "Juice WRLD DID",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 207,
+"w": true
+},
+"859": {
+"t": "Juck",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 187,
+"w": true
+},
+"860": {
+"t": "Journey",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 154,
+"w": true
+},
+"861": {
+"t": "Javelin",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 204,
+"w": false
+},
+"862": {
+"t": "Invasion (v1.1)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 216,
+"w": true
+},
+"863": {
+"t": "I Will Follow (with Young Thug)",
+"a": "Juice WRLD & Young Thug",
+"e": "Death Race For Love",
+"d": 240,
+"w": true
+},
+"864": {
+"t": "I Need It",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 192,
+"w": true
+},
+"865": {
+"t": "Hope I Did It",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 171,
+"w": true
+},
+"866": {
+"t": "Hold It Down",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 141,
+"w": true
+},
+"871": {
+"t": "Here I Go Again",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 281,
+"w": true
+},
+"872": {
+"t": "Herbo Flow",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 187,
+"w": false
+},
+"880": {
+"t": "HeMotions (v3)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 187,
+"w": false
+},
+"882": {
+"t": "HeMotions",
+"a": "Juice WRLD",
+"e": "DRFL",
+"d": 187,
+"w": true
+},
+"883": {
+"t": "Give Me My Fix",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 217,
+"w": true
+},
+"885": {
+"t": "Get No Peace",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 179,
+"w": false
+},
+"888": {
+"t": "From Afar",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 227,
+"w": true
+},
+"891": {
+"t": "Flaws And Sins",
+"a": "Juice WRLD",
+"e": "DRFL",
+"d": 219,
+"w": true
+},
+"892": {
+"t": "Fire",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 189,
+"w": true
+},
+"893": {
+"t": "Feeling (v3)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 205,
+"w": true
+},
+"894": {
+"t": "Feeling (v1)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 204,
+"w": true
+},
+"895": {
+"t": "Feeling",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 205,
+"w": true
+},
+"896": {
+"t": "Feel It",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 194,
+"w": true
+},
+"897": {
+"t": "Fast",
+"a": "Juice WRLD",
+"e": null,
+"d": 209,
+"w": true
+},
+"898": {
+"t": "False Truth",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 180,
+"w": true
+},
+"902": {
+"t": "Empty",
+"a": "Juice WRLD",
+"e": "DRFL",
+"d": 248,
+"w": true
+},
+"903": {
+"t": "Ducks",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 207,
+"w": true
+},
+"905": {
+"t": "Doubting Me",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 221,
+"w": false
+},
+"906": {
+"t": "Don't Got Time",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 272,
+"w": true
+},
+"907": {
+"t": "Dismissed",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 207,
+"w": true
+},
+"912": {
+"t": "Desire",
+"a": "Juice WRLD",
+"e": "DRFL",
+"d": 194,
+"w": true
+},
+"915": {
+"t": "Demonz Interlude (feat. Brent Faiyaz)",
+"a": "Juice WRLD",
+"e": "DRFL",
+"d": 97,
+"w": true
+},
+"918": {
+"t": "Cursed",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 243,
+"w": true
+},
+"920": {
+"t": "Confide",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 214,
+"w": true
+},
+"922": {
+"t": "Come And Get Me",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 149,
+"w": true
+},
+"924": {
+"t": "Codeine Guzzler",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 174,
+"w": true
+},
+"925": {
+"t": "Personality Disorder",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 236,
+"w": false
+},
+"926": {
+"t": "Codeine Cobain",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 262,
+"w": true
+},
+"927": {
+"t": "Cheat Code",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 211,
+"w": true
+},
+"928": {
+"t": "Chase My Highs",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 189,
+"w": true
+},
+"930": {
+"t": "Casualty",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 172,
+"w": false
+},
+"931": {
+"t": "Faster",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 141,
+"w": true
+},
+"933": {
+"t": "Big Dog",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 236,
+"w": true
+},
+"936": {
+"t": "Big",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 224,
+"w": true
+},
+"937": {
+"t": "Better Off Alone",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 227,
+"w": true
+},
+"938": {
+"t": "Better Off",
+"a": "Juice WRLD",
+"e": null,
+"d": 204,
+"w": true
+},
+"939": {
+"t": "Best Believe",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 198,
+"w": true
+},
+"940": {
+"t": "Not Supposed To Be Here",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 228,
+"w": true
+},
+"941": {
+"t": "Barbarian (v1)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 150,
+"w": false
+},
+"942": {
+"t": "Bandit (v1)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 213,
+"w": false
+},
+"943": {
+"t": "Attachments",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 159,
+"w": true
+},
+"944": {
+"t": "Astray",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 241,
+"w": true
+},
+"948": {
+"t": "Anxiety",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 192,
+"w": true
+},
+"949": {
+"t": "Another Place",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 191,
+"w": true
+},
+"950": {
+"t": "All Talk",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 144,
+"w": true
+},
+"951": {
+"t": "AP TikTok",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 169,
+"w": true
+},
+"953": {
+"t": "4L",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 135,
+"w": false
+},
+"954": {
+"t": "4 Instance",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 147,
+"w": true
+},
+"957": {
+"t": "10 Feet",
+"a": "Juice WRLD",
+"e": "DRFL",
+"d": 216,
+"w": true
+},
+"958": {
+"t": "Z Nation",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 222,
+"w": true
+},
+"967": {
+"t": "World Tour (Aquafina) [v1]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 155,
+"w": false
+},
+"972": {
+"t": "Whip",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 155,
+"w": false
+},
+"973": {
+"t": "What Else?",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 176,
+"w": true
+},
+"975": {
+"t": "WRLD On Drugs (with Future)",
+"a": "Juice WRLD & Future",
+"e": "WOD",
+"d": 217,
+"w": true
+},
+"976": {
+"t": "Try Me",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 174,
+"w": true
+},
+"977": {
+"t": "Traveling The World",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 226,
+"w": true
+},
+"978": {
+"t": "Traveling",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 311,
+"w": true
+},
+"979": {
+"t": "Transformer (feat. Nicki Minaj)",
+"a": "Future",
+"e": "WOD",
+"d": 196,
+"w": false
+},
+"980": {
+"t": "To The Face (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 259,
+"w": false
+},
+"981": {
+"t": "Tick-Tock",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 246,
+"w": true
+},
+"982": {
+"t": "Thrills",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 193,
+"w": true
+},
+"987": {
+"t": "That's A 50",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 196,
+"w": true
+},
+"988": {
+"t": "Talking To Voices",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 150,
+"w": true
+},
+"989": {
+"t": "Talk Too Much",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 244,
+"w": true
+},
+"990": {
+"t": "Takeover (with Lil Yachty) [v2]",
+"a": "Juice WRLD & Lil Yachty",
+"e": "WRLD On Drugs",
+"d": 145,
+"w": true
+},
+"991": {
+"t": "Takeover (with Lil Yachty) [v1]",
+"a": "Juice WRLD & Lil Yachty",
+"e": "WRLD On Drugs",
+"d": 130,
+"w": true
+},
+"992": {
+"t": "Take Off",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 117,
+"w": true
+},
+"993": {
+"t": "Take Me Home (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 113,
+"w": true
+},
+"998": {
+"t": "Sugarfish",
+"a": "Juice WRLD & The Chainsmokers",
+"e": "WRLD On Drugs",
+"d": 122,
+"w": true
+},
+"1000": {
+"t": "New Age",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 232,
+"w": true
+},
+"1002": {
+"t": "Starstruck (v3)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 239,
+"w": true
+},
+"1004": {
+"t": "Spanglish",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 222,
+"w": true
+},
+"1005": {
+"t": "So What?",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 165,
+"w": false
+},
+"1008": {
+"t": "Slow Me Down (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 216,
+"w": false
+},
+"1009": {
+"t": "Slow Me Down (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 216,
+"w": false
+},
+"1010": {
+"t": "Slide",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 243,
+"w": true
+},
+"1013": {
+"t": "Show 'N Tell",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 111,
+"w": false
+},
+"1018": {
+"t": "Shorty (with Future)",
+"a": "Juice WRLD & Future",
+"e": "WOD",
+"d": 121,
+"w": true
+},
+"1020": {
+"t": "Semi Addict",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 98,
+"w": true
+},
+"1022": {
+"t": "Sacrifices (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 233,
+"w": true
+},
+"1024": {
+"t": "Run It Up",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 168,
+"w": true
+},
+"1026": {
+"t": "Royer",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 86,
+"w": true
+},
+"1027": {
+"t": "Ronald (with Playboi Carti)",
+"a": "Juice WRLD & Playboi Carti",
+"e": "WRLD On Drugs",
+"d": 150,
+"w": true
+},
+"1028": {
+"t": "Ronald",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 204,
+"w": true
+},
+"1030": {
+"t": "Rockstar Status (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 198,
+"w": false
+},
+"1034": {
+"t": "Relapse",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 180,
+"w": true
+},
+"1035": {
+"t": "Red Guts",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 264,
+"w": false
+},
+"1037": {
+"t": "Red Bentley (with Future) [feat. Young Thug] {v2}",
+"a": "Juice WRLD & Future",
+"e": "WRLD On Drugs",
+"d": 210,
+"w": false
+},
+"1040": {
+"t": "Realer 'N Realer (with Future)",
+"a": "Juice WRLD & Future",
+"e": "WOD",
+"d": 170,
+"w": true
+},
+"1043": {
+"t": "Real One",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 204,
+"w": true
+},
+"1044": {
+"t": "Ratio",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 192,
+"w": true
+},
+"1045": {
+"t": "Racks In",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 153,
+"w": true
+},
+"1047": {
+"t": "Pour Up A 6 (v3)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 142,
+"w": false
+},
+"1048": {
+"t": "Pour Up A 6 (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 146,
+"w": true
+},
+"1050": {
+"t": "Pop Rock",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 198,
+"w": false
+},
+"1053": {
+"t": "Play Fair",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 172,
+"w": true
+},
+"1054": {
+"t": "Percs",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 176,
+"w": true
+},
+"1056": {
+"t": "Pause",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 179,
+"w": true
+},
+"1057": {
+"t": "Oxy (with Future) [feat. Lil Wayne] {v1}",
+"a": "Juice WRLD & Future",
+"e": "WRLD On Drugs",
+"d": 243,
+"w": true
+},
+"1058": {
+"t": "Oxy (feat. Lil Wayne)",
+"a": "Future",
+"e": "WOD",
+"d": 180,
+"w": false
+},
+"1062": {
+"t": "On Tour (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 213,
+"w": true
+},
+"1063": {
+"t": "On A Plane (feat. Juice WRLD)",
+"a": "Gunna",
+"e": "WRLD On Drugs",
+"d": 155,
+"w": true
+},
+"1064": {
+"t": "Oh Yeah I Did (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 103,
+"w": true
+},
+"1065": {
+"t": "OREO (feat. Lil Yachty) [v3]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 238,
+"w": true
+},
+"1066": {
+"t": "OREO (feat. Lil Yachty) [v2]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 238,
+"w": true
+},
+"1067": {
+"t": "OREO (feat. Lil Yachty) [v1]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 238,
+"w": true
+},
+"1068": {
+"t": "OREO",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 200,
+"w": true
+},
+"1069": {
+"t": "OKAY!! (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 261,
+"w": false
+},
+"1070": {
+"t": "OKAY!! (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 261,
+"w": false
+},
+"1071": {
+"t": "O.J. Glove",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 148,
+"w": true
+},
+"1072": {
+"t": "Codependent",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 200,
+"w": true
+},
+"1073": {
+"t": "Not Right",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 113,
+"w": true
+},
+"1078": {
+"t": "No Rush",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 142,
+"w": false
+},
+"1079": {
+"t": "No Issue (with Future) [v4]",
+"a": "Juice WRLD & Future",
+"e": "WRLD On Drugs",
+"d": 699,
+"w": true
+},
+"1081": {
+"t": "No Issue (with Future)",
+"a": "Juice WRLD & Future",
+"e": "WOD",
+"d": 185,
+"w": true
+},
+"1082": {
+"t": "Tints",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 144,
+"w": true
+},
+"1083": {
+"t": "Newww Whip (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 138,
+"w": true
+},
+"1085": {
+"t": "Dolce Jeans",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 134,
+"w": true
+},
+"1088": {
+"t": "Rebel",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 148,
+"w": true
+},
+"1090": {
+"t": "My Bad",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 226,
+"w": true
+},
+"1091": {
+"t": "Murda Gang",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 193,
+"w": true
+},
+"1093": {
+"t": "Morphine",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 214,
+"w": true
+},
+"1094": {
+"t": "Morgue",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 212,
+"w": true
+},
+"1095": {
+"t": "Money War (with G Herbo)",
+"a": "Juice WRLD & G Herbo",
+"e": "WRLD On Drugs",
+"d": 182,
+"w": true
+},
+"1096": {
+"t": "Money On The Way",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 69,
+"w": true
+},
+"1097": {
+"t": "Money Long",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 164,
+"w": true
+},
+"1099": {
+"t": "Money (feat. Juice WRLD)",
+"a": "Young Thug",
+"e": "WRLD On Drugs",
+"d": 199,
+"w": true
+},
+"1100": {
+"t": "Minus (with Leven Kali)",
+"a": "Juice WRLD, Digi & Leven Kali",
+"e": "WRLD On Drugs",
+"d": 187,
+"w": true
+},
+"1101": {
+"t": "Militia",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 166,
+"w": true
+},
+"1102": {
+"t": "Miles & Miles",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 198,
+"w": true
+},
+"1103": {
+"t": "Mental Overload",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 122,
+"w": true
+},
+"1106": {
+"t": "Man Down (feat. G Herbo)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 179,
+"w": true
+},
+"1108": {
+"t": "Make It Back",
+"a": "Juice WRLD",
+"e": "WOD",
+"d": 102,
+"w": true
+},
+"1109": {
+"t": "Luigi",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 195,
+"w": false
+},
+"1110": {
+"t": "Lovely (Remix) (with Billie Eilish & Khalid)",
+"a": "Juice WRLD, Billie Eilish & Khalid",
+"e": "WRLD On Drugs",
+"d": 193,
+"w": true
+},
+"1111": {
+"t": "Love You Always (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 260,
+"w": true
+},
+"1112": {
+"t": "Lonely",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 144,
+"w": true
+},
+"1113": {
+"t": "Lobster Pizza",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 117,
+"w": true
+},
+"1114": {
+"t": "Livin' Life (with Lil Yachty)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "WRLD On Drugs",
+"d": 146,
+"w": true
+},
+"1115": {
+"t": "Lit",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 182,
+"w": true
+},
+"1116": {
+"t": "Like A Riff",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 243,
+"w": true
+},
+"1118": {
+"t": "Lightyears",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 170,
+"w": true
+},
+"1119": {
+"t": "Life's A Movie",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 199,
+"w": true
+},
+"1120": {
+"t": "Let 'Em Have It",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 179,
+"w": true
+},
+"1121": {
+"t": "Lemon Glow",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 139,
+"w": true
+},
+"1122": {
+"t": "Lean With It",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 163,
+"w": true
+},
+"1123": {
+"t": "Lead",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 129,
+"w": true
+},
+"1124": {
+"t": "Later On",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 156,
+"w": true
+},
+"1125": {
+"t": "Knuck If You Buck (with Lil Yachty)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "WRLD On Drugs",
+"d": 157,
+"w": true
+},
+"1126": {
+"t": "King Kong",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 170,
+"w": true
+},
+"1130": {
+"t": "It Won't Hurt",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 178,
+"w": true
+},
+"1131": {
+"t": "It Ain't So",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 166,
+"w": true
+},
+"1132": {
+"t": "Inspire Me (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 183,
+"w": true
+},
+"1133": {
+"t": "In The Mix",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 206,
+"w": false
+},
+"1134": {
+"t": "In My Arms [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 250,
+"w": true
+},
+"1135": {
+"t": "Ignorant (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 125,
+"w": true
+},
+"1136": {
+"t": "Ignorant (v1.4)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 294,
+"w": true
+},
+"1137": {
+"t": "If I",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 192,
+"w": true
+},
+"1140": {
+"t": "I Feel Rich Today",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 188,
+"w": true
+},
+"1143": {
+"t": "Homicide",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 141,
+"w": true
+},
+"1144": {
+"t": "Hit A Lick",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 180,
+"w": true
+},
+"1145": {
+"t": "High Again",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 143,
+"w": false
+},
+"1148": {
+"t": "Her Friend",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 110,
+"w": true
+},
+"1151": {
+"t": "Help Me",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 207,
+"w": true
+},
+"1152": {
+"t": "Hectic",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 132,
+"w": true
+},
+"1154": {
+"t": "Hard Work Pays Off (with Future) [v1]",
+"a": "Juice WRLD & Future",
+"e": "WRLD On Drugs",
+"d": 224,
+"w": true
+},
+"1155": {
+"t": "Hard Work Pays Off (with Future)",
+"a": "Juice WRLD & Future",
+"e": "WOD",
+"d": 224,
+"w": true
+},
+"1157": {
+"t": "Had To",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 206,
+"w": false
+},
+"1158": {
+"t": "Ha Ha (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 139,
+"w": false
+},
+"1159": {
+"t": "Gun You Down",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 85,
+"w": true
+},
+"1164": {
+"t": "Good Days",
+"a": "Juice WRLD",
+"e": null,
+"d": 205,
+"w": true
+},
+"1165": {
+"t": "Glo'd Up (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 299,
+"w": false
+},
+"1169": {
+"t": "Gave Her All Of Me",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 200,
+"w": true
+},
+"1172": {
+"t": "Fuck You Mean? (feat. Juice WRLD)",
+"a": "Trippie Redd",
+"e": "WRLD On Drugs",
+"d": 192,
+"w": true
+},
+"1174": {
+"t": "From The Bottom",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 219,
+"w": true
+},
+"1175": {
+"t": "Friends Die (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 204,
+"w": false
+},
+"1176": {
+"t": "Friends Die (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 204,
+"w": false
+},
+"1177": {
+"t": "For Your Life (On The Daily) (with Future)",
+"a": "Juice WRLD & Future",
+"e": "WRLD On Drugs",
+"d": 180,
+"w": true
+},
+"1179": {
+"t": "Follow (with A Boogie Wit' Da Hoodie)",
+"a": "Juice WRLD & A Boogie Wit' Da Hoodie",
+"e": "WRLD On Drugs",
+"d": 200,
+"w": true
+},
+"1181": {
+"t": "First Time",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 206,
+"w": true
+},
+"1187": {
+"t": "Feel Like A God",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 165,
+"w": true
+},
+"1191": {
+"t": "Far Away",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 162,
+"w": true
+},
+"1193": {
+"t": "Eternity",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 203,
+"w": true
+},
+"1195": {
+"t": "Dream",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 229,
+"w": true
+},
+"1200": {
+"t": "Dolce",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 362,
+"w": true
+},
+"1201": {
+"t": "Dirty Fanta (with G Herbo)",
+"a": "Juice WRLD & G Herbo",
+"e": "WRLD On Drugs",
+"d": 239,
+"w": true
+},
+"1204": {
+"t": "Different (with Future) [feat. Yung Bans]",
+"a": "Juice WRLD & Future",
+"e": "WOD",
+"d": 151,
+"w": true
+},
+"1207": {
+"t": "Deep In",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 201,
+"w": true
+},
+"1209": {
+"t": "Couple M's",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 113,
+"w": true
+},
+"1210": {
+"t": "Cooking Orders",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 181,
+"w": false
+},
+"1211": {
+"t": "Confused (with Lil Yachty)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "WRLD On Drugs",
+"d": 203,
+"w": true
+},
+"1212": {
+"t": "Common Sense",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 187,
+"w": true
+},
+"1215": {
+"t": "Choppa",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 231,
+"w": true
+},
+"1216": {
+"t": "Choice",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 308,
+"w": true
+},
+"1217": {
+"t": "Catch Up (with Lil Yachty)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "WRLD On Drugs",
+"d": 204,
+"w": false
+},
+"1218": {
+"t": "Cash Up",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 185,
+"w": false
+},
+"1219": {
+"t": "Can't Let Go",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 203,
+"w": true
+},
+"1220": {
+"t": "Can't Die (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 183,
+"w": false
+},
+"1221": {
+"t": "Bye Bye Baby (feat. Juice WRLD)",
+"a": "Young Thug",
+"e": "WRLD On Drugs",
+"d": 242,
+"w": true
+},
+"1222": {
+"t": "Bustin'",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 102,
+"w": true
+},
+"1223": {
+"t": "Busch",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 122,
+"w": true
+},
+"1225": {
+"t": "Boomerang (with Lil Yachty)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 191,
+"w": true
+},
+"1226": {
+"t": "Body Bag",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 90,
+"w": true
+},
+"1227": {
+"t": "Blues",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 180,
+"w": false
+},
+"1228": {
+"t": "Blow Ya' Brains (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 161,
+"w": false
+},
+"1229": {
+"t": "Blastoff (feat. Juice WRLD)",
+"a": "Trippie Redd",
+"e": "WRLD On Drugs",
+"d": 172,
+"w": true
+},
+"1230": {
+"t": "Bitter ASFF (feat. Juice WRLD) [v2]",
+"a": "SYKI",
+"e": "WRLD On Drugs",
+"d": 198,
+"w": false
+},
+"1233": {
+"t": "Bird's Eye View (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 131,
+"w": false
+},
+"1234": {
+"t": "Big Swag (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 243,
+"w": false
+},
+"1235": {
+"t": "Benjamin (Friends With Benefits) (v1.1)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 189,
+"w": false
+},
+"1236": {
+"t": "Battle Scars",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 141,
+"w": true
+},
+"1237": {
+"t": "Bask In The Moment (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 168,
+"w": false
+},
+"1238": {
+"t": "Ball",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 123,
+"w": true
+},
+"1239": {
+"t": "Bad To The Bone",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 138,
+"w": true
+},
+"1242": {
+"t": "Back On It",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 168,
+"w": true
+},
+"1243": {
+"t": "Back Home",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 161,
+"w": true
+},
+"1244": {
+"t": "Back & Forth (with Lil Yachty)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "WRLD On Drugs",
+"d": 231,
+"w": true
+},
+"1245": {
+"t": "Astronauts (with Future) [v7]",
+"a": "Juice WRLD & Future",
+"e": "WRLD On Drugs",
+"d": 171,
+"w": false
+},
+"1248": {
+"t": "Astronauts (with Future)",
+"a": "Juice WRLD & Future",
+"e": "WOD",
+"d": 170,
+"w": true
+},
+"1249": {
+"t": "Army Armory",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 132,
+"w": true
+},
+"1250": {
+"t": "Armed And Dangerous (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 238,
+"w": false
+},
+"1252": {
+"t": "Anything But Normal",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 199,
+"w": true
+},
+"1256": {
+"t": "Amuse You (with G Herbo)",
+"a": "Juice WRLD & G Herbo",
+"e": "WRLD On Drugs",
+"d": 212,
+"w": false
+},
+"1257": {
+"t": "Alright (v3)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 240,
+"w": false
+},
+"1258": {
+"t": "All Out",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 227,
+"w": true
+},
+"1259": {
+"t": "All In",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 203,
+"w": false
+},
+"1260": {
+"t": "Air 'Em Out",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 203,
+"w": false
+},
+"1261": {
+"t": "Ain't Livin' Right (with Future) [feat. Gunna] {v3}",
+"a": "Juice WRLD & Future",
+"e": "WRLD On Drugs",
+"d": 321,
+"w": false
+},
+"1262": {
+"t": "Ain't Livin' Right (with Future) [feat. Gunna]",
+"a": "Juice WRLD & Future",
+"e": "WOD",
+"d": 230,
+"w": true
+},
+"1263": {
+"t": "Ain't Livin' Right (feat. Gunna) [v2]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 216,
+"w": false
+},
+"1264": {
+"t": "Ain't Coming Back (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 236,
+"w": true
+},
+"1265": {
+"t": "Afterlife",
+"a": "Future",
+"e": "WOD",
+"d": 214,
+"w": false
+},
+"1266": {
+"t": "Abyss Interlude",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 202,
+"w": false
+},
+"1267": {
+"t": "Abyss",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 195,
+"w": true
+},
+"1270": {
+"t": "8 Minute Freestyle",
+"a": "Juice WRLD",
+"e": null,
+"d": 514,
+"w": true
+},
+"1271": {
+"t": "7 A.M. Freestyle (with Future) [v3]",
+"a": "Juice WRLD & Future",
+"e": "WRLD On Drugs",
+"d": 191,
+"w": false
+},
+"1272": {
+"t": "7 A.M. Freestyle (with Future) [v1]",
+"a": "Juice WRLD & Future",
+"e": "WRLD On Drugs",
+"d": 182,
+"w": false
+},
+"1273": {
+"t": "7 A.M. Freestyle (with Future)",
+"a": "Juice WRLD & Future",
+"e": "WOD",
+"d": 192,
+"w": true
+},
+"1274": {
+"t": "6 Kiss (feat. YNW Melly)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 271,
+"w": true
+},
+"1275": {
+"t": "500 Carats",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 170,
+"w": true
+},
+"1276": {
+"t": "24 Hours",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 269,
+"w": true
+},
+"1277": {
+"t": "Bussin'",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 124,
+"w": true
+},
+"1278": {
+"t": "pop-punkstar (with SYKI) [v1]",
+"a": "Juice WRLD & SYKI",
+"e": "Goodbye & Good Riddance",
+"d": 247,
+"w": true
+},
+"1279": {
+"t": "Zombie Shit",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 117,
+"w": true
+},
+"1280": {
+"t": "Zaxbys",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 239,
+"w": true
+},
+"1281": {
+"t": "Your Loss",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 218,
+"w": true
+},
+"1282": {
+"t": "You Ain't Safe (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 137,
+"w": true
+},
+"1283": {
+"t": "You Ain't Safe (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 149,
+"w": true
+},
+"1285": {
+"t": "Will",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 199,
+"w": true
+},
+"1286": {
+"t": "Whole Lotta Shots (with YCJ)",
+"a": "Juice WRLD & YCJ",
+"e": "Goodbye & Good Riddance",
+"d": 193,
+"w": true
+},
+"1287": {
+"t": "Who I Am Anymore",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 219,
+"w": true
+},
+"1288": {
+"t": "Whatever",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 204,
+"w": true
+},
+"1289": {
+"t": "What I Live For",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 120,
+"w": true
+},
+"1290": {
+"t": "So Dope (with MadeInTYO)",
+"a": "Juice WRLD & MadeInTYO",
+"e": "Goodbye & Good Riddance",
+"d": 158,
+"w": true
+},
+"1291": {
+"t": "Wavy",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 179,
+"w": true
+},
+"1294": {
+"t": "Wasted (feat. Lil Uzi Vert) [v1]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 256,
+"w": false
+},
+"1295": {
+"t": "Wandered To L.A. (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 148,
+"w": false
+},
+"1296": {
+"t": "Waiting For The Drugs To Hit Me",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 153,
+"w": true
+},
+"1297": {
+"t": "Naruto",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 230,
+"w": false
+},
+"1298": {
+"t": "Used To",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 176,
+"w": true
+},
+"1300": {
+"t": "Underworld",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 180,
+"w": true
+},
+"1301": {
+"t": "Uh-Woah",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 125,
+"w": false
+},
+"1302": {
+"t": "Uh-Huh",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 220,
+"w": true
+},
+"1303": {
+"t": "Trust Issues",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 69,
+"w": true
+},
+"1304": {
+"t": "Trick Or Treat",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 187,
+"w": true
+},
+"1305": {
+"t": "Trees",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 144,
+"w": true
+},
+"1306": {
+"t": "Trap House",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 157,
+"w": false
+},
+"1307": {
+"t": "Train Wreck",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 198,
+"w": false
+},
+"1309": {
+"t": "Tonight (feat. Valee) [v1]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 199,
+"w": false
+},
+"1310": {
+"t": "To The Grave (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 141,
+"w": false
+},
+"1311": {
+"t": "The Race",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 184,
+"w": true
+},
+"1312": {
+"t": "That Sad Shit",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 169,
+"w": true
+},
+"1313": {
+"t": "Tell Your Friends",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 124,
+"w": true
+},
+"1314": {
+"t": "Teasing",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 229,
+"w": true
+},
+"1315": {
+"t": "Task Force",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 194,
+"w": true
+},
+"1317": {
+"t": "Take No Chance",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 168,
+"w": false
+},
+"1318": {
+"t": "Take My Soul (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 171,
+"w": false
+},
+"1319": {
+"t": "Take My Soul (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 171,
+"w": false
+},
+"1320": {
+"t": "Surf",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": false
+},
+"1321": {
+"t": "Super Saiyan",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 156,
+"w": false
+},
+"1322": {
+"t": "Stranger",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 191,
+"w": true
+},
+"1325": {
+"t": "Start It Up",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 273,
+"w": true
+},
+"1327": {
+"t": "Rockets",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 232,
+"w": true
+},
+"1328": {
+"t": "Some More",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 142,
+"w": true
+},
+"1330": {
+"t": "Sober",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 124,
+"w": true
+},
+"1331": {
+"t": "So Hard",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 164,
+"w": true
+},
+"1332": {
+"t": "Smoke A Half",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 177,
+"w": true
+},
+"1334": {
+"t": "Smoke",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 119,
+"w": true
+},
+"1335": {
+"t": "Slowly",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 193,
+"w": false
+},
+"1336": {
+"t": "Slim Body",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 290,
+"w": true
+},
+"1337": {
+"t": "Slenderman",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 235,
+"w": true
+},
+"1339": {
+"t": "Sleep Paralysis (v1)",
+"a": "Juice WRLD & The Chainsmokers",
+"e": "Goodbye & Good Riddance",
+"d": 139,
+"w": true
+},
+"1340": {
+"t": "Slasher (v1.5)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 209,
+"w": true
+},
+"1341": {
+"t": "Slasher (v1.4)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 209,
+"w": true
+},
+"1343": {
+"t": "Sideshow (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 320,
+"w": false
+},
+"1344": {
+"t": "Go",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 172,
+"w": true
+},
+"1346": {
+"t": "Shadows",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 181,
+"w": false
+},
+"1347": {
+"t": "Seems To Be",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 122,
+"w": false
+},
+"1348": {
+"t": "Scissor",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 173,
+"w": true
+},
+"1349": {
+"t": "Scared Of Love (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 170,
+"w": false
+},
+"1350": {
+"t": "Scared Of Love",
+"a": "Juice WRLD",
+"e": "GB&GR",
+"d": 171,
+"w": true
+},
+"1351": {
+"t": "Safe (with D. Savage)",
+"a": "Juice WRLD & D. Savage",
+"e": "Goodbye & Good Riddance",
+"d": 179,
+"w": true
+},
+"1352": {
+"t": "Sad Thing",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 184,
+"w": true
+},
+"1353": {
+"t": "Rush (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 191,
+"w": false
+},
+"1355": {
+"t": "Run That Shit",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 219,
+"w": true
+},
+"1356": {
+"t": "Run Away",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 117,
+"w": true
+},
+"1358": {
+"t": "Rotate",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 177,
+"w": false
+},
+"1359": {
+"t": "Rose Petals",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 160,
+"w": true
+},
+"1360": {
+"t": "Rollie",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 176,
+"w": true
+},
+"1361": {
+"t": "Rockstar Status",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 188,
+"w": true
+},
+"1362": {
+"t": "Rockstar Lifestyle",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 169,
+"w": true
+},
+"1363": {
+"t": "Robbery (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 240,
+"w": false
+},
+"1365": {
+"t": "Ritual (with Marcus Gibson) [v1]",
+"a": "Juice WRLD & Marcus Gibson",
+"e": "Goodbye & Good Riddance",
+"d": 218,
+"w": false
+},
+"1366": {
+"t": "Right Or Wrong (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 174,
+"w": false
+},
+"1367": {
+"t": "Right Now",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 197,
+"w": true
+},
+"1369": {
+"t": "Reliable",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 166,
+"w": true
+},
+"1370": {
+"t": "Rebel Blood",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 218,
+"w": true
+},
+"1371": {
+"t": "Realize (v3)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 167,
+"w": true
+},
+"1372": {
+"t": "Realize (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 183,
+"w": true
+},
+"1373": {
+"t": "Reach Freestyle",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 87,
+"w": false
+},
+"1374": {
+"t": "Reach 2",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 228,
+"w": true
+},
+"1375": {
+"t": "Reach",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 228,
+"w": true
+},
+"1376": {
+"t": "Race Beginning",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 171,
+"w": true
+},
+"1377": {
+"t": "Na Na Na",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 221,
+"w": true
+},
+"1378": {
+"t": "Python",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": true
+},
+"1379": {
+"t": "Put Me Down",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 219,
+"w": true
+},
+"1380": {
+"t": "Psychedelics",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 226,
+"w": true
+},
+"1381": {
+"t": "Prime Time (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 216,
+"w": true
+},
+"1382": {
+"t": "Prime Time (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 134,
+"w": true
+},
+"1384": {
+"t": "Porridge",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 216,
+"w": true
+},
+"1385": {
+"t": "Plug",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 238,
+"w": true
+},
+"1386": {
+"t": "Play Your Role",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 169,
+"w": true
+},
+"1388": {
+"t": "Persona (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 250,
+"w": true
+},
+"1390": {
+"t": "Percaholic",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 221,
+"w": true
+},
+"1393": {
+"t": "Orange",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 306,
+"w": true
+},
+"1396": {
+"t": "Open Shop (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 261,
+"w": true
+},
+"1397": {
+"t": "Push Me Away",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 245,
+"w": true
+},
+"1398": {
+"t": "On Me (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 172,
+"w": true
+},
+"1400": {
+"t": "Obsessed",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 210,
+"w": true
+},
+"1401": {
+"t": "Numb The Pain (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 190,
+"w": true
+},
+"1402": {
+"t": "Numb The Pain (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 191,
+"w": true
+},
+"1403": {
+"t": "Not Enough (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 193,
+"w": false
+},
+"1406": {
+"t": "No Shortcuts (feat. Juice WRLD)",
+"a": "MadeInTYO",
+"e": "Goodbye & Good Riddance",
+"d": 236,
+"w": true
+},
+"1407": {
+"t": "No Rest (feat. Juice WRLD)",
+"a": "Lil Skies",
+"e": "Goodbye & Good Riddance",
+"d": 210,
+"w": true
+},
+"1408": {
+"t": "No Hook",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 140,
+"w": true
+},
+"1409": {
+"t": "No Benefits (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 175,
+"w": true
+},
+"1410": {
+"t": "No Benefits (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 174,
+"w": true
+},
+"1411": {
+"t": "Nintendo",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 155,
+"w": true
+},
+"1413": {
+"t": "New Girl (v3)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 252,
+"w": true
+},
+"1414": {
+"t": "New Girl (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 252,
+"w": true
+},
+"1415": {
+"t": "New Girl (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 249,
+"w": true
+},
+"1416": {
+"t": "Nascar (with Calboy)",
+"a": "Juice WRLD & Calboy",
+"e": "Goodbye & Good Riddance",
+"d": 168,
+"w": true
+},
+"1417": {
+"t": "My Phone",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 149,
+"w": true
+},
+"1418": {
+"t": "My Life In A Nutshell (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 189,
+"w": false
+},
+"1419": {
+"t": "Mr. Heartbreak (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 187,
+"w": false
+},
+"1420": {
+"t": "Mr. Heartbreak (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 186,
+"w": false
+},
+"1422": {
+"t": "Motions (with MadeInTYO)",
+"a": "Juice WRLD & MadeInTYO",
+"e": "Goodbye & Good Riddance",
+"d": 230,
+"w": true
+},
+"1423": {
+"t": "Mood (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 197,
+"w": true
+},
+"1424": {
+"t": "Molly & Mike",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 160,
+"w": true
+},
+"1425": {
+"t": "Misunderstood",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 115,
+"w": true
+},
+"1426": {
+"t": "Misery Avenue (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 241,
+"w": true
+},
+"1427": {
+"t": "Minus (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 200,
+"w": true
+},
+"1428": {
+"t": "Melody (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 185,
+"w": true
+},
+"1429": {
+"t": "Meagan Good (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 157,
+"w": true
+},
+"1431": {
+"t": "Lucid Dreams (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 240,
+"w": false
+},
+"1432": {
+"t": "Lucid Dreams (Remix) (feat. Lil Uzi Vert) (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 240,
+"w": true
+},
+"1433": {
+"t": "Love Over There",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 190,
+"w": true
+},
+"1434": {
+"t": "Love No Hoe",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 173,
+"w": true
+},
+"1435": {
+"t": "Love And Leave Them",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 186,
+"w": true
+},
+"1436": {
+"t": "Love Ain't Meant For Demons (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 203,
+"w": true
+},
+"1437": {
+"t": "Love Ain't Meant For Demons (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 199,
+"w": true
+},
+"1438": {
+"t": "Lost Love",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 125,
+"w": true
+},
+"1439": {
+"t": "Lose You (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 189,
+"w": false
+},
+"1440": {
+"t": "Lose A Dream",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 135,
+"w": true
+},
+"1441": {
+"t": "Loose Screw",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 66,
+"w": true
+},
+"1443": {
+"t": "Long Gone",
+"a": "Juice WRLD",
+"e": "GB&GR",
+"d": 187,
+"w": true
+},
+"1444": {
+"t": "Lonely Road (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 185,
+"w": true
+},
+"1445": {
+"t": "London Tipton (feat. DoobieDaLil)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 176,
+"w": true
+},
+"1446": {
+"t": "London Tipton",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 175,
+"w": true
+},
+"1447": {
+"t": "Live Forever",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 167,
+"w": true
+},
+"1448": {
+"t": "Hope You Understand",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 278,
+"w": true
+},
+"1451": {
+"t": "Chosen",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": true
+},
+"1452": {
+"t": "Life",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 125,
+"w": false
+},
+"1453": {
+"t": "Let Me Go",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 249,
+"w": true
+},
+"1454": {
+"t": "Let It Buss",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 193,
+"w": false
+},
+"1455": {
+"t": "Let Her Leave",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 173,
+"w": true
+},
+"1456": {
+"t": "Let Go",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 205,
+"w": true
+},
+"1457": {
+"t": "Left",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 219,
+"w": true
+},
+"1458": {
+"t": "Lean Wit' Me (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 177,
+"w": false
+},
+"1459": {
+"t": "Lavish",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 172,
+"w": true
+},
+"1460": {
+"t": "Larry Bird",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 207,
+"w": true
+},
+"1461": {
+"t": "Kirby's Selecta",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 191,
+"w": true
+},
+"1462": {
+"t": "Killing Myself [Unofficial File]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 267,
+"w": true
+},
+"1463": {
+"t": "Kicks (v3)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 120,
+"w": false
+},
+"1464": {
+"t": "Kicks (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 109,
+"w": false
+},
+"1466": {
+"t": "Kickflip",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": true
+},
+"1467": {
+"t": "Keep Your Eyes Up (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 107,
+"w": false
+},
+"1470": {
+"t": "KNIGHT CRAWLER",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 177,
+"w": true
+},
+"1471": {
+"t": "Juicy",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 186,
+"w": true
+},
+"1472": {
+"t": "Jeffrey (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 171,
+"w": false
+},
+"1473": {
+"t": "Jack Wit' A Bean (with Lil Yachty)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "Goodbye & Good Riddance",
+"d": 201,
+"w": true
+},
+"1474": {
+"t": "Irony",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 179,
+"w": true
+},
+"1475": {
+"t": "Intro (feat. ToiNoStory)",
+"a": "Juice WRLD",
+"e": "GB&GR",
+"d": 75,
+"w": false
+},
+"1476": {
+"t": "Intended",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 251,
+"w": true
+},
+"1477": {
+"t": "Insecurities",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 134,
+"w": true
+},
+"1478": {
+"t": "Infatuated",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 175,
+"w": true
+},
+"1479": {
+"t": "In Zone",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 284,
+"w": true
+},
+"1481": {
+"t": "In This Bitch (with Lil Bibby) [v1]",
+"a": "Juice WRLD & Lil Bibby",
+"e": "Goodbye & Good Riddance",
+"d": 151,
+"w": false
+},
+"1482": {
+"t": "In The Trap",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 179,
+"w": true
+},
+"1483": {
+"t": "In My Head (feat. Juice WRLD)",
+"a": "The Chainsmokers",
+"e": "Goodbye & Good Riddance",
+"d": 240,
+"w": true
+},
+"1484": {
+"t": "In My Bag",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": true
+},
+"1485": {
+"t": "In A Mix",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 207,
+"w": true
+},
+"1486": {
+"t": "I'm Still (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 191,
+"w": true
+},
+"1487": {
+"t": "I'm Still",
+"a": "Juice WRLD",
+"e": "GB&GR",
+"d": 192,
+"w": true
+},
+"1488": {
+"t": "I'll Be Fine (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 243,
+"w": false
+},
+"1489": {
+"t": "I'll Be Fine",
+"a": "Juice WRLD",
+"e": "GB&GR",
+"d": 244,
+"w": true
+},
+"1490": {
+"t": "I See Everything (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 190,
+"w": true
+},
+"1491": {
+"t": "I See Everything (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 202,
+"w": true
+},
+"1492": {
+"t": "I Listen",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 155,
+"w": true
+},
+"1495": {
+"t": "Coke Fan",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 149,
+"w": true
+},
+"1496": {
+"t": "I Don't Know",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 138,
+"w": true
+},
+"1497": {
+"t": "Hypnotic",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 184,
+"w": true
+},
+"1498": {
+"t": "Hunt You Down",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 157,
+"w": true
+},
+"1499": {
+"t": "Hunnid'",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 165,
+"w": true
+},
+"1500": {
+"t": "Hop Out",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 204,
+"w": true
+},
+"1501": {
+"t": "Hoover",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 228,
+"w": true
+},
+"1502": {
+"t": "Honestly (feat. Juice WRLD) [v3]",
+"a": "G Herbo & Southside",
+"e": "Goodbye & Good Riddance",
+"d": 215,
+"w": true
+},
+"1503": {
+"t": "Honestly (feat. Juice WRLD) [v2]",
+"a": "G Herbo & Southside",
+"e": "Goodbye & Good Riddance",
+"d": 212,
+"w": true
+},
+"1504": {
+"t": "Honestly (feat. Juice WRLD) [v1]",
+"a": "G Herbo & Southside",
+"e": "Goodbye & Good Riddance",
+"d": 212,
+"w": true
+},
+"1505": {
+"t": "Honest",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 213,
+"w": false
+},
+"1506": {
+"t": "Hold My Hand",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 272,
+"w": true
+},
+"1507": {
+"t": "Hilfiger",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 227,
+"w": true
+},
+"1511": {
+"t": "Here We Go Again",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 201,
+"w": true
+},
+"1513": {
+"t": "Help Me (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 109,
+"w": true
+},
+"1514": {
+"t": "Help Me (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 109,
+"w": true
+},
+"1515": {
+"t": "The Wiz",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 191,
+"w": true
+},
+"1517": {
+"t": "Heart Clean",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 137,
+"w": true
+},
+"1518": {
+"t": "Hand On My Chest",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 191,
+"w": true
+},
+"1519": {
+"t": "Gucci Purse (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 139,
+"w": true
+},
+"1521": {
+"t": "Goyard (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 221,
+"w": true
+},
+"1522": {
+"t": "Gorgeous",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 163,
+"w": true
+},
+"1523": {
+"t": "Good Day",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 197,
+"w": true
+},
+"1524": {
+"t": "Going Crazy",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 159,
+"w": true
+},
+"1525": {
+"t": "God's Plan",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 197,
+"w": true
+},
+"1526": {
+"t": "Game",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 205,
+"w": true
+},
+"1527": {
+"t": "Further",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 213,
+"w": true
+},
+"1528": {
+"t": "Skyy",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 259,
+"w": true
+},
+"1529": {
+"t": "Fuck You",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 162,
+"w": true
+},
+"1530": {
+"t": "From The Start",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 135,
+"w": true
+},
+"1531": {
+"t": "Fridget",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 185,
+"w": true
+},
+"1532": {
+"t": "Freestyle 2",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 74,
+"w": false
+},
+"1533": {
+"t": "Four Words",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 168,
+"w": true
+},
+"1534": {
+"t": "For You (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 173,
+"w": true
+},
+"1535": {
+"t": "Flintstones",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 187,
+"w": true
+},
+"1536": {
+"t": "Flaws",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": true
+},
+"1537": {
+"t": "Flavor",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 232,
+"w": true
+},
+"1540": {
+"t": "Feline (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 210,
+"w": true
+},
+"1541": {
+"t": "Feline (feat. Lil Yachty)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "Goodbye & Good Riddance",
+"d": 210,
+"w": true
+},
+"1543": {
+"t": "Fadeaway",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 288,
+"w": true
+},
+"1544": {
+"t": "FUCK!",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 152,
+"w": true
+},
+"1545": {
+"t": "Eyes Closed",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 187,
+"w": true
+},
+"1546": {
+"t": "Eye Contact, Mind Control (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 183,
+"w": true
+},
+"1547": {
+"t": "Every Hour",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 78,
+"w": true
+},
+"1548": {
+"t": "Everlasting Love",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 182,
+"w": true
+},
+"1549": {
+"t": "End Of The Road (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 162,
+"w": true
+},
+"1550": {
+"t": "End Of The Road",
+"a": "Juice WRLD",
+"e": "GB&GR",
+"d": 163,
+"w": true
+},
+"1551": {
+"t": "Emotional Overdose",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 235,
+"w": false
+},
+"1552": {
+"t": "Dummy",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 204,
+"w": true
+},
+"1553": {
+"t": "Dumb Slut",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 216,
+"w": true
+},
+"1554": {
+"t": "Drown",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 189,
+"w": true
+},
+"1556": {
+"t": "Dover",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 115,
+"w": true
+},
+"1557": {
+"t": "Don't Play",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 218,
+"w": true
+},
+"1558": {
+"t": "Don't Care",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 166,
+"w": true
+},
+"1559": {
+"t": "Disco (with Lil Flash)",
+"a": "Juice WRLD & Lil Flash",
+"e": "Goodbye & Good Riddance",
+"d": 187,
+"w": true
+},
+"1560": {
+"t": "Die To Me",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 177,
+"w": true
+},
+"1561": {
+"t": "Devil In A Red Dress (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 170,
+"w": true
+},
+"1562": {
+"t": "Devil In A Red Dress (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 170,
+"w": true
+},
+"1563": {
+"t": "Devil Horns (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 231,
+"w": true
+},
+"1564": {
+"t": "Devil Horns (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 234,
+"w": true
+},
+"1565": {
+"t": "Deprived",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 131,
+"w": true
+},
+"1566": {
+"t": "Dark Queen",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 212,
+"w": true
+},
+"1567": {
+"t": "Dagger (with MadeInTYO)",
+"a": "Juice WRLD & MadeInTYO",
+"e": "Goodbye & Good Riddance",
+"d": 161,
+"w": true
+},
+"1568": {
+"t": "Curse From An Angel",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 205,
+"w": true
+},
+"1569": {
+"t": "Creepin'",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 166,
+"w": true
+},
+"1570": {
+"t": "Crazy Things",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 197,
+"w": true
+},
+"1571": {
+"t": "Cosby",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 206,
+"w": true
+},
+"1572": {
+"t": "Connection (feat. Juice WRLD)",
+"a": "Wifisfuneral",
+"e": "Goodbye & Good Riddance",
+"d": 168,
+"w": false
+},
+"1573": {
+"t": "Confide To",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 234,
+"w": true
+},
+"1574": {
+"t": "Confessions",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 206,
+"w": true
+},
+"1575": {
+"t": "Complications",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 209,
+"w": true
+},
+"1576": {
+"t": "Come Around",
+"a": "Juice WRLD & Mustard",
+"e": "Goodbye & Good Riddance",
+"d": 193,
+"w": true
+},
+"1577": {
+"t": "Coffins",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 174,
+"w": true
+},
+"1578": {
+"t": "Codeine Music",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 196,
+"w": true
+},
+"1579": {
+"t": "Codeine Casket",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 155,
+"w": true
+},
+"1580": {
+"t": "Cocaine (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 207,
+"w": true
+},
+"1581": {
+"t": "Cloudy",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 137,
+"w": true
+},
+"1582": {
+"t": "Click Click (with Lil Bibby & Ski Mask The Slump God) [v3]",
+"a": "Juice WRLD, Lil Bibby & Ski Mask The Slump God",
+"e": "Goodbye & Good Riddance",
+"d": 172,
+"w": true
+},
+"1584": {
+"t": "Click Click (with Lil Bibby & Ski Mask The Slump God) [v1]",
+"a": "Juice WRLD, Lil Bibby & Ski Mask The Slump God",
+"e": "Goodbye & Good Riddance",
+"d": 126,
+"w": true
+},
+"1585": {
+"t": "Clean",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 213,
+"w": true
+},
+"1586": {
+"t": "Classroom",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 182,
+"w": true
+},
+"1587": {
+"t": "Circles",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 175,
+"w": true
+},
+"1588": {
+"t": "Cigarettes (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 229,
+"w": true
+},
+"1589": {
+"t": "Cigarettes (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 228,
+"w": true
+},
+"1592": {
+"t": "Chosen One (feat. Juice WRLD & G Herbo)",
+"a": "Prince Bopp",
+"e": "Goodbye & Good Riddance",
+"d": 182,
+"w": true
+},
+"1595": {
+"t": "Chimp",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 170,
+"w": true
+},
+"1596": {
+"t": "Chemical Imbalance",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 111,
+"w": true
+},
+"1597": {
+"t": "Chase You Down",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 178,
+"w": true
+},
+"1598": {
+"t": "Carrera",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 260,
+"w": true
+},
+"1600": {
+"t": "Candles",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 184,
+"w": true
+},
+"1601": {
+"t": "Can't Survive",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 164,
+"w": true
+},
+"1602": {
+"t": "Can't Feel My Face",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 193,
+"w": true
+},
+"1603": {
+"t": "Cali Girl",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 240,
+"w": true
+},
+"1604": {
+"t": "By Myself",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 195,
+"w": true
+},
+"1605": {
+"t": "Burberry Timbs (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 188,
+"w": false
+},
+"1606": {
+"t": "Bullet For My Valentine (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 175,
+"w": false
+},
+"1607": {
+"t": "Bottom From Here",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 169,
+"w": true
+},
+"1608": {
+"t": "Bottle",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 186,
+"w": true
+},
+"1609": {
+"t": "Boss Now",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 120,
+"w": true
+},
+"1610": {
+"t": "Bonnie And Clyde",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 199,
+"w": true
+},
+"1611": {
+"t": "Blink-182 (feat. Tyla Yaweh) [v2]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 150,
+"w": false
+},
+"1612": {
+"t": "Blink-182 (feat. Tyla Yaweh) [v1]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 153,
+"w": false
+},
+"1613": {
+"t": "Blind Fold",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 117,
+"w": true
+},
+"1614": {
+"t": "Black & White (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": true
+},
+"1615": {
+"t": "Black & White",
+"a": "Juice WRLD",
+"e": "GB&GR",
+"d": 187,
+"w": true
+},
+"1616": {
+"t": "Billy Idol",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 178,
+"w": true
+},
+"1617": {
+"t": "Betrayal (Skit) [feat. ToiNoStory]",
+"a": "Juice WRLD",
+"e": "GB&GR",
+"d": 64,
+"w": false
+},
+"1618": {
+"t": "Before Tomorrow (feat. Juice WRLD)",
+"a": "Lil Bibby",
+"e": "Goodbye & Good Riddance",
+"d": 172,
+"w": true
+},
+"1619": {
+"t": "Last Time",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 166,
+"w": true
+},
+"1620": {
+"t": "Bank Account",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 114,
+"w": true
+},
+"1621": {
+"t": "Bad Romance",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 129,
+"w": true
+},
+"1622": {
+"t": "Back In Chicago",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 144,
+"w": true
+},
+"1626": {
+"t": "In A Minute (feat. Lil Skies & Takeoff)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 220,
+"w": true
+},
+"1627": {
+"t": "In A Minute",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 219,
+"w": true
+},
+"1628": {
+"t": "Another One",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 182,
+"w": true
+},
+"1629": {
+"t": "Analog",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 207,
+"w": true
+},
+"1630": {
+"t": "Already Dead (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 231,
+"w": true
+},
+"1631": {
+"t": "Already (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 210,
+"w": false
+},
+"1633": {
+"t": "All The Same",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 168,
+"w": true
+},
+"1634": {
+"t": "All Smoke",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 122,
+"w": true
+},
+"1635": {
+"t": "All On My Own",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 120,
+"w": true
+},
+"1636": {
+"t": "All Girls Are The Same 2 (Insecure) [v1]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": false
+},
+"1637": {
+"t": "All Girls Are The Same (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 169,
+"w": false
+},
+"1639": {
+"t": "Airport Security (with Lil Yachty)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "Goodbye & Good Riddance",
+"d": 188,
+"w": true
+},
+"1640": {
+"t": "Addicted",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 185,
+"w": true
+},
+"1641": {
+"t": "999",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": true
+},
+"1642": {
+"t": "911",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 203,
+"w": true
+},
+"1643": {
+"t": "734 (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 196,
+"w": true
+},
+"1644": {
+"t": "27 Club (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 129,
+"w": false
+},
+"1645": {
+"t": "Stuck",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 242,
+"w": true
+},
+"1646": {
+"t": "Triple 9",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 215,
+"w": true
+},
+"1647": {
+"t": "Too Far (v2)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 126,
+"w": true
+},
+"1648": {
+"t": "Too Far (v1)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 119,
+"w": true
+},
+"1649": {
+"t": "Thank Me Later",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 282,
+"w": true
+},
+"1650": {
+"t": "Soldier",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 265,
+"w": false
+},
+"1651": {
+"t": "Realize (v1)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 218,
+"w": true
+},
+"1655": {
+"t": "OK",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 255,
+"w": true
+},
+"1656": {
+"t": "No Smoke (v2)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 127,
+"w": false
+},
+"1659": {
+"t": "All Alone",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": false
+},
+"1660": {
+"t": "Miracle",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 168,
+"w": true
+},
+"1661": {
+"t": "Make It Sell",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 180,
+"w": true
+},
+"1662": {
+"t": "Lost Myself",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 210,
+"w": true
+},
+"1663": {
+"t": "Like That",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 231,
+"w": true
+},
+"1664": {
+"t": "Insanity",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 195,
+"w": true
+},
+"1665": {
+"t": "Grace (Teaser)",
+"a": "Juice WRLD",
+"e": "BINGEDRINKINGMUSIC",
+"d": 267,
+"w": true
+},
+"1666": {
+"t": "Go Home",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 224,
+"w": true
+},
+"1667": {
+"t": "Freestyle",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 188,
+"w": true
+},
+"1668": {
+"t": "Drunk (Pt. 2)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 203,
+"w": true
+},
+"1669": {
+"t": "Champagne",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 192,
+"w": true
+},
+"1670": {
+"t": "Don't Know What I'm On (v3)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 299,
+"w": true
+},
+"1671": {
+"t": "Don't Know What I'm On (v2)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 299,
+"w": true
+},
+"1672": {
+"t": "Don't Know What I'm On (v1)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 299,
+"w": true
+},
+"1673": {
+"t": "DENIAL </3 (demo)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 182,
+"w": false
+},
+"1674": {
+"t": "DARK PLACE (demo)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 147,
+"w": false
+},
+"1676": {
+"t": "Believe In Me (with Joey88)",
+"a": "Juice WRLD & Joey88",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 193,
+"w": true
+},
+"1677": {
+"t": "All Burnt Up (v2)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 222,
+"w": true
+},
+"1678": {
+"t": "All Burnt Up (v1)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 222,
+"w": true
+},
+"1679": {
+"t": "Act Right (with RoadRunner GDo)",
+"a": "Juice WRLD & RoadRunner GDo",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 171,
+"w": true
+},
+"1680": {
+"t": "ALL GIRLS ARE THE SAME 999",
+"a": "Juice WRLD",
+"e": "ND",
+"d": 169,
+"w": false
+},
+"1681": {
+"t": "Your Man (with 9DSVN)",
+"a": "Juice WRLD & 9DSVN",
+"e": "BINGEDRINKINGMUSIC",
+"d": 407,
+"w": false
+},
+"1682": {
+"t": "YOUDONTLOVEME",
+"a": "Juice WRLD",
+"e": "bdm",
+"d": 156,
+"w": true
+},
+"1684": {
+"t": "Rock",
+"a": "Juice WRLD",
+"e": "BINGEDRINKINGMUSIC",
+"d": 178,
+"w": true
+},
+"1685": {
+"t": "PARANOID",
+"a": "Juice WRLD",
+"e": "bdm",
+"d": 158,
+"w": false
+},
+"1686": {
+"t": "Watts",
+"a": "Juice WRLD",
+"e": "BINGEDRINKINGMUSIC",
+"d": 192,
+"w": false
+},
+"1687": {
+"t": "until it's over (closure)",
+"a": "Juice WRLD",
+"e": "jw 999",
+"d": 216,
+"w": true
+},
+"1688": {
+"t": "two cups (everything's going my way)",
+"a": "Juice WRLD",
+"e": "jw 999",
+"d": 151,
+"w": true
+},
+"1689": {
+"t": "sticks & stones",
+"a": "Juice WRLD",
+"e": "jw 999",
+"d": 122,
+"w": true
+},
+"1690": {
+"t": "rainbow",
+"a": "Juice WRLD",
+"e": "jw 999",
+"d": 235,
+"w": true
+},
+"1691": {
+"t": "moonlight",
+"a": "Juice WRLD",
+"e": "jw 999",
+"d": 178,
+"w": true
+},
+"1692": {
+"t": "lucid dreams [Session Mix] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 240,
+"w": false
+},
+"1693": {
+"t": "lost her",
+"a": "Juice WRLD",
+"e": "jw 999",
+"d": 191,
+"w": true
+},
+"1694": {
+"t": "eye contact (look me in my eyes)",
+"a": "Juice WRLD",
+"e": "jw 999",
+"d": 200,
+"w": true
+},
+"1695": {
+"t": "Studio Sessions (I don't wanna lose freestyle) </3",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 245,
+"w": false
+},
+"1696": {
+"t": "Radio",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 195,
+"w": true
+},
+"1698": {
+"t": "Oh, No",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 196,
+"w": false
+},
+"1699": {
+"t": "No Promo",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 279,
+"w": false
+},
+"1700": {
+"t": "No More",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 206,
+"w": true
+},
+"1701": {
+"t": "Money Hunt",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 217,
+"w": true
+},
+"1702": {
+"t": "hollywood dreams (come true) 9 9 9",
+"a": "Juice WRLD",
+"e": "HIH 999",
+"d": 256,
+"w": true
+},
+"1703": {
+"t": "Tuff Talk",
+"a": "Juice WRLD",
+"e": "Heartbroken In Hollywood 999",
+"d": 193,
+"w": false
+},
+"1704": {
+"t": "Hell",
+"a": "Juice WRLD",
+"e": "Heartbroken In Hollywood 999",
+"d": 258,
+"w": true
+},
+"1705": {
+"t": "Franky On Me (with RoadRunner GDo)",
+"a": "Juice WRLD & RoadRunner GDo",
+"e": "Heartbroken In Hollywood 999",
+"d": 172,
+"w": false
+},
+"1706": {
+"t": "FALL BACK",
+"a": "Juice WRLD",
+"e": "HIH 999",
+"d": 258,
+"w": true
+},
+"1707": {
+"t": "playing games (I'm not playing fair) </3",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 229,
+"w": true
+},
+"1708": {
+"t": "You Freestyle",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 252,
+"w": false
+},
+"1709": {
+"t": "Yo' Bishh",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 169,
+"w": false
+},
+"1710": {
+"t": "Xan, Xan, Xan (with RoadRunner GDo)",
+"a": "Juice WRLD & RoadRunner GDo",
+"e": "Affliction",
+"d": 238,
+"w": true
+},
+"1711": {
+"t": "Work",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 146,
+"w": true
+},
+"1712": {
+"t": "Watch Me",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 236,
+"w": true
+},
+"1713": {
+"t": "Right, Left",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 290,
+"w": false
+},
+"1714": {
+"t": "Ran Off",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 234,
+"w": true
+},
+"1715": {
+"t": "ROCKSTAR GIRL",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 141,
+"w": true
+},
+"1716": {
+"t": "On The Rise",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 185,
+"w": true
+},
+"1717": {
+"t": "No Reason",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 225,
+"w": true
+},
+"1718": {
+"t": "Matrix",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 261,
+"w": true
+},
+"1719": {
+"t": "Masterpiece",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 210,
+"w": false
+},
+"1720": {
+"t": "Like Yeah",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 238,
+"w": false
+},
+"1721": {
+"t": "Kawasaki",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 231,
+"w": true
+},
+"1722": {
+"t": "IMDA$$HIXX",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 138,
+"w": false
+},
+"1723": {
+"t": "I Wanna",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 217,
+"w": true
+},
+"1724": {
+"t": "I Love It (feat. YdotGdot)",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 232,
+"w": false
+},
+"1725": {
+"t": "I Love It",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 229,
+"w": true
+},
+"1727": {
+"t": "Golden X Get Away </3 (interlude)",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 288,
+"w": true
+},
+"1728": {
+"t": "GO",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 206,
+"w": false
+},
+"1729": {
+"t": "Fuck It Up (feat. JuiceTheKidd)",
+"a": "King Jefe",
+"e": "Affliction",
+"d": 147,
+"w": false
+},
+"1731": {
+"t": "Chop A Brick",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 199,
+"w": false
+},
+"1732": {
+"t": "2MININHELL (Pt. 2)",
+"a": "JuiceTheKidd",
+"e": "Affliction",
+"d": 204,
+"w": true
+},
+"1733": {
+"t": "You & I",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 248,
+"w": true
+},
+"1734": {
+"t": "Who Are You?",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 189,
+"w": true
+},
+"1735": {
+"t": "WOAH",
+"a": "JuiceTheKidd",
+"e": "jute",
+"d": 240,
+"w": true
+},
+"1736": {
+"t": "Tweekin' (with Zay Loco)",
+"a": "JuiceTheKidd & Zay Loco",
+"e": "JUICED UP THE EP",
+"d": 193,
+"w": true
+},
+"1737": {
+"t": "Trap Phone Bling",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 246,
+"w": false
+},
+"1739": {
+"t": "Thoughts",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 220,
+"w": true
+},
+"1740": {
+"t": "RUNNAWAY FREESTYLE",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 343,
+"w": true
+},
+"1742": {
+"t": "Over & Over",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 192,
+"w": true
+},
+"1743": {
+"t": "Only For You",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 233,
+"w": true
+},
+"1745": {
+"t": "Ohh My, Ohh My",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 210,
+"w": true
+},
+"1746": {
+"t": "Dough",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 245,
+"w": true
+},
+"1747": {
+"t": "Man Man",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 262,
+"w": true
+},
+"1748": {
+"t": "Let's Go (with Gunbo & Mr. Goon)",
+"a": "JuiceTheKidd, Gunbo & Mr. Goon",
+"e": "JUICED UP THE EP",
+"d": 342,
+"w": false
+},
+"1749": {
+"t": "LET'S GO",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 223,
+"w": true
+},
+"1750": {
+"t": "KKK",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 215,
+"w": false
+},
+"1751": {
+"t": "Jordan (Woah) [Pt. 2]",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 232,
+"w": true
+},
+"1752": {
+"t": "In My Mind",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 254,
+"w": true
+},
+"1753": {
+"t": "I SWEAR",
+"a": "JuiceTheKidd",
+"e": "jute",
+"d": 251,
+"w": true
+},
+"1754": {
+"t": "I Don’t Know",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 181,
+"w": true
+},
+"1755": {
+"t": "Goin' Crazy",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 266,
+"w": true
+},
+"1756": {
+"t": "Fuck It",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 209,
+"w": false
+},
+"1757": {
+"t": "Finesse Me (feat. JuiceTheKidd)",
+"a": "King Jefe",
+"e": "JUICED UP THE EP",
+"d": 200,
+"w": false
+},
+"1758": {
+"t": "Fall Through",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 245,
+"w": true
+},
+"1759": {
+"t": "Don't Waste My Time",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 206,
+"w": true
+},
+"1760": {
+"t": "Classic Trap (feat. JuiceTheKidd)",
+"a": "Zay Loco",
+"e": "YouTube",
+"d": 170,
+"w": false
+},
+"1761": {
+"t": "'Bout That (feat. RoadRunner GDo)",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 292,
+"w": false
+},
+"1762": {
+"t": "Blowin' Up",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 266,
+"w": true
+},
+"1763": {
+"t": "Aye Aye",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 367,
+"w": true
+},
+"1764": {
+"t": "Ain't Talkin' Toronto (feat. JuiceTheKidd)",
+"a": "RoadRunner GDo",
+"e": "JUICED UP THE EP",
+"d": 245,
+"w": false
+},
+"1765": {
+"t": "2MININHELL",
+"a": "JuiceTheKidd",
+"e": "JUICED UP THE EP",
+"d": 223,
+"w": true
+},
+"1771": {
+"t": "Feline [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 279,
+"w": true
+},
+"1776": {
+"t": "Fuck What You Sayin' (feat. Lil Yachty) [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 172,
+"w": true
+},
+"1777": {
+"t": "Love And Leave Them [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 589,
+"w": false
+},
+"1779": {
+"t": "Starfire",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 228,
+"w": true
+},
+"1847": {
+"t": "Tales Of The Toxic",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 155,
+"w": true
+},
+"1877": {
+"t": "On My Mind",
+"a": "Juice WRLD",
+"e": null,
+"d": 186,
+"w": true
+},
+"1973": {
+"t": "Slasher [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 295,
+"w": true
+},
+"1974": {
+"t": "Sleep Paralysis [Sessions]",
+"a": "Juice WRLD & The Chainsmokers",
+"e": "Goodbye & Good Riddance",
+"d": 285,
+"w": true
+},
+"1975": {
+"t": "Forever",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 211,
+"w": true
+},
+"1978": {
+"t": "500 Carats [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 209,
+"w": true
+},
+"1984": {
+"t": "Dolce [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 1070,
+"w": true
+},
+"1986": {
+"t": "All The Same [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 420,
+"w": true
+},
+"1987": {
+"t": "Already [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 280,
+"w": true
+},
+"1989": {
+"t": "Juice WRLD DID [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 337,
+"w": false
+},
+"1992": {
+"t": "Back Home [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 569,
+"w": true
+},
+"1995": {
+"t": "Back On It [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 288,
+"w": true
+},
+"1996": {
+"t": "Bad Day [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 246,
+"w": true
+},
+"1999": {
+"t": "Bank Account [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 141,
+"w": true
+},
+"2001": {
+"t": "Big Swag [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 631,
+"w": true
+},
+"2002": {
+"t": "Billy Idol [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 451,
+"w": false
+},
+"2003": {
+"t": "Bird's Eye View [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 168,
+"w": true
+},
+"2005": {
+"t": "Body Bag [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 489,
+"w": true
+},
+"2006": {
+"t": "Bonnie & Clyde [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 292,
+"w": true
+},
+"2008": {
+"t": "Bottle [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 744,
+"w": true
+},
+"2009": {
+"t": "Bottom From Here [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 231,
+"w": true
+},
+"2010": {
+"t": "Buck 50 (Buck Fifty)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 285,
+"w": true
+},
+"2011": {
+"t": "Bullet For My Valentine [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 948,
+"w": false
+},
+"2012": {
+"t": "Bullet For My Valentine [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 1428,
+"w": false
+},
+"2014": {
+"t": "Emotional Overdose [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 690,
+"w": true
+},
+"2015": {
+"t": "Can't Let Go [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 203,
+"w": false
+},
+"2017": {
+"t": "Crazy Things [Extended]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 274,
+"w": false
+},
+"2025": {
+"t": "Classroom [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 248,
+"w": true
+},
+"2027": {
+"t": "Come And Get Me [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 120,
+"w": true
+},
+"2028": {
+"t": "Condone It [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 247,
+"w": true
+},
+"2030": {
+"t": "Cosby [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 540,
+"w": false
+},
+"2032": {
+"t": "Creepin' [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 228,
+"w": true
+},
+"2034": {
+"t": "Cupid's Carcass (Who Shot Cupid Session)",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 215,
+"w": false
+},
+"2035": {
+"t": "Curse From An Angel [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 342,
+"w": true
+},
+"2036": {
+"t": "Dark Place [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 302,
+"w": true
+},
+"2037": {
+"t": "Dark Place [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 726,
+"w": true
+},
+"2038": {
+"t": "Rockstar In His Prime [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 355,
+"w": true
+},
+"2040": {
+"t": "Demons And Angels [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 740,
+"w": true
+},
+"2042": {
+"t": "Desire [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 269,
+"w": true
+},
+"2047": {
+"t": "Dirty Fan [Session Mix]",
+"a": "Juice WRLD & G Herbo",
+"e": "WRLD On Drugs",
+"d": 96,
+"w": true
+},
+"2048": {
+"t": "Don't Go [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 652,
+"w": true
+},
+"2055": {
+"t": "Skyy [Sessions] (v1)",
+"a": "Juice WRLD, Lil Bibby & Ski Mask The Slump God",
+"e": "Goodbye & Good Riddance",
+"d": 1048,
+"w": true
+},
+"2058": {
+"t": "Feel Like A God [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 280,
+"w": true
+},
+"2061": {
+"t": "Finessin' [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 640,
+"w": true
+},
+"2063": {
+"t": "First Time [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 483,
+"w": true
+},
+"2064": {
+"t": "Flavor [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 304,
+"w": true
+},
+"2065": {
+"t": "Flaws And Sins [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 580,
+"w": true
+},
+"2066": {
+"t": "Flaws [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 202,
+"w": true
+},
+"2068": {
+"t": "Flintstones [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 461,
+"w": true
+},
+"2071": {
+"t": "Extra [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 351,
+"w": true
+},
+"2073": {
+"t": "Forever [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 341,
+"w": true
+},
+"2074": {
+"t": "Fridget [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 325,
+"w": true
+},
+"2076": {
+"t": "FUCK! [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 185,
+"w": true
+},
+"2077": {
+"t": "Game [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 549,
+"w": false
+},
+"2078": {
+"t": "Game [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 857,
+"w": true
+},
+"2080": {
+"t": "Girl Of My Dreams [Sessions]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 142,
+"w": true
+},
+"2081": {
+"t": "Girl With The Blonde Hair [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 252,
+"w": true
+},
+"2083": {
+"t": "Your Loss [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 688,
+"w": false
+},
+"2089": {
+"t": "Got Nothing On Me [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 455,
+"w": true
+},
+"2092": {
+"t": "Gucci Purse [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 234,
+"w": false
+},
+"2095": {
+"t": "Heart Clean [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 193,
+"w": true
+},
+"2099": {
+"t": "Heavy [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 894,
+"w": false
+},
+"2101": {
+"t": "Henny [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 286,
+"w": false
+},
+"2102": {
+"t": "Hey Wonderland [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 234,
+"w": true
+},
+"2103": {
+"t": "Hide [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 280,
+"w": true
+},
+"2104": {
+"t": "High Again [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 182,
+"w": true
+},
+"2105": {
+"t": "Hold My Hand [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 845,
+"w": true
+},
+"2108": {
+"t": "Hypnotic [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 424,
+"w": true
+},
+"2110": {
+"t": "I Wonder [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 299,
+"w": false
+},
+"2111": {
+"t": "Don't Go There [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 271,
+"w": true
+},
+"2115": {
+"t": "In This Bitch (with Lil Bibby) [Sessions]",
+"a": "Juice WRLD & Lil Bibby",
+"e": "Goodbye & Good Riddance",
+"d": 1236,
+"w": true
+},
+"2116": {
+"t": "Inspire Me [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 223,
+"w": true
+},
+"2120": {
+"t": "Jack Wit' A Bean [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 208,
+"w": true
+},
+"2122": {
+"t": "Rockets [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 454,
+"w": false
+},
+"2124": {
+"t": "Karate Kid (No Hands) (Jumanji) [v1]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 160,
+"w": true
+},
+"2126": {
+"t": "Knight Crawler [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 236,
+"w": true
+},
+"2128": {
+"t": "Knuck If You Buck (with Lil Yachty) [Sessions] (v2)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "WRLD On Drugs",
+"d": 245,
+"w": true
+},
+"2129": {
+"t": "Larry Bird [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 183,
+"w": true
+},
+"2131": {
+"t": "Plight [Sessions] (v3)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 915,
+"w": true
+},
+"2135": {
+"t": "Lean Wit Me' [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 503,
+"w": true
+},
+"2136": {
+"t": "Let Her Leave [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 346,
+"w": false
+},
+"2137": {
+"t": "Let Her Leave [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 320,
+"w": false
+},
+"2138": {
+"t": "Like A Riff [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 371,
+"w": false
+},
+"2142": {
+"t": "London Tipton [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 421,
+"w": true
+},
+"2144": {
+"t": "Lonely Road [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 313,
+"w": true
+},
+"2145": {
+"t": "Loose Screw [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 122,
+"w": false
+},
+"2151": {
+"t": "Lucid Dreams [Session Mix] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 241,
+"w": true
+},
+"2153": {
+"t": "Make Believe [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 296,
+"w": true
+},
+"2155": {
+"t": "Make It Back [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 255,
+"w": true
+},
+"2165": {
+"t": "Traveling The World [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 594,
+"w": true
+},
+"2169": {
+"t": "Minus (feat. Trevor Daniel) [Sessions]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 248,
+"w": true
+},
+"2170": {
+"t": "Misery Avenue [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 620,
+"w": true
+},
+"2172": {
+"t": "Molly & Mike [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 243,
+"w": false
+},
+"2173": {
+"t": "Money Hunt [Sessions]",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 720,
+"w": true
+},
+"2176": {
+"t": "MoshPit (both juice verses)",
+"a": "Kodak Black",
+"e": "WRLD On Drugs",
+"d": 224,
+"w": true
+},
+"2178": {
+"t": "My Phone [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 443,
+"w": true
+},
+"2179": {
+"t": "Persona [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 311,
+"w": true
+},
+"2187": {
+"t": "No Fears",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 335,
+"w": true
+},
+"2188": {
+"t": "No Good [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 372,
+"w": true
+},
+"2191": {
+"t": "Not Enough [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 355,
+"w": true
+},
+"2192": {
+"t": "Not That Easy [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 250,
+"w": true
+},
+"2195": {
+"t": "On And On [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 1830,
+"w": false
+},
+"2196": {
+"t": "On Me [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 202,
+"w": true
+},
+"2198": {
+"t": "Outta Pocket [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 1048,
+"w": true
+},
+"2202": {
+"t": "Porridge [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 346,
+"w": true
+},
+"2203": {
+"t": "Hell [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 279,
+"w": true
+},
+"2204": {
+"t": "Pour Up A 6 [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 525,
+"w": true
+},
+"2209": {
+"t": "Like Shit [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 250,
+"w": false
+},
+"2210": {
+"t": "Na Na Na [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 1110,
+"w": false
+},
+"2215": {
+"t": "Reach Freestyle [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 463,
+"w": false
+},
+"2225": {
+"t": "Rob A Bank [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 237,
+"w": false
+},
+"2227": {
+"t": "Rose Petals [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 572,
+"w": true
+},
+"2230": {
+"t": "Rush [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 617,
+"w": true
+},
+"2232": {
+"t": "Track Race [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 727,
+"w": true
+},
+"2233": {
+"t": "Fadeaway [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 435,
+"w": true
+},
+"2240": {
+"t": "Lightyears (feat. Young Thug) [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 319,
+"w": true
+},
+"2246": {
+"t": "Slowly [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 1446,
+"w": false
+},
+"2250": {
+"t": "Rollie [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 253,
+"w": true
+},
+"2251": {
+"t": "Sometimes [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 504,
+"w": true
+},
+"2252": {
+"t": "Start It Up [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 1167,
+"w": true
+},
+"2253": {
+"t": "Super Saiyan [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 156,
+"w": false
+},
+"2260": {
+"t": "Tales Of The Toxic [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 332,
+"w": true
+},
+"2272": {
+"t": "Too Far [Sessions]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 1343,
+"w": true
+},
+"2274": {
+"t": "Trick Or Treat [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 330,
+"w": true
+},
+"2275": {
+"t": "To The Face [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 407,
+"w": true
+},
+"2282": {
+"t": "I See Everything [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 415,
+"w": true
+},
+"2285": {
+"t": "Who I Am Anymore [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 743,
+"w": false
+},
+"2286": {
+"t": "Who Shot Cupid [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 367,
+"w": true
+},
+"2287": {
+"t": "Will [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 558,
+"w": true
+},
+"2289": {
+"t": "Without Me (feat. Juice WRLD) [Sessions]",
+"a": "Halsey",
+"e": "Death Race For Love",
+"d": 303,
+"w": true
+},
+"2295": {
+"t": "Switch",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 200,
+"w": false
+},
+"2296": {
+"t": "Listen To This If You're Lost",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 178,
+"w": true
+},
+"2298": {
+"t": "Narcs",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 208,
+"w": false
+},
+"2301": {
+"t": "Won't Hurt 2",
+"a": "Juice WRLD",
+"e": null,
+"d": 195,
+"w": true
+},
+"2302": {
+"t": "Purse",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 202,
+"w": true
+},
+"2303": {
+"t": "Sexual Healing [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 386,
+"w": false
+},
+"2304": {
+"t": "Revive You",
+"a": "Juice WRLD",
+"e": null,
+"d": 144,
+"w": true
+},
+"2305": {
+"t": "Blink-182 [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 353,
+"w": true
+},
+"2306": {
+"t": "Murakami",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 126,
+"w": false
+},
+"2307": {
+"t": "Tsunami Soul [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 269,
+"w": true
+},
+"2308": {
+"t": "My Life In A Nutshell [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 284,
+"w": true
+},
+"2309": {
+"t": "Drunk & Honest",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 166,
+"w": true
+},
+"2311": {
+"t": "Outer Space",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 195,
+"w": true
+},
+"2312": {
+"t": "Down Bad",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 114,
+"w": true
+},
+"2314": {
+"t": "911 [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 467,
+"w": true
+},
+"2315": {
+"t": "Listen To This If You're Lost [Jer Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 178,
+"w": false
+},
+"2317": {
+"t": "Insanity [Sessions]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 766,
+"w": true
+},
+"2319": {
+"t": "Miracle [Sessions]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 1027,
+"w": true
+},
+"2320": {
+"t": "Four Words [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 432,
+"w": true
+},
+"2322": {
+"t": "I Want It (feat. Halsey) (Sessions)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 388,
+"w": true
+},
+"2331": {
+"t": "Hands Behind Your Back",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 192,
+"w": true
+},
+"2332": {
+"t": "Amnesia",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 135,
+"w": false
+},
+"2333": {
+"t": "Never Alone (Solo)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 113,
+"w": false
+},
+"2334": {
+"t": "Break",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 244,
+"w": true
+},
+"2336": {
+"t": "Dime Piece [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 152,
+"w": true
+},
+"2338": {
+"t": "Hop Out [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 276,
+"w": true
+},
+"2350": {
+"t": "Your Mom [Sessions]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 205,
+"w": true
+},
+"2354": {
+"t": "Airport Security [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 175,
+"w": true
+},
+"2355": {
+"t": "Devil Horns [OG]",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 156,
+"w": true
+},
+"2356": {
+"t": "Autograph v2",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 156,
+"w": false
+},
+"2357": {
+"t": "Autograph v3",
+"a": "Juice WRLD",
+"e": "Stem",
+"d": 184,
+"w": true
+},
+"2358": {
+"t": "Anxiety (feat. Kodak Black)",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 180,
+"w": false
+},
+"2359": {
+"t": "Switch [Master] (Mix 2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 128,
+"w": true
+},
+"2364": {
+"t": "Listen To This If You're Lost (Sessions) (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 796,
+"w": true
+},
+"2365": {
+"t": "In My Arms [Jer Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 158,
+"w": true
+},
+"2366": {
+"t": "GOLDEN x GETAWAY",
+"a": "Juice WRLD",
+"e": null,
+"d": 288,
+"w": false
+},
+"2367": {
+"t": "Reach Freestyle [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": null,
+"d": 864,
+"w": true
+},
+"2368": {
+"t": "Devil Horns [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 327,
+"w": true
+},
+"2371": {
+"t": "Life's A Mess (feat. The Kid LAROI)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 288,
+"w": true
+},
+"2375": {
+"t": "Man Of The Year (v1)",
+"a": "Juice WRLD",
+"e": null,
+"d": 139,
+"w": true
+},
+"2376": {
+"t": "Man Of The Year (v18)",
+"a": "Juice WRLD",
+"e": null,
+"d": 137,
+"w": true
+},
+"2379": {
+"t": "Retro J's",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 182,
+"w": true
+},
+"2380": {
+"t": "Relocate",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 154,
+"w": true
+},
+"2382": {
+"t": "Underworld [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 469,
+"w": true
+},
+"2384": {
+"t": "Dosage",
+"a": "Juice WRLD",
+"e": null,
+"d": 227,
+"w": true
+},
+"2386": {
+"t": "Wasted Pt.2 (feat. Lil Uzi Vert)",
+"a": "Juice WRLD",
+"e": null,
+"d": 224,
+"w": true
+},
+"2390": {
+"t": "Moon Rocks",
+"a": "Juice WRLD",
+"e": null,
+"d": 201,
+"w": true
+},
+"2394": {
+"t": "Sanity",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 168,
+"w": true
+},
+"2396": {
+"t": "Second Floor",
+"a": "Juice WRLD",
+"e": null,
+"d": 130,
+"w": true
+},
+"2397": {
+"t": "Cowboy Hunt",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 192,
+"w": true
+},
+"2399": {
+"t": "Rental [Jer Master] (With Piano Intro)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 283,
+"w": true
+},
+"2400": {
+"t": "Devil Horns [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 748,
+"w": true
+},
+"2405": {
+"t": "Blood, Sweat, Tears (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 149,
+"w": true
+},
+"2406": {
+"t": "Devil Horns [Sessions] [No Chorus Repeat]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 655,
+"w": false
+},
+"2408": {
+"t": "Smoke A Half [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 199,
+"w": true
+},
+"2409": {
+"t": "Miracle [Alt Mix]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 194,
+"w": true
+},
+"2410": {
+"t": "Plug [Sessions] (v3)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 645,
+"w": true
+},
+"2411": {
+"t": "Don’t Text My Phone",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 194,
+"w": false
+},
+"2412": {
+"t": "On The Floor",
+"a": "Juice WRLD",
+"e": null,
+"d": 295,
+"w": true
+},
+"2413": {
+"t": "Double R [OG Beat]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 227,
+"w": true
+},
+"2417": {
+"t": "SAD! Freestyle",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 197,
+"w": true
+},
+"2418": {
+"t": "Percocet Zombie Freestyle",
+"a": "Juice WRLD",
+"e": null,
+"d": 131,
+"w": false
+},
+"2419": {
+"t": "Rental Freestyle",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 471,
+"w": true
+},
+"2421": {
+"t": "Priceless Freestyle",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 494,
+"w": true
+},
+"2423": {
+"t": "Back On That Wok Freestyle",
+"a": "Juice WRLD",
+"e": null,
+"d": 437,
+"w": false
+},
+"2424": {
+"t": "Campfire Freestyle",
+"a": "Juice WRLD",
+"e": null,
+"d": 106,
+"w": false
+},
+"2425": {
+"t": "Demise + Freestyle",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 316,
+"w": true
+},
+"2426": {
+"t": "Demise Freestyle",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 187,
+"w": true
+},
+"2427": {
+"t": "Play For Keeps",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 450,
+"w": true
+},
+"2428": {
+"t": "Codeine Crazy Freestyle",
+"a": "Juice WRLD",
+"e": null,
+"d": 335,
+"w": true
+},
+"2430": {
+"t": "The Seventies",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 87,
+"w": true
+},
+"2432": {
+"t": "Keep Save Freestyle 1",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 92,
+"w": false
+},
+"2433": {
+"t": "Keep Save Freestyle 2",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 88,
+"w": false
+},
+"2434": {
+"t": "Keep Save Freestyle 3",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 110,
+"w": false
+},
+"2435": {
+"t": "Keep Save Freestyle 4",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 98,
+"w": false
+},
+"2436": {
+"t": "Keep Save Freestyle 5",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 93,
+"w": false
+},
+"2440": {
+"t": "Macaroni Sound Freestyle",
+"a": "Juice WRLD",
+"e": null,
+"d": 143,
+"w": false
+},
+"2442": {
+"t": "Cheese And Dope Freestyle",
+"a": "Juice WRLD",
+"e": null,
+"d": 208,
+"w": true
+},
+"2447": {
+"t": "Awful Times",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 169,
+"w": false
+},
+"2450": {
+"t": "High Tide",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 175,
+"w": true
+},
+"2451": {
+"t": "Don't Care (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 108,
+"w": true
+},
+"2452": {
+"t": "Agree To Disagree",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 243,
+"w": true
+},
+"2457": {
+"t": "Compromised (v2) [Master, & Edit]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 172,
+"w": false
+},
+"2463": {
+"t": "Blown Away",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 187,
+"w": true
+},
+"2464": {
+"t": "Darkness",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 144,
+"w": false
+},
+"2485": {
+"t": "Mr. Heartbreak [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 332,
+"w": true
+},
+"2488": {
+"t": "Calm Down [AI Remaster]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 291,
+"w": false
+},
+"2490": {
+"t": "Ghost",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 225,
+"w": true
+},
+"2499": {
+"t": "Perfect Strangers Freestyle",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 270,
+"w": true
+},
+"2500": {
+"t": "Blood On My Jeans + Freestyle",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 211,
+"w": false
+},
+"2507": {
+"t": "Devil Horns [No Demon Voice Edit]",
+"a": "Juice WRLD",
+"e": null,
+"d": 231,
+"w": false
+},
+"2509": {
+"t": "Wake up",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 125,
+"w": true
+},
+"2514": {
+"t": "Forever",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 192,
+"w": true
+},
+"2515": {
+"t": "Hard Work Pays Off (Solo)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 142,
+"w": true
+},
+"2518": {
+"t": "Made It",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 199,
+"w": true
+},
+"2520": {
+"t": "Love You Always [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 233,
+"w": true
+},
+"2531": {
+"t": "I Don't Do Molly No More ft. ILoveMakonnen (Freestyle)",
+"a": "Juice WRLD",
+"e": null,
+"d": 185,
+"w": false
+},
+"2536": {
+"t": "Blade [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 163,
+"w": true
+},
+"2538": {
+"t": "Do It [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 204,
+"w": true
+},
+"2539": {
+"t": "Hourglass [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 204,
+"w": false
+},
+"2540": {
+"t": "Not My Fault [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 187,
+"w": true
+},
+"2541": {
+"t": "USD [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 216,
+"w": true
+},
+"2542": {
+"t": "Karma [Jer Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 215,
+"w": true
+},
+"2543": {
+"t": "Cheat Code [Jer Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 211,
+"w": true
+},
+"2544": {
+"t": "Cavalier [Dev Master]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 151,
+"w": true
+},
+"2545": {
+"t": "Sacrifices [Dev Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 233,
+"w": false
+},
+"2548": {
+"t": "Galore [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 158,
+"w": false
+},
+"2549": {
+"t": "Let It Off [Deadops Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 205,
+"w": false
+},
+"2550": {
+"t": "Sippin' Red [Jer Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 143,
+"w": true
+},
+"2552": {
+"t": "Emotional Overdose [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 208,
+"w": true
+},
+"2554": {
+"t": "Bask In The Moment [Jer Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 172,
+"w": true
+},
+"2559": {
+"t": "You",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 150,
+"w": false
+},
+"2560": {
+"t": "Same To Me [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 69,
+"w": false
+},
+"2561": {
+"t": "Keep Save [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 156,
+"w": true
+},
+"2562": {
+"t": "Far Away [Sonic Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 149,
+"w": true
+},
+"2563": {
+"t": "Run It Up [Sonic Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 120,
+"w": true
+},
+"2564": {
+"t": "Let Me Go [Foldr Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 197,
+"w": true
+},
+"2566": {
+"t": "Love You Always [Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 137,
+"w": true
+},
+"2569": {
+"t": "Feel Like A God [Sonic Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 131,
+"w": true
+},
+"2573": {
+"t": "Fire In My Lungs [Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 142,
+"w": true
+},
+"2575": {
+"t": "Thank Me Later [Muffle Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 179,
+"w": true
+},
+"2576": {
+"t": "Numb The Pain [Jer Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 129,
+"w": true
+},
+"2581": {
+"t": "Fadeaway [Dev Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 228,
+"w": false
+},
+"2583": {
+"t": "4 Real (v1.1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 168,
+"w": false
+},
+"2586": {
+"t": "Eye Contact, Mind Control [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 384,
+"w": true
+},
+"2591": {
+"t": "2020 Vision",
+"a": "Juice WRLD",
+"e": null,
+"d": 165,
+"w": true
+},
+"2593": {
+"t": "Anything But Normal (Shortened)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 120,
+"w": true
+},
+"2599": {
+"t": "Back On It [Sonic Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 117,
+"w": true
+},
+"2604": {
+"t": "Trail [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 131,
+"w": true
+},
+"2606": {
+"t": "Day 1 [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 118,
+"w": true
+},
+"2611": {
+"t": "Keep Save + IG Live Freestyle",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 216,
+"w": true
+},
+"2627": {
+"t": "Murder Scene (Label Mix)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 230,
+"w": true
+},
+"2630": {
+"t": "Mean Time (Remix)",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 132,
+"w": false
+},
+"2632": {
+"t": "Murder Rate + Freestyle",
+"a": "Juice WRLD",
+"e": null,
+"d": 212,
+"w": true
+},
+"2636": {
+"t": "London Tipton (Shortened)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 116,
+"w": true
+},
+"2638": {
+"t": "Cosby (Shortened)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 137,
+"w": true
+},
+"2640": {
+"t": "Karate Kid (Shortened)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 114,
+"w": true
+},
+"2647": {
+"t": "Heist [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 135,
+"w": true
+},
+"2651": {
+"t": "Billy Idol [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 122,
+"w": true
+},
+"2652": {
+"t": "Rockets [Jer Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 200,
+"w": true
+},
+"2654": {
+"t": "Wishing Well [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 397,
+"w": true
+},
+"2657": {
+"t": "Forever (Left You)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 117,
+"w": true
+},
+"2664": {
+"t": "Crystal",
+"a": "Juice WRLD",
+"e": null,
+"d": 178,
+"w": true
+},
+"2671": {
+"t": "Sometimes [RAW]",
+"a": "Juice WRLD",
+"e": "Raw",
+"d": 250,
+"w": false
+},
+"2672": {
+"t": "All Girls Are The Same [RAW]",
+"a": "Juice WRLD",
+"e": "Raw",
+"d": 190,
+"w": false
+},
+"2688": {
+"t": "Cigarettes [RAW]",
+"a": "Juice WRLD",
+"e": "Raw",
+"d": 230,
+"w": true
+},
+"2691": {
+"t": "Comportement Freestyle",
+"a": "Juice WRLD",
+"e": null,
+"d": 100,
+"w": true
+},
+"2694": {
+"t": "Double R [Foldr Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 212,
+"w": true
+},
+"2699": {
+"t": "Purple Rain",
+"a": "Juice WRLD",
+"e": null,
+"d": 193,
+"w": true
+},
+"2711": {
+"t": "No Trespassing (Shortened)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 134,
+"w": true
+},
+"2713": {
+"t": "4 Real [Dev Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 168,
+"w": true
+},
+"2714": {
+"t": "Wild",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 140,
+"w": true
+},
+"2719": {
+"t": "Hairline Trigger (Freestyle)",
+"a": "Juice WRLD",
+"e": "Freestyles",
+"d": 189,
+"w": true
+},
+"2725": {
+"t": "Stay A While",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 230,
+"w": true
+},
+"2727": {
+"t": "Japan Freestyle",
+"a": "Juice WRLD",
+"e": "Freestyles",
+"d": 207,
+"w": false
+},
+"2729": {
+"t": "No Shame [Jer Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 191,
+"w": false
+},
+"2730": {
+"t": "Out The Blue",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 135,
+"w": true
+},
+"2732": {
+"t": "Champagne [Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 192,
+"w": true
+},
+"2735": {
+"t": "Love You Always [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Session Edit",
+"d": 237,
+"w": true
+},
+"2737": {
+"t": "Fast Acoustic Freestyle",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 224,
+"w": false
+},
+"2738": {
+"t": "Fast + Acoustic Verse",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 285,
+"w": true
+},
+"2739": {
+"t": "Benjamin (Friends With Benefits) (v1)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 178,
+"w": true
+},
+"2747": {
+"t": "Anakin",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 173,
+"w": true
+},
+"2750": {
+"t": "Long Day",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 219,
+"w": true
+},
+"2753": {
+"t": "Cold Summer (Shortened)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 112,
+"w": true
+},
+"2758": {
+"t": "My Fault </3 [Alt Mix]",
+"a": "Juice WRLD",
+"e": "Masters",
+"d": 225,
+"w": false
+},
+"2760": {
+"t": "Pesos",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 255,
+"w": true
+},
+"2761": {
+"t": "Chase The Dragon [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 163,
+"w": true
+},
+"2762": {
+"t": "Record Straight",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 168,
+"w": true
+},
+"2763": {
+"t": "Record Straight [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 154,
+"w": true
+},
+"2764": {
+"t": "24 Hours [Jer Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 270,
+"w": true
+},
+"2765": {
+"t": "Hypnotic (Shortened)",
+"a": "Juice Wrld",
+"e": "Goodbye & Good Riddance",
+"d": 148,
+"w": true
+},
+"2769": {
+"t": "4 Real (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 168,
+"w": false
+},
+"2771": {
+"t": "Hoover [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 204,
+"w": true
+},
+"2773": {
+"t": "KTM Drip [Boat Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 252,
+"w": true
+},
+"2787": {
+"t": "Rollie [Sessions]",
+"a": "Juice Wrld",
+"e": "Session Edit",
+"d": 219,
+"w": true
+},
+"2833": {
+"t": "Two Phones [Ai Remaster]",
+"a": "Juice Wrld",
+"e": null,
+"d": 214,
+"w": true
+},
+"2836": {
+"t": "Hater (feat. Juice WRLD)",
+"a": "Chief Keef & Juice WRLD",
+"e": "Outsiders",
+"d": 315,
+"w": true
+},
+"2837": {
+"t": "Toe To Toe [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 99,
+"w": false
+},
+"2840": {
+"t": "Bask In The Moment (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 190,
+"w": true
+},
+"2843": {
+"t": "Trail",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 132,
+"w": true
+},
+"2847": {
+"t": "Shoot For Love (v1)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 261,
+"w": true
+},
+"2853": {
+"t": "Move The Bale (with Unhkl Flex) (v2)",
+"a": "Juice WRLD & Unhkl Flex",
+"e": "WRLD On Drugs",
+"d": 153,
+"w": true
+},
+"2857": {
+"t": "Wild (with D. Savage) (v1)",
+"a": "Juice WRLD & D. Savage",
+"e": "Goodbye & Good Riddance",
+"d": 66,
+"w": true
+},
+"2858": {
+"t": "Wild (with D. Savage) (v2?)",
+"a": "Juice WRLD & D. Savage",
+"e": "Goodbye & Good Riddance",
+"d": 257,
+"w": true
+},
+"2859": {
+"t": "Ain't Coming Back [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 237,
+"w": true
+},
+"2860": {
+"t": "Ignorant [RAW]",
+"a": "Juice Wrld",
+"e": "Raw",
+"d": 125,
+"w": true
+},
+"2864": {
+"t": "Codeine Cobain (Shortened)",
+"a": "Juice Wrld",
+"e": "Death Race For Love",
+"d": 165,
+"w": true
+},
+"2865": {
+"t": "Lair [Jer Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 115,
+"w": true
+},
+"2866": {
+"t": "Feel Like A God [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 362,
+"w": false
+},
+"2867": {
+"t": "Ronald (feat. Playboi Carti) (Remix)",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 162,
+"w": true
+},
+"2868": {
+"t": "Same To Me [Completed Edit]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 241,
+"w": true
+},
+"2870": {
+"t": "Barry Bonds [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 182,
+"w": true
+},
+"2871": {
+"t": "Wake Up [Jer Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 273,
+"w": true
+},
+"2874": {
+"t": "No Hands [Boat Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 237,
+"w": true
+},
+"2875": {
+"t": "K Like A Russian [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 254,
+"w": true
+},
+"2876": {
+"t": "Charcoal [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 230,
+"w": true
+},
+"2877": {
+"t": "Charcoal [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 230,
+"w": true
+},
+"2878": {
+"t": "Timid Half [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 194,
+"w": true
+},
+"2879": {
+"t": "Blown Away [Jer Master With Intro]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 181,
+"w": true
+},
+"2880": {
+"t": "Vegetarians [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 205,
+"w": true
+},
+"2881": {
+"t": "Vegetarians [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 218,
+"w": true
+},
+"2882": {
+"t": "Pokémon [Boat Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 234,
+"w": true
+},
+"2883": {
+"t": "Fresh Air [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 220,
+"w": true
+},
+"2884": {
+"t": "Fresh Air [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 220,
+"w": true
+},
+"2885": {
+"t": "Burner [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 165,
+"w": true
+},
+"2886": {
+"t": "Burner [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 165,
+"w": true
+},
+"2887": {
+"t": "Road Runners [Jer Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 165,
+"w": true
+},
+"2888": {
+"t": "Motor Boat [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 195,
+"w": true
+},
+"2889": {
+"t": "Pause [Jer Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 179,
+"w": true
+},
+"2890": {
+"t": "Sugarfish (feat. The Chainsmokers) [Jer Master]",
+"a": "Juice WRLD & The Chainsmokers",
+"e": "WRLD On Drugs",
+"d": 195,
+"w": true
+},
+"2891": {
+"t": "Broke Boys [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 179,
+"w": true
+},
+"2893": {
+"t": "Demise [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 146,
+"w": true
+},
+"2895": {
+"t": "No Love, No Trust 999 (v1)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 186,
+"w": true
+},
+"2896": {
+"t": "No Love, No Trust 999 (v2)",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 185,
+"w": true
+},
+"2959": {
+"t": "Rainbow [Deadops Master]",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 235,
+"w": true
+},
+"2964": {
+"t": "I Don't Know [Deadops Master]",
+"a": "Juice WRLD",
+"e": "JUICED UP THE EP",
+"d": 181,
+"w": true
+},
+"2969": {
+"t": "London [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 187,
+"w": true
+},
+"2971": {
+"t": "On The Low [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 139,
+"w": true
+},
+"2972": {
+"t": "Money (with Young Thug) [Boat Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 199,
+"w": true
+},
+"2974": {
+"t": "Rich And Blind [Sonic Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 229,
+"w": true
+},
+"2975": {
+"t": "Whatever [Jer Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 205,
+"w": true
+},
+"2981": {
+"t": "Battle Scars [Sonic Master]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 140,
+"w": true
+},
+"2982": {
+"t": "4 Instance [Boat Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 148,
+"w": true
+},
+"2990": {
+"t": "Shot 'Em Down [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 176,
+"w": true
+},
+"2993": {
+"t": "Karate Kid [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 160,
+"w": true
+},
+"2999": {
+"t": "Adore You [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 175,
+"w": true
+},
+"3007": {
+"t": "Don't Forget Me [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 174,
+"w": true
+},
+"3013": {
+"t": "Do It + Freestyle",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 207,
+"w": true
+},
+"3026": {
+"t": "Insanity [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 195,
+"w": true
+},
+"3033": {
+"t": "Rob & Scam [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 164,
+"w": true
+},
+"3039": {
+"t": "Send Away [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 185,
+"w": true
+},
+"3044": {
+"t": "Hand On My Chest [Jer Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 192,
+"w": true
+},
+"3054": {
+"t": "Rollie [Jer Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 177,
+"w": true
+},
+"3064": {
+"t": "I Want It [RAW]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 145,
+"w": true
+},
+"3166": {
+"t": "Your Loss [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 217,
+"w": true
+},
+"3174": {
+"t": "Rental [Jer Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 253,
+"w": true
+},
+"3186": {
+"t": "GoPro [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 213,
+"w": true
+},
+"3187": {
+"t": "GoPro [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 207,
+"w": true
+},
+"3303": {
+"t": "Percaholic [Sessions]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 947,
+"w": true
+},
+"3340": {
+"t": "RNG [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 143,
+"w": true
+},
+"3347": {
+"t": "Compromised (v2) [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 179,
+"w": true
+},
+"3348": {
+"t": "Compromised (feat. Ski Mask The Slump God) [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 208,
+"w": true
+},
+"3349": {
+"t": "Compromised (feat. Ski Mask The Slump God) [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 208,
+"w": true
+},
+"3350": {
+"t": "Coraline [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 160,
+"w": true
+},
+"3360": {
+"t": "Uncanny [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 202,
+"w": true
+},
+"3365": {
+"t": "Jet Lag [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 156,
+"w": true
+},
+"3366": {
+"t": "Jet Lag [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 156,
+"w": true
+},
+"3368": {
+"t": "Let It Off [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 203,
+"w": true
+},
+"3369": {
+"t": "Let It Off [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 205,
+"w": true
+},
+"3372": {
+"t": "Wait 4 Me [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 189,
+"w": true
+},
+"3373": {
+"t": "Wait 4 Me [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 192,
+"w": true
+},
+"3377": {
+"t": "Tempted [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"3378": {
+"t": "Flex (feat. Juice WRLD) [Jer Master]",
+"a": "Polo G",
+"e": "Outsiders",
+"d": 164,
+"w": true
+},
+"3379": {
+"t": "Karate Kid [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 114,
+"w": true
+},
+"3380": {
+"t": "High Tide [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 124,
+"w": true
+},
+"3381": {
+"t": "USD [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 216,
+"w": true
+},
+"3382": {
+"t": "USD [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 216,
+"w": true
+},
+"3392": {
+"t": "In The Woods [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 93,
+"w": true
+},
+"3393": {
+"t": "In The Woods [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 93,
+"w": true
+},
+"3394": {
+"t": "In The Woods [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 93,
+"w": true
+},
+"3400": {
+"t": "GO GO [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"3401": {
+"t": "GO GO [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 185,
+"w": true
+},
+"3403": {
+"t": "Not My Fault [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 187,
+"w": true
+},
+"3404": {
+"t": "Not My Fault [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 187,
+"w": true
+},
+"3408": {
+"t": "Out The Projects [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 180,
+"w": true
+},
+"3416": {
+"t": "Made It Work [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 216,
+"w": true
+},
+"3417": {
+"t": "Made It Work [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 214,
+"w": true
+},
+"3422": {
+"t": "Adore You [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 174,
+"w": true
+},
+"3474": {
+"t": "Record Straight [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 154,
+"w": true
+},
+"3475": {
+"t": "Record Straight [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 154,
+"w": true
+},
+"3476": {
+"t": "Record Straight [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 154,
+"w": true
+},
+"3477": {
+"t": "Meet Me At The Door (with Chance The Rapper & Supa Bwe) [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 155,
+"w": true
+},
+"3481": {
+"t": "Turns Me On [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 193,
+"w": true
+},
+"3482": {
+"t": "Everywhere You Go [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 203,
+"w": true
+},
+"3484": {
+"t": "Murder Scene [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 215,
+"w": true
+},
+"3485": {
+"t": "Murder Scene [Boat Master]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 231,
+"w": true
+},
+"3487": {
+"t": "Blade [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 163,
+"w": true
+},
+"3490": {
+"t": "Broke Boys [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 179,
+"w": true
+},
+"3491": {
+"t": "Broke Boys [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 199,
+"w": true
+},
+"3492": {
+"t": "Chrome [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 254,
+"w": true
+},
+"3493": {
+"t": "Chrome [Dev Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 255,
+"w": true
+},
+"3494": {
+"t": "Fire In My Lungs [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 142,
+"w": true
+},
+"3495": {
+"t": "Fire In My Lungs [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 157,
+"w": true
+},
+"3496": {
+"t": "Fire In My Lungs [Dev Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 163,
+"w": true
+},
+"3498": {
+"t": "No Stopping Us [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 87,
+"w": true
+},
+"3510": {
+"t": "Unexplainable (feat. The Kid LAROI) [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 182,
+"w": true
+},
+"3532": {
+"t": "Lock 'N Load [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 128,
+"w": true
+},
+"3533": {
+"t": "Lock 'N Load [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 136,
+"w": true
+},
+"3549": {
+"t": "Feel Alone [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 231,
+"w": true
+},
+"3552": {
+"t": "For The Taking [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 152,
+"w": true
+},
+"3553": {
+"t": "Burner [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 164,
+"w": true
+},
+"3555": {
+"t": "Get Excited [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 123,
+"w": true
+},
+"3556": {
+"t": "Double Date [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 150,
+"w": true
+},
+"3557": {
+"t": "Double Date [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 151,
+"w": true
+},
+"3558": {
+"t": "Do It [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 204,
+"w": true
+},
+"3559": {
+"t": "Dime Piece [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 126,
+"w": true
+},
+"3561": {
+"t": "Double R [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 216,
+"w": true
+},
+"3562": {
+"t": "Send Away [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 183,
+"w": true
+},
+"3563": {
+"t": "Send Away [4L Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 185,
+"w": true
+},
+"3565": {
+"t": "Cold Summer [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 145,
+"w": true
+},
+"3566": {
+"t": "Cold Summer [Boat Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 146,
+"w": true
+},
+"3567": {
+"t": "Charcoal [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 230,
+"w": true
+},
+"3572": {
+"t": "Chase The Dragon [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 163,
+"w": true
+},
+"3573": {
+"t": "Carry It [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 192,
+"w": true
+},
+"3574": {
+"t": "Can't Be Saved [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 205,
+"w": true
+},
+"3575": {
+"t": "Can't Be Saved [4L Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 206,
+"w": true
+},
+"3583": {
+"t": "Charcoal [HunterMfckr Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 230,
+"w": true
+},
+"3588": {
+"t": "Cite [Ai Remaster]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 256,
+"w": true
+},
+"3591": {
+"t": "X-Mas List [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 204,
+"w": false
+},
+"3611": {
+"t": "No Stopping Us [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 85,
+"w": true
+},
+"3619": {
+"t": "Jet Lag [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 154,
+"w": true
+},
+"3625": {
+"t": "GoPro [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 207,
+"w": true
+},
+"3632": {
+"t": "Feel Alone [Yawaya Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 230,
+"w": true
+},
+"3633": {
+"t": "Everywhere You Go [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 201,
+"w": true
+},
+"3635": {
+"t": "Turns Me On [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 193,
+"w": true
+},
+"3637": {
+"t": "On Your Mind [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 275,
+"w": true
+},
+"3638": {
+"t": "Coraline [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 155,
+"w": true
+},
+"3657": {
+"t": "Charcoal [Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 230,
+"w": true
+},
+"3663": {
+"t": "Uncanny [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 205,
+"w": true
+},
+"3664": {
+"t": "Unexplainable (feat. The Kid LAROI) [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 182,
+"w": true
+},
+"3671": {
+"t": "Keep Save [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 139,
+"w": true
+},
+"3675": {
+"t": "Trail [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 122,
+"w": true
+},
+"3677": {
+"t": "GoPro [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 206,
+"w": true
+},
+"3679": {
+"t": "Turns Me On [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 194,
+"w": true
+},
+"3680": {
+"t": "Everywhere You Go [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 203,
+"w": true
+},
+"3681": {
+"t": "Feel Alone [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 229,
+"w": true
+},
+"3682": {
+"t": "Send Away [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 184,
+"w": true
+},
+"3683": {
+"t": "Charcoal [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 230,
+"w": true
+},
+"3684": {
+"t": "Cold Summer [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 123,
+"w": true
+},
+"3685": {
+"t": "Chrome [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 255,
+"w": true
+},
+"3686": {
+"t": "Can't Be Saved [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 206,
+"w": true
+},
+"3687": {
+"t": "Carry It [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 192,
+"w": true
+},
+"3688": {
+"t": "RNG [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 154,
+"w": true
+},
+"3689": {
+"t": "GO GO [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 185,
+"w": true
+},
+"3690": {
+"t": "Adore You [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 164,
+"w": true
+},
+"3691": {
+"t": "Made It Work [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 215,
+"w": true
+},
+"3692": {
+"t": "Out The Projects [Temp Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 181,
+"w": true
+},
+"3698": {
+"t": "autograph (on my line) [Instrumental]",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 228,
+"w": true
+},
+"3699": {
+"t": "My Fault </3 [Instrumental]",
+"a": "Juice WRLD",
+"e": "SoundCloud",
+"d": 274,
+"w": true
+},
+"3700": {
+"t": "Lucid Dreams (Remix) (feat. Lil Uzi Vert) [Boat Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 241,
+"w": true
+},
+"3701": {
+"t": "Up Up And Away [Instrumental]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 213,
+"w": true
+},
+"3702": {
+"t": "Broke Boys [Dev Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 179,
+"w": true
+},
+"3709": {
+"t": "Chimp [Instrumental]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 169,
+"w": true
+},
+"3711": {
+"t": "Cigarettes [Instrumental]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 228,
+"w": true
+},
+"3712": {
+"t": "Hide [Instrumental]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 285,
+"w": true
+},
+"3720": {
+"t": "Act Right (with RoadRunner GDo) [Temp Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 170,
+"w": true
+},
+"3721": {
+"t": "Act Right (with RoadRunner GDo) [Deadops Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 215,
+"w": true
+},
+"3722": {
+"t": "All Burnt Up [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 170,
+"w": true
+},
+"3723": {
+"t": "Break [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 244,
+"w": true
+},
+"3724": {
+"t": "Freestyle [Jer Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 188,
+"w": true
+},
+"3725": {
+"t": "Champagne [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 189,
+"w": true
+},
+"3726": {
+"t": "Champagne [HunterMfckr Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 192,
+"w": true
+},
+"3727": {
+"t": "Don't Know What I'm On [pas9coe Master, & Edit]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 234,
+"w": true
+},
+"3728": {
+"t": "Don't Know What I'm On [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 299,
+"w": true
+},
+"3729": {
+"t": "Don't Know What I'm On [Deadops Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 299,
+"w": true
+},
+"3730": {
+"t": "Drunk (Pt. 2) [Temp Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 201,
+"w": true
+},
+"3731": {
+"t": "Drunk (Pt. 2) [Deadops Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 203,
+"w": true
+},
+"3732": {
+"t": "Go Home [pas9coe Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 219,
+"w": true
+},
+"3733": {
+"t": "Go Home [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 219,
+"w": true
+},
+"3734": {
+"t": "Go Home [Jer Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 224,
+"w": true
+},
+"3735": {
+"t": "Thank Me Later [Sonic Master, & Edit]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 224,
+"w": true
+},
+"3736": {
+"t": "Insanity [Cato Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 194,
+"w": true
+},
+"3737": {
+"t": "Insanity [4L Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 195,
+"w": true
+},
+"3738": {
+"t": "Let Me Go [HunterMfckr Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 171,
+"w": true
+},
+"3739": {
+"t": "Let Me Go [4L Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 158,
+"w": true
+},
+"3740": {
+"t": "Like That [Deadops Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 198,
+"w": true
+},
+"3741": {
+"t": "Lost Myself [Jer Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 210,
+"w": true
+},
+"3742": {
+"t": "Make It Sell [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 180,
+"w": true
+},
+"3743": {
+"t": "Make It Sell [Boat Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 181,
+"w": true
+},
+"3744": {
+"t": "Miracle [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 194,
+"w": true
+},
+"3745": {
+"t": "Airport Security (with Lil Yachty) [Sessions] (v1)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "Goodbye & Good Riddance",
+"d": 244,
+"w": true
+},
+"3746": {
+"t": "Airport Security (with Lil Yachty) [Sessions] (v2)",
+"a": "Juice WRLD & Lil Yachty",
+"e": "Goodbye & Good Riddance",
+"d": 312,
+"w": true
+},
+"3747": {
+"t": "No Love, No Trust 999 [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 179,
+"w": true
+},
+"3748": {
+"t": "No Love, No Trust 999 [Jer Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 182,
+"w": true
+},
+"3749": {
+"t": "No Smoke [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 140,
+"w": false
+},
+"3750": {
+"t": "OK [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 253,
+"w": true
+},
+"3751": {
+"t": "OK [Boat Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 255,
+"w": true
+},
+"3753": {
+"t": "Realize [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 179,
+"w": false
+},
+"3754": {
+"t": "Realize [Rylo Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 166,
+"w": true
+},
+"3755": {
+"t": "Too Far [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 121,
+"w": true
+},
+"3756": {
+"t": "Too Far [Jer Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 124,
+"w": true
+},
+"3757": {
+"t": "Triple 9 [Sonic Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 145,
+"w": true
+},
+"3758": {
+"t": "Move The Bale (with Unhkl Flex) [HunterMfckr Master]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 197,
+"w": true
+},
+"3760": {
+"t": "Double Date [Dev Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 151,
+"w": true
+},
+"3762": {
+"t": "Floating (v1.2)",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 205,
+"w": true
+},
+"3763": {
+"t": "Let's Ride (v1.2)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"3764": {
+"t": "Ain't Nothing To It",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 172,
+"w": true
+},
+"3765": {
+"t": "Boast",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 90,
+"w": true
+},
+"3766": {
+"t": "Ain't Nothing To It [Mason Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"3767": {
+"t": "Ain't Nothing To It [Jer Mix]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 158,
+"w": true
+},
+"3768": {
+"t": "Let's Ride [Cato Session Mix]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": false
+},
+"3770": {
+"t": "Let's Ride [Sessions] (v2)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 204,
+"w": true
+},
+"3771": {
+"t": "Floating [Overseas Session Mix]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 204,
+"w": true
+},
+"3772": {
+"t": "Let's Ride [Foldr Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"3773": {
+"t": "Let's Ride [Instrumental]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 217,
+"w": true
+},
+"3774": {
+"t": "Ain't Nothing To It [Instrumental]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 172,
+"w": true
+},
+"3775": {
+"t": "Signs (feat. Juice WRLD) (v2)",
+"a": "Seezyn & Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"3776": {
+"t": "Let's Ride [Sessions] (v1)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 217,
+"w": true
+},
+"3779": {
+"t": "Ain't Nothing To It [Foldr Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"3781": {
+"t": "Abyss [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 195,
+"w": true
+},
+"3784": {
+"t": "Dream [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 158,
+"w": true
+},
+"3785": {
+"t": "Hairline Trigger [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 109,
+"w": true
+},
+"3822": {
+"t": "DENIAL </3 (demo) [Instrumental]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 181,
+"w": true
+},
+"3823": {
+"t": "DARK PLACE (demo) [Instrumental]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 224,
+"w": true
+},
+"3825": {
+"t": "Out My Face [Instrumental]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 181,
+"w": true
+},
+"3826": {
+"t": "Stay High (v1) [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 213,
+"w": true
+},
+"3829": {
+"t": "Tell Me U Luv Me [Instrumental]",
+"a": "Juice WRLD & Trippie Redd",
+"e": "Outsiders",
+"d": 210,
+"w": true
+},
+"3830": {
+"t": "Signs (feat. Juice WRLD)",
+"a": "Seezyn & Juice WRLD",
+"e": "YouTube",
+"d": 193,
+"w": true
+},
+"3831": {
+"t": "Ain't Nothing To It [Rylo Master, & Edit]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 137,
+"w": true
+},
+"3832": {
+"t": "Floating [Rylo Master, & Edit]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 190,
+"w": true
+},
+"3833": {
+"t": "Floating [Jer Session Mix]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 209,
+"w": true
+},
+"3834": {
+"t": "Ain't Nothing To It [pas9coe Mix]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 172,
+"w": true
+},
+"3835": {
+"t": "Let's Ride [Yawaya Session Mix]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"3839": {
+"t": "Percaholic [Instrumental]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 222,
+"w": true
+},
+"3841": {
+"t": "Late Night Thoughts [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 215,
+"w": true
+},
+"3842": {
+"t": "Better Off Alone [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 227,
+"w": true
+},
+"3843": {
+"t": "You're Not The Boss [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 210,
+"w": true
+},
+"3844": {
+"t": "Make No Noise [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 183,
+"w": true
+},
+"3845": {
+"t": "Journey [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 154,
+"w": true
+},
+"3846": {
+"t": "AP TikTok [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 166,
+"w": true
+},
+"3847": {
+"t": "I Need It [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 190,
+"w": true
+},
+"3848": {
+"t": "Dismissed [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 205,
+"w": true
+},
+"3849": {
+"t": "Bandit (v1) [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 213,
+"w": true
+},
+"3850": {
+"t": "Vinci [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 268,
+"w": true
+},
+"3851": {
+"t": "Here I Go Again [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 208,
+"w": true
+},
+"3852": {
+"t": "Late Night Thoughts [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 217,
+"w": true
+},
+"3853": {
+"t": "No Coaster [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 246,
+"w": true
+},
+"3855": {
+"t": "Nuketown [Instrumental]",
+"a": "Ski Mask The Slump God & Juice WRLD",
+"e": "Death Race For Love",
+"d": 168,
+"w": true
+},
+"3856": {
+"t": "Purple Moncler [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 236,
+"w": true
+},
+"3857": {
+"t": "You're Not The Boss [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 214,
+"w": true
+},
+"3858": {
+"t": "Out My Way [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 158,
+"w": true
+},
+"3859": {
+"t": "Under Her Skin [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 252,
+"w": true
+},
+"3860": {
+"t": "You Wouldn't Understand [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 219,
+"w": true
+},
+"3861": {
+"t": "The Bee's Knees [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 169,
+"w": true
+},
+"3862": {
+"t": "Someone New [Instrumental]",
+"a": "Juice WRLD & 1Mind",
+"e": "Death Race For Love",
+"d": 212,
+"w": true
+},
+"3863": {
+"t": "Robbery [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 240,
+"w": true
+},
+"3865": {
+"t": "Signs (feat. Juice WRLD) (v2) [Mason Master]",
+"a": "Seezyn & Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"3866": {
+"t": "Let's Ride [Mason Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 169,
+"w": true
+},
+"3867": {
+"t": "Floating [Mason Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 203,
+"w": true
+},
+"3868": {
+"t": "Let's Ride [Jer Mix]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 178,
+"w": true
+},
+"3869": {
+"t": "Let's Ride [Sessions] (v3)",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 217,
+"w": true
+},
+"3870": {
+"t": "Matrix [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 261,
+"w": true
+},
+"3871": {
+"t": "Who Are You? [Deadops Master]",
+"a": "Juice WRLD",
+"e": "JUICED UP THE EP",
+"d": 188,
+"w": true
+},
+"3872": {
+"t": "two cups (everything's going my way) [deadops master]",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 151,
+"w": true
+},
+"3873": {
+"t": "Watch Me [Deadops Master]",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 236,
+"w": true
+},
+"3874": {
+"t": "Anything But Normal [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 220,
+"w": true
+},
+"3876": {
+"t": "Glo'd Up [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 200,
+"w": true
+},
+"3878": {
+"t": "Minus [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 151,
+"w": true
+},
+"3879": {
+"t": "Thrills [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 194,
+"w": true
+},
+"3880": {
+"t": "Spanglish [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 213,
+"w": false
+},
+"3881": {
+"t": "Who Shot Cupid [Instrumental]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 215,
+"w": true
+},
+"3882": {
+"t": "Dummy [Instrumental]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 219,
+"w": true
+},
+"3883": {
+"t": "Here We Go Again [Instrumental]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 201,
+"w": true
+},
+"3885": {
+"t": "Radio [Dev Master]",
+"a": "Juice WRLD",
+"e": "Juice WRLD 999",
+"d": 184,
+"w": true
+},
+"3886": {
+"t": "SOMETHING NEW [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Affliction",
+"d": 238,
+"w": true
+},
+"3890": {
+"t": "Certain",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 264,
+"w": true
+},
+"3891": {
+"t": "All Burnt Up [Sessions]",
+"a": "Juice WRLD",
+"e": "NOTHING'S DIFFERENT </3",
+"d": 222,
+"w": false
+},
+"3892": {
+"t": "Floating [Temp Master]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 205,
+"w": true
+},
+"3893": {
+"t": "Boast [Jer Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 90,
+"w": true
+},
+"3894": {
+"t": "Ain't Nothing To It [Kryo Mix]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": false
+},
+"3895": {
+"t": "Let's Ride [Rylo Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 164,
+"w": false
+},
+"3901": {
+"t": "Truth No Dare",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 162,
+"w": true
+},
+"3902": {
+"t": "Death Do Us Part",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 197,
+"w": true
+},
+"3903": {
+"t": "Forever [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 210,
+"w": true
+},
+"3906": {
+"t": "Can't Be Replaced",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 243,
+"w": true
+},
+"4001": {
+"t": "Wasted [Instrumental]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 202,
+"w": true
+},
+"4005": {
+"t": "Wishing Well (v1) [Instrumental]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 232,
+"w": true
+},
+"4006": {
+"t": "Back In Chicago [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 144,
+"w": true
+},
+"4007": {
+"t": "All On My Own [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 120,
+"w": true
+},
+"4008": {
+"t": "734 [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 196,
+"w": true
+},
+"4010": {
+"t": "Condone It [RAW]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 146,
+"w": true
+},
+"4011": {
+"t": "Floating [Instrumental]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 247,
+"w": true
+},
+"4017": {
+"t": "Man Of The Year [RAW]",
+"a": "Juice WRLD",
+"e": "Raw",
+"d": 138,
+"w": true
+},
+"4019": {
+"t": "Relocate [Instrumental]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 208,
+"w": true
+},
+"4021": {
+"t": "Wandered To L.A. (v2) [Instrumental]",
+"a": "Juice WRLD & Justin Bieber",
+"e": "Posthumous",
+"d": 204,
+"w": true
+},
+"4023": {
+"t": "Bad Energy [Instrumental]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 188,
+"w": true
+},
+"4024": {
+"t": "Bottle [RAW]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 177,
+"w": true
+},
+"4025": {
+"t": "Cosby [Instrumental]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 234,
+"w": true
+},
+"4031": {
+"t": "Sober [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 125,
+"w": true
+},
+"4032": {
+"t": "So Hard [Sonic Master]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 161,
+"w": true
+},
+"4056": {
+"t": "Feel Alone [RAW]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 218,
+"w": true
+},
+"4060": {
+"t": "Let's Ride [Dev Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": true
+},
+"4113": {
+"t": "Numb The Pain (Shortened)",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 127,
+"w": true
+},
+"4129": {
+"t": "Let's Ride [Kryo Mix]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 171,
+"w": false
+},
+"4132": {
+"t": "Outta Time",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 176,
+"w": true
+},
+"4134": {
+"t": "Cash Cow",
+"a": "Juice WRLD",
+"e": "Session Edit",
+"d": 240,
+"w": true
+},
+"4135": {
+"t": "Far From It",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 225,
+"w": true
+},
+"4136": {
+"t": "Glo Limit (feat. Juice WRLD)",
+"a": "Chief Keef",
+"e": "Outsiders",
+"d": 175,
+"w": true
+},
+"4137": {
+"t": "Dead Presidents",
+"a": "Juice WRLD",
+"e": "Stem Edit",
+"d": 218,
+"w": true
+},
+"4143": {
+"t": "Maze [Acapella]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 144,
+"w": true
+},
+"4144": {
+"t": "Bad Energy [Acapella]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 195,
+"w": true
+},
+"4145": {
+"t": "Flaws And Sins [Acapella]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 219,
+"w": true
+},
+"4146": {
+"t": "Start It Up [Acapella]",
+"a": "Juice WRLD",
+"e": "Goodbye & Good Riddance",
+"d": 156,
+"w": true
+},
+"4148": {
+"t": "Conversations [Acapella]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 208,
+"w": true
+},
+"4149": {
+"t": "Can't Die [Acapella]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 183,
+"w": true
+},
+"4151": {
+"t": "I Want It [Acapella]",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 175,
+"w": true
+},
+"4152": {
+"t": "Feeling [Acapella]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 205,
+"w": true
+},
+"4153": {
+"t": "Coraline (v2.6)",
+"a": "Juice WRLD",
+"e": "Posthumous",
+"d": 159,
+"w": true
+},
+"4154": {
+"t": "Heart Racing",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 224,
+"w": true
+},
+"4157": {
+"t": "Heart Racing [Mason Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 224,
+"w": true
+},
+"4160": {
+"t": "NLMB What I Claim",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 212,
+"w": true
+},
+"4163": {
+"t": "Oversprung [Dev Master]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 242,
+"w": true
+},
+"4168": {
+"t": "Royer [Sessions]",
+"a": "Juice WRLD",
+"e": "WRLD On Drugs",
+"d": 192,
+"w": true
+},
+"4171": {
+"t": "Cheat Code [Sessions]",
+"a": "Juice WRLD",
+"e": "Death Race For Love",
+"d": 742,
+"w": true
+},
+"4180": {
+"t": "Heart Racing [Jer Mix]",
+"a": "Juice WRLD",
+"e": "Outsiders",
+"d": 224,
+"w": true
+}
+}
+}

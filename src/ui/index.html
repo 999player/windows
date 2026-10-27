@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" data-glass="full">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>999 player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="lg-refract" x="-6%" y="-6%" width="112%" height="112%" color-interpolation-filters="sRGB">
+      <feImage id="lg-map" preserveAspectRatio="none" result="map"/>
+      <feDisplacementMap in="SourceGraphic" in2="map" scale="28" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+  <div id="ambient"><div class="amb" id="amb-a"></div><div class="amb" id="amb-b"></div></div>
+  <div id="noise"></div>
+
+  <div id="app">
+    <header id="titlebar">
+      <div class="drag" id="drag">
+        <div class="brand"><span class="logo" id="brand-logo"></span><span><b>999</b> player</span></div>
+        <div class="np-mini" id="np-mini"></div>
+      </div>
+      <div class="win-btns">
+        <button id="win-min" title="minimize"></button>
+        <button id="win-max" title="maximize"></button>
+        <button id="win-close" class="close" title="close"></button>
+      </div>
+    </header>
+
+    <div id="workspace">
+      <aside id="sidebar" class="glass lg">
+        <div class="nav-ind" id="nav-ind"></div>
+        <nav id="nav-main"></nav>
+        <div class="sb-scroll">
+          <div class="nav-sec" data-sec="browse"><button class="sec-toggle" title="hide browse"><span>browse</span><i class="chev"></i></button></div>
+          <div class="sec-body" id="sec-browse"><div class="sec-in"><nav id="nav-browse"></nav></div></div>
+          <div class="nav-sec" data-sec="collection"><button class="sec-toggle" title="hide your collection"><span>your collection</span><i class="chev"></i></button><button class="mini" id="pl-new" title="new playlist"></button></div>
+          <div class="sec-body" id="sec-collection"><div class="sec-in"><nav id="nav-collection"></nav><nav id="nav-playlists"></nav></div></div>
+        </div>
+      </aside>
+
+      <section id="main" class="surface">
+        <div id="topbar" class="glass lg">
+          <div class="nav-arrows">
+            <button class="btn-icon" id="nav-back" title="back"></button>
+            <button class="btn-icon" id="nav-fwd" title="forward"></button>
+          </div>
+          <div class="search-wrap">
+            <span id="search-ic"></span>
+            <input id="search" type="text" placeholder="what do you want to play?" spellcheck="false" autocomplete="off">
+            <button class="btn-icon xs plain clear hidden" id="search-clear" title="clear"></button>
+          </div>
+          <div class="topbar-right">
+            <button class="btn-icon plain tb-offline hidden" id="tb-offline" title="offline mode — only downloaded tracks are shown. click to turn off."></button>
+            <button class="btn-icon plain" id="tb-collapse" title="collapse sidebar"></button>
+            <button class="btn-icon plain" id="tb-settings" title="settings"></button>
+          </div>
+        </div>
+        <div id="main-scroll"><div id="view"></div></div>
+      </section>
+
+      <aside id="right" class="glass lg">
+        <div class="tabs">
+          <span class="ph-title" id="right-title">lyrics</span>
+          <button class="btn-icon xs plain close" id="right-close" title="close panel"></button>
+        </div>
+        <div class="body" id="right-body"></div>
+      </aside>
+    </div>
+
+    <footer id="player" class="glass lg idle">
+      <div class="p-left">
+        <div class="cv" id="p-cover" title="open now playing"><div class="exp"></div></div>
+        <div class="txt">
+          <div class="t" id="p-title">nothing playing</div>
+          <div class="s" id="p-sub">pick a track to start the vault</div>
+        </div>
+        <button class="btn-icon plain sm" id="p-like" title="like"></button>
+      </div>
+      <div class="p-center">
+        <div class="p-ctrls">
+          <button class="btn-icon plain" id="p-shuffle" title="shuffle"></button>
+          <button class="btn-icon plain" id="p-prev" title="previous"></button>
+          <button class="btn-icon p-play" id="p-play" title="play"><span class="spin"></span></button>
+          <button class="btn-icon plain" id="p-next" title="next"></button>
+          <button class="btn-icon plain" id="p-repeat" title="repeat"></button>
+        </div>
+        <div class="p-seek">
+          <span class="time" id="p-cur">0:00</span>
+          <div class="slider" id="p-slider"><div class="track"><div class="buf"></div><div class="fill"></div><div class="knob"></div></div></div>
+          <span class="time r" id="p-dur">0:00</span>
+        </div>
+      </div>
+      <div class="p-right">
+        <button class="btn-icon plain" id="p-lyrics" title="lyrics (l)"></button>
+        <button class="btn-icon plain" id="p-queue" title="queue (q)"></button>
+        <button class="btn-icon plain" id="p-info" title="track details"></button>
+        <button class="btn-icon plain" id="p-download" title="download"></button>
+        <div class="vol">
+          <button class="btn-icon plain sm" id="p-mute" title="mute (m)"></button>
+          <div class="slider" id="v-slider"><div class="track"><div class="fill"></div><div class="knob"></div></div></div>
+        </div>
+        <button class="btn-icon plain" id="p-expand" title="now playing view (f)"></button>
+      </div>
+    </footer>
+  </div>
+
+  <div id="npv">
+    <div class="npv-bg" id="npv-bg-a"><i></i><i></i><i></i></div><div class="npv-bg" id="npv-bg-b"><i></i><i></i><i></i></div>
+    <button class="btn-icon close" id="npv-close" title="close"></button>
+    <div class="left">
+      <img class="cover" id="npv-cover" alt="">
+      <div class="meta">
+        <h1 id="npv-title"></h1>
+        <div class="by" id="npv-by"></div>
+      </div>
+    </div>
+    <div class="right"><div id="npv-lyrics"></div></div>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toasts"></div>
+  <div class="edge n" data-edge="top"></div><div class="edge s" data-edge="bottom"></div>
+  <div class="edge w" data-edge="left"></div><div class="edge e" data-edge="right"></div>
+  <div class="edge nw" data-edge="top left"></div><div class="edge ne" data-edge="top right"></div>
+  <div class="edge sw" data-edge="bottom left"></div><div class="edge se" data-edge="bottom right"></div>
+
+  <div id="splash"><div class="wrap"><div class="logo" id="splash-logo"></div><div class="txt">999 player</div><div class="st" id="splash-st">opening the vault…</div></div></div>
+
+  <script src="qwebchannel.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/bridge.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/lyrics.js"></script>
+  <script src="js/vlist.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
