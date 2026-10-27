@@ -4,5 +4,6 @@ drop the images here with these names and the main readme picks them up:
 - `home.png` the home page
 - `now-playing.png` the now playing view
 - `lyrics.png` a song with the lyrics panel open
+- `setup.png` the installer's first page
 
 png or jpg, 1400 px wide or so looks best on github.

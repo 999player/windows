@@ -39,6 +39,8 @@ don't want an installer? `999player-ptb.zip` is the same app as a folder. unzip 
 
 windows 10 or 11, 64 bit. nothing else to install.
 
+![setup](screenshots/setup.png)
+
 ![lyrics](screenshots/lyrics.png)
 
 ## iphone
