@@ -1,4 +1,3 @@
-"""Scans the user's local music folders into catalog-shaped entries (negative ids) with tags and embedded art."""
 from __future__ import annotations
 
 import json
@@ -13,7 +12,6 @@ from appdata import CACHE_DIR
 
 log = logging.getLogger("999player.local")
 
-# audio only — video containers (mp4/mkv/mov…) are deliberately ignored
 AUDIO_EXT = {".mp3", ".wav", ".flac", ".m4a", ".opus", ".ogg", ".aac", ".aiff", ".aif"}
 MIME = {".mp3": "audio/mpeg", ".wav": "audio/wav", ".flac": "audio/flac", ".m4a": "audio/mp4",
         ".opus": "audio/ogg", ".ogg": "audio/ogg", ".aac": "audio/aac", ".aiff": "audio/aiff", ".aif": "audio/aiff"}

@@ -1,11 +1,3 @@
-"""999 player, glass setup / uninstaller (QtWidgets only, no WebEngine).
-
-setup:      frozen one-file exe with the app zip appended    →  run_install()
-            (python's zipfile copes with a zip glued onto the end of another file)
-uninstall:  999player.exe --uninstall                        →  run_uninstall()
-dev:        py installer.py --payload build\\installer\\payload.zip [--shot out.png --page N]
-            py installer.py --uninstall-preview --install-dir "C:\\x"  (uninstall UI without deleting anything)
-"""
 from __future__ import annotations
 
 import json
@@ -27,24 +19,24 @@ from PySide6.QtWidgets import (QAbstractButton, QApplication, QFileDialog, QFram
 
 try:
     from version import APP_VERSION
-except ImportError:  # built without version.py beside it
+except ImportError:
     APP_VERSION = "0.0.0"
 
 APP_NAME = "999 player"
 EXE_NAME = "999player.exe"
-OLD_EXE = "JuiceVault.exe"   # what builds before 2.1.0 were called; found, replaced and killed like our own
+OLD_EXE = "JuiceVault.exe"
 REG_KEY = r"Software\Microsoft\Windows\CurrentVersion\Uninstall\999player"
-OLD_REG_KEY = r"Software\Microsoft\Windows\CurrentVersion\Uninstall\JuiceVault"   # builds before 2.1.0
+OLD_REG_KEY = r"Software\Microsoft\Windows\CurrentVersion\Uninstall\JuiceVault"
 BUNDLE_DIR = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
 COVERS_DIR = BUNDLE_DIR / "ui" / "covers"
 FONTS_DIR = BUNDLE_DIR / "ui" / "fonts"
 ICON = BUNDLE_DIR / "assets" / "icon.png"
 NO_WINDOW = 0x08000000
-NEW_GROUP = 0x00000200  # not DETACHED_PROCESS: a detached cmd has no console, so its ping child pops a visible one
-DETACHED = 0x00000008   # the app we open at the end must not die with this window
-SANDBOX = os.environ.get("JV_SETUP_SANDBOX") == "1"   # tests: no shortcuts, no programs-list entry, nothing outside the target folder
+NEW_GROUP = 0x00000200
+DETACHED = 0x00000008
+SANDBOX = os.environ.get("JV_SETUP_SANDBOX") == "1"
 
-ERAS = [  # chronological; cover files from ui/covers
+ERAS = [
     ("juiced up the ep", "juiced-up-the-ep.jpg"), ("affliction", "affliction.jpg"),
     ("heartbroken in hollywood 999", "heartbroken-in-hollywood-999.jpg"), ("juice wrld 999", "juice-wrld-999.jpg"),
     ("bingedrinkingmusic", "bingedrinkingmusic.jpg"), ("nothing's different </3", "nothings-different.jpg"),
@@ -68,14 +60,11 @@ FACTS = [
 ]
 
 
-# ───────────────────────────── helpers ─────────────────────────────
-
 def _rgba(rgb, a) -> str:
     return "rgba(%d,%d,%d,%d)" % (rgb[0], rgb[1], rgb[2], a)
 
 
 def load_fonts() -> None:
-    """Inter (static TTFs) — the closest open match to apple's SF Pro; qt can't read the app's woff2 files."""
     for p in sorted((FONTS_DIR / "inter").glob("*.ttf")):
         QFontDatabase.addApplicationFont(str(p))
 
@@ -99,7 +88,6 @@ def text_family() -> str:
 
 
 def glow(widget: QWidget, radius: int = 28, alpha: int = 110) -> None:
-    """Soft white halo behind text — the 'glowed up' look (qss has no text-shadow)."""
     from PySide6.QtWidgets import QGraphicsDropShadowEffect
     fx = QGraphicsDropShadowEffect(widget)
     fx.setBlurRadius(radius)
@@ -130,7 +118,6 @@ def rounded_pixmap(img: QImage, size: int, radius: int, gray: bool = False) -> Q
 
 
 def frosted(img: QImage, w: int, h: int) -> QPixmap:
-    """Cover-fit then heavy frosted blur (two rounds of smooth down/up scaling)."""
     fit = img.scaled(w, h, Qt.AspectRatioMode.KeepAspectRatioByExpanding, Qt.TransformationMode.SmoothTransformation)
     fit = fit.copy((fit.width() - w) // 2, (fit.height() - h) // 2, w, h)
     tiny = fit.scaled(max(6, w // 40), max(4, h // 40), Qt.AspectRatioMode.IgnoreAspectRatio, Qt.TransformationMode.SmoothTransformation)
@@ -191,12 +178,11 @@ def ps(script: str) -> subprocess.CompletedProcess:
                           capture_output=True, text=True, timeout=60, creationflags=NO_WINDOW)
 
 
-def _q(s) -> str:  # single-quoted PowerShell literal
+def _q(s) -> str:
     return "'" + str(s).replace("'", "''") + "'"
 
 
 def make_shortcut(folder_kind: str, target: Path) -> None:
-    """folder_kind: 'Desktop' or 'Programs' ([Environment]::GetFolderPath names)."""
     script = (f"$d=[Environment]::GetFolderPath('{folder_kind}'); "
               f"$s=(New-Object -ComObject WScript.Shell).CreateShortcut((Join-Path $d {_q(APP_NAME + '.lnk')})); "
               f"$s.TargetPath={_q(target)}; $s.WorkingDirectory={_q(target.parent)}; "
@@ -207,7 +193,6 @@ def make_shortcut(folder_kind: str, target: Path) -> None:
 
 
 def shortcut_exists(folder_kind: str) -> bool:
-    """whether our .lnk is on the desktop / in the start menu (asked, not assumed, when updating in place)."""
     if SANDBOX:
         return False
     try:
@@ -240,7 +225,7 @@ def write_registry(target: Path, size_bytes: int) -> None:
         winreg.SetValueEx(k, "NoModify", 0, winreg.REG_DWORD, 1)
         winreg.SetValueEx(k, "NoRepair", 0, winreg.REG_DWORD, 1)
     try:
-        winreg.DeleteKey(winreg.HKEY_CURRENT_USER, OLD_REG_KEY)   # one entry in the programs list, not two
+        winreg.DeleteKey(winreg.HKEY_CURRENT_USER, OLD_REG_KEY)
     except Exception:
         pass
 
@@ -274,10 +259,8 @@ def kill_app() -> None:
     time.sleep(1.5)
 
 
-# ───────────────────────────── workers ─────────────────────────────
-
 class InstallWorker(QThread):
-    progress = Signal(int, int, str)      # done bytes, total bytes, phase key
+    progress = Signal(int, int, str)
     locked = Signal()
     done = Signal()
     failed = Signal(str)
@@ -285,8 +268,8 @@ class InstallWorker(QThread):
     def __init__(self, payload: Path, target: Path, desktop: bool, startmenu: bool, register: bool = True, auto_close: bool = False):
         super().__init__()
         self.payload, self.target, self.desktop, self.startmenu = payload, target, desktop, startmenu
-        self.register, self.auto_close = register, auto_close   # auto_close: the app started us and is quitting, no need to ask
-        self.decision = None  # 'kill' | 'cancel'
+        self.register, self.auto_close = register, auto_close
+        self.decision = None
 
     def phase_for(self, name: str) -> str:
         if "/assets/lyrics/" in name:
@@ -304,7 +287,7 @@ class InstallWorker(QThread):
                 infos = [i for i in zf.infolist() if not i.is_dir()]
                 total = sum(i.file_size for i in infos) or 1
                 if self.auto_close:
-                    for _ in range(120):   # the app is closing itself; give it up to 12 s before pulling the plug
+                    for _ in range(120):
                         if not app_locked(self.target):
                             break
                         time.sleep(0.1)
@@ -325,7 +308,7 @@ class InstallWorker(QThread):
                 self.target.mkdir(parents=True, exist_ok=True)
                 if (self.target / "_internal").exists():
                     shutil.rmtree(self.target / "_internal", ignore_errors=True)
-                (self.target / OLD_EXE).unlink(missing_ok=True)   # an older build's exe; shortcuts get re-pointed below
+                (self.target / OLD_EXE).unlink(missing_ok=True)
                 done = 0
                 root = self.target.resolve()
                 last = 0.0
@@ -350,7 +333,7 @@ class InstallWorker(QThread):
                 exe = self.target / EXE_NAME
                 if self.desktop:
                     make_shortcut("Desktop", exe)
-                elif not self.auto_close and not SANDBOX:   # an update keeps whatever the user had; tests touch nothing
+                elif not self.auto_close and not SANDBOX:
                     remove_shortcut("Desktop")
                 if self.startmenu:
                     make_shortcut("Programs", exe)
@@ -398,8 +381,6 @@ class UninstallWorker(QThread):
 
 
 def schedule_self_delete(install_dir: Path) -> None:
-    """The running exe locks its own folder; a hidden batch retries the delete once a second until it is gone (15 s max),
-    then removes itself. A batch file because quotes passed straight to cmd /c get escaped and the delete never ran."""
     d = str(install_dir)
     bat = Path(os.environ.get("TEMP", "C:\\")) / "999player-uninstall.cmd"
     lines = [
@@ -416,8 +397,6 @@ def schedule_self_delete(install_dir: Path) -> None:
     subprocess.Popen(["cmd", "/c", str(bat)], cwd=str(bat.parent), creationflags=NO_WINDOW | NEW_GROUP,
                      close_fds=True, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-
-# ───────────────────────────── widgets ─────────────────────────────
 
 class Switch(QAbstractButton):
     def __init__(self, checked=True, accent=(155, 107, 255), parent=None):
@@ -531,7 +510,6 @@ class Progress(QWidget):
 
 
 class EraTimeline(QWidget):
-    """Every era's cover in a row; they light up as the install moves through his career."""
 
     def __init__(self, covers: list[tuple[str, QImage]], accent):
         super().__init__()
@@ -556,7 +534,6 @@ class EraTimeline(QWidget):
         cy = 36
         reached = self.progress * (n - 1)
         cur = min(n - 1, int(round(reached)))
-        # connecting rail
         p.setPen(QPen(QColor(255, 255, 255, 40), 2, Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap))
         p.drawLine(QPointF(size / 2, cy), QPointF(self.width() - size / 2, cy))
         if reached > 0:
@@ -585,7 +562,6 @@ class EraTimeline(QWidget):
 
 
 class CoverFan(QWidget):
-    """Three era covers fanned out and floating — the welcome page's hero."""
 
     def __init__(self, covers: list[QImage]):
         super().__init__()
@@ -614,7 +590,6 @@ class CoverFan(QWidget):
             p.translate(cx + dx * size, cy + drift)
             p.rotate(ang + math.sin(self.t * 0.6 + i) * 1.2)
             r = QRectF(-size / 2, -size / 2, size, size)
-            # soft shadow
             p.setPen(Qt.PenStyle.NoPen)
             for k in range(6, 0, -1):
                 p.setBrush(QColor(0, 0, 0, 14))
@@ -655,10 +630,7 @@ class TitleBar(QWidget):
         self._drag = None
 
 
-# ───────────────────────────── glass window ─────────────────────────────
-
 class PageTransition(QWidget):
-    """Old page fades/slides out, new page slides in — painted over the stack while it swaps."""
 
     def __init__(self, parent: QWidget):
         super().__init__(parent)
@@ -717,8 +689,8 @@ class GlassWindow(QWidget):
     SHADOW = 26
     RADIUS = 26
     BG_ERA = "outsiders"
-    RENDER_DOWN = 3  # the blurred blobs are painted at 1/3 size and scaled up — they're blur anyway
-    BLOBS = (  # (seconds per turn, direction, offset x/y as % of blob, scale, opacity, screen-blend)  — same as the app's #npv
+    RENDER_DOWN = 3
+    BLOBS = (
         (46, 1, -0.09, -0.06, 1.0, 0.92, False),
         (63, -1, 0.11, 0.07, 0.92, 0.5, True),
         (85, -1, -0.05, 0.10, 1.06, 0.45, False),
@@ -742,7 +714,6 @@ class GlassWindow(QWidget):
         self._bg_timer = QTimer(self, interval=40)
         self._bg_timer.timeout.connect(self.update)
         self._bg_timer.start()
-        # ios-style pop: the pane scales up from 92% while fading in; reversed on close
         self._pose = 0.0
         self._snapshot: QPixmap | None = None
         self._closing = False
@@ -758,20 +729,18 @@ class GlassWindow(QWidget):
         root.setSpacing(0)
         self.titlebar = TitleBar(self, f"{APP_NAME}  ·  {caption}")
         root.addWidget(self.titlebar)
-        # the stack sits in a layout-less host so hiding it mid-transition never reflows the title bar
         self.host = StackHost()
         root.addWidget(self.host, 1)
         self.stack = self.host.stack
         self.trans = PageTransition(self.body)
         self.apply_style()
 
-    # backdrop: three huge blurred copies of the cover turning slowly, like the player's full-screen view
     def _make_blob(self, img: QImage) -> QPixmap:
         vmax = max(self.inner_size.width(), self.inner_size.height())
         size = int(1.65 * vmax / self.RENDER_DOWN)
         tiny = img.scaled(14, 14, Qt.AspectRatioMode.IgnoreAspectRatio, Qt.TransformationMode.SmoothTransformation)
         tiny = tiny.convertToFormat(QImage.Format.Format_ARGB32)
-        for y in range(tiny.height()):           # saturate(1.9) brightness(.5), cheap on 196 pixels
+        for y in range(tiny.height()):
             for x in range(tiny.width()):
                 c = tiny.pixelColor(x, y)
                 h, s, v, a = c.getHsvF()
@@ -814,7 +783,6 @@ class GlassWindow(QWidget):
         q.end()
         p.drawImage(inner.toRect(), c)
 
-    # ios pop ----------------------------------------------------------------
     def showEvent(self, e):
         super().showEvent(e)
         if self._pose == 0.0 and self._pose_anim.state() != QVariantAnimation.State.Running:
@@ -859,7 +827,6 @@ class GlassWindow(QWidget):
         self._pose_anim.start()
 
     def go(self, index: int):
-        """Switch pages with a slide-and-fade instead of a hard cut."""
         if index == self.stack.currentIndex() or not self.body.isVisible():
             self.stack.setCurrentIndex(index)
             return
@@ -928,12 +895,11 @@ class GlassWindow(QWidget):
         p.setRenderHint(QPainter.RenderHint.SmoothPixmapTransform)
         S, R = self.SHADOW, self.RADIUS
         inner = QRectF(S, S, self.inner_size.width(), self.inner_size.height())
-        if self._pose < 1.0 or self._snapshot is not None:   # ios pop: scale the whole pane about its centre
+        if self._pose < 1.0 or self._snapshot is not None:
             k = 0.92 + 0.08 * self._pose
             p.translate(inner.center())
             p.scale(k, k)
             p.translate(-inner.center())
-        # drop shadow
         p.setPen(Qt.PenStyle.NoPen)
         for k in range(S, 0, -2):
             p.setBrush(QColor(0, 0, 0, int(3 + (S - k) * 0.55)))
@@ -947,7 +913,6 @@ class GlassWindow(QWidget):
         g.setColorAt(0.55, QColor(6, 6, 11, 107))
         g.setColorAt(1, QColor(6, 6, 11, 199))
         p.fillRect(inner, QBrush(g))
-        # glass sheen along the top
         sheen = QLinearGradient(inner.topLeft(), QPointF(inner.left(), inner.top() + 120))
         sheen.setColorAt(0, QColor(255, 255, 255, 26))
         sheen.setColorAt(1, QColor(255, 255, 255, 0))
@@ -959,7 +924,6 @@ class GlassWindow(QWidget):
         p.setBrush(Qt.BrushStyle.NoBrush)
         p.drawRoundedRect(inner.adjusted(0.5, 0.5, -0.5, -0.5), R, R)
 
-    # helpers ---------------------------------------------------------------
     @staticmethod
     def label(text, oid, wrap=False) -> QLabel:
         lab = QLabel(text)
@@ -994,8 +958,6 @@ class GlassWindow(QWidget):
         return w, lay
 
 
-# ───────────────────────────── setup window ─────────────────────────────
-
 class SetupWindow(GlassWindow):
     def __init__(self, covers, payload: Path | None, update_dir: Path | None = None):
         super().__init__("update" if update_dir else "setup", covers)
@@ -1003,7 +965,7 @@ class SetupWindow(GlassWindow):
         self.worker: InstallWorker | None = None
         self.need_bytes = 0
         self.previous = existing_install()
-        self.update_dir = update_dir   # --update DIR: started by the app itself, no questions, straight to the progress page
+        self.update_dir = update_dir
         self.target = update_dir or self.previous or default_target()
         self._read_payload()
         self.build_welcome()
@@ -1021,7 +983,6 @@ class SetupWindow(GlassWindow):
             self.go(0)
 
     def start_update(self):
-        """in-place update of the folder the app runs from: shortcuts and the programs list stay as they were."""
         self.target = Path(self.update_dir)
         self.i_sub.setText(f"999 player {APP_VERSION}  ·  {self.target}")
         self._fact_i = 0
@@ -1049,7 +1010,6 @@ class SetupWindow(GlassWindow):
             return
         self.payload_error = ""
 
-    # page 0 --------------------------------------------------------------
     def build_welcome(self):
         w, lay = self.page((56, 10, 40, 36))
         row = QHBoxLayout()
@@ -1085,7 +1045,6 @@ class SetupWindow(GlassWindow):
         lay.addLayout(row, 1)
         self.stack.addWidget(w)
 
-    # page 1 --------------------------------------------------------------
     def build_setup(self):
         w, lay = self.page()
         lay.addWidget(self.label("where should the vault live?", "h2"))
@@ -1173,7 +1132,6 @@ class SetupWindow(GlassWindow):
         self.warn.setText(warn)
         self.b_install.setEnabled(ok and not self.payload_error)
 
-    # page 2 --------------------------------------------------------------
     def build_installing(self):
         w, lay = self.page()
         self.i_title = self.label("opening the vault…", "h2")
@@ -1252,7 +1210,6 @@ class SetupWindow(GlassWindow):
         self.i_title.setText(self.PHASES.get(phase, "unpacking the vault…"))
         self.i_detail.setText(f"{human(done)} of {human(total)}" if phase not in ("shortcuts", "done") else "")
 
-    # page 3 --------------------------------------------------------------
     def build_done(self):
         w, lay = self.page((56, 10, 40, 36))
         row = QHBoxLayout()
@@ -1302,7 +1259,6 @@ class SetupWindow(GlassWindow):
             return
         self.close()
 
-    # page 4 --------------------------------------------------------------
     def build_error(self):
         w, lay = self.page()
         lay.addStretch(1)
@@ -1345,14 +1301,11 @@ class SetupWindow(GlassWindow):
             super().keyPressEvent(e)
 
 
-# ───────────────────────────── uninstall window ─────────────────────────────
-
 class UninstallWindow(GlassWindow):
     def __init__(self, covers, install_dir: Path, preview: bool = False):
         super().__init__("uninstall", covers, size=(760, 480))
         self.install_dir, self.preview = install_dir, preview
         self.worker = None
-        # confirm
         w, lay = self.page((48, 20, 48, 36))
         lay.addStretch(1)
         lay.addWidget(self.label("remove 999 player?", "h2"))
@@ -1379,14 +1332,12 @@ class UninstallWindow(GlassWindow):
         btns.addWidget(go)
         lay.addLayout(btns)
         self.stack.addWidget(w)
-        # working
         w, lay = self.page((48, 20, 48, 36))
         lay.addStretch(1)
         self.u_step = self.label("closing the vault…", "h2")
         lay.addWidget(self.u_step)
         lay.addStretch(1)
         self.stack.addWidget(w)
-        # done
         w, lay = self.page((48, 20, 48, 36))
         lay.addStretch(2)
         lay.addWidget(self.label("removed.", "h1"))
@@ -1419,8 +1370,6 @@ class UninstallWindow(GlassWindow):
         super().closeEvent(e)
 
 
-# ───────────────────────────── entry points ─────────────────────────────
-
 def load_covers() -> list[tuple[str, QImage]]:
     out = []
     for name, fn in ERAS:
@@ -1440,7 +1389,6 @@ def _app() -> QApplication:
 
 
 def _dev_hooks(win: GlassWindow) -> None:
-    """--shot out.png [--page N]: screenshot after the first paint, then quit (dev only)."""
     if "--shot" not in sys.argv:
         return
     shot = sys.argv[sys.argv.index("--shot") + 1]
@@ -1451,12 +1399,11 @@ def _dev_hooks(win: GlassWindow) -> None:
         win.grab().save(shot)
         QApplication.quit()
 
-    if "--go" in sys.argv:   # --go N: start a page transition at 900 ms, shoot mid-flight
+    if "--go" in sys.argv:
         QTimer.singleShot(900, lambda: win.go(int(sys.argv[sys.argv.index("--go") + 1])))
         QTimer.singleShot(1060, go)
         return
     if "--auto" in sys.argv and isinstance(win, SetupWindow):
-        # unattended: --auto --target DIR → run the whole install, screenshot whatever page it ends on
         win.path.setText(sys.argv[sys.argv.index("--target") + 1])
         win.o_launch.sw.setChecked(False)
         if SANDBOX:

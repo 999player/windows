@@ -1,11 +1,9 @@
-/* 999 player, application. */
 (function () {
   'use strict';
   const { $, $$, h, esc, fmtTime, fmtLong, fmtInt, fmtDate, fmtRelative, fmtBytes, debounce, shuffle, clamp, coverUrl, imageUrl, parseTitle, canonEra, eraSortKey, ERA_YEARS, CATS, CAT_BY_KEY, catName, songChips, normalizeQuery } = U;
   const el = (id) => document.getElementById(id);
   window.__thumbs = true;
 
-  // ───────────────────────── state ─────────────────────────
   const S = {
     songs: [], byId: new Map(), eras: new Map(), catCounts: {}, fetchedAt: 0, catalogVersion: 0,
     likes: new Set(), likedAt: {}, playlists: [], history: [], playCounts: {}, downloads: {},
@@ -20,10 +18,8 @@
   const engine = new Engine();
   let scroller, lyPanel, lyFull, seekSlider, volSlider;
 
-  // ───────────────────────── boot ─────────────────────────
   document.addEventListener('DOMContentLoaded', boot);
 
-  // User doesn't want browser-native tooltips anywhere — strip title attributes as they appear.
   function killTooltips() {
     const strip = (el) => { if (el && el.hasAttribute && el.hasAttribute('title')) el.removeAttribute('title'); };
     const sweep = (root) => { strip(root); if (root && root.querySelectorAll) root.querySelectorAll('[title]').forEach(strip); };
@@ -57,16 +53,16 @@
     on('catalogChanged', async (count, version) => { S.catalogVersion = version; await loadCatalog(true); setStatus('ok', `${fmtInt(count)} tracks · synced just now`); });
     on('catalogProgress', (n, t) => setStatus('busy', `syncing ${fmtInt(n)} / ${fmtInt(t)}…`));
     on('catalogError', () => { setStatus(S.songs.length ? 'ok' : 'err', S.songs.length ? `${fmtInt(S.songs.length)} tracks · offline` : 'could not reach the vault'); if (!S.songs.length) { el('splash-st').textContent = 'could not reach the vault. check your connection — retrying…'; setTimeout(() => Bridge.fire('refreshCatalog'), 8000); } });
-    on('detail', (id, json) => { let d = null; try { d = JSON.parse(json); } catch (e) { /* noop */ } S.detailCache.set(id, d); const w = S.detailWaiters.get(id); if (w) { S.detailWaiters.delete(id); w.forEach((r) => r(d)); } });
-    on('detailError', (id, msg) => { S.detailCache.set(id, null); /* remember the miss, or panels re-request it in a loop */ const w = S.detailWaiters.get(id); if (w) { S.detailWaiters.delete(id); w.forEach((r) => r(null)); } Bridge.log('warning', 'detail failed ' + id + ': ' + msg); });
-    on('catalogChanged', () => { for (const [k, v] of S.detailCache) if (v === null) S.detailCache.delete(k); }); // retry misses after a sync
+    on('detail', (id, json) => { let d = null; try { d = JSON.parse(json); } catch (e) {  } S.detailCache.set(id, d); const w = S.detailWaiters.get(id); if (w) { S.detailWaiters.delete(id); w.forEach((r) => r(d)); } });
+    on('detailError', (id, msg) => { S.detailCache.set(id, null);  const w = S.detailWaiters.get(id); if (w) { S.detailWaiters.delete(id); w.forEach((r) => r(null)); } Bridge.log('warning', 'detail failed ' + id + ': ' + msg); });
+    on('catalogChanged', () => { for (const [k, v] of S.detailCache) if (v === null) S.detailCache.delete(k); });
     on('downloadProgress', (id, got, total) => { S.dlp.set(id, total ? got / total : 0); refreshRow(id); if (S.current && S.current.id === id) paintPlayerDownload(); });
     on('downloadDone', (id, path, ok, err) => { S.dlp.delete(id); refreshRow(id); if (S.current && S.current.id === id) paintPlayerDownload(); const s = S.byId.get(id); if (ok) toast(`saved “${s ? parseTitle(s.title).name : 'track'}” to your music folder`, 'ok'); else toast(`download failed: ${err}`, 'err'); });
-    on('downloadsChanged', (json) => { try { S.downloads = JSON.parse(json) || {}; } catch (e) { /* noop */ } if (S.settings.offlineOnly) { applyCatalog(null, true); } else if (S.route && S.route.name === 'downloads') renderView(S.route, scroller.scrollTop); });
+    on('downloadsChanged', (json) => { try { S.downloads = JSON.parse(json) || {}; } catch (e) {  } if (S.settings.offlineOnly) { applyCatalog(null, true); } else if (S.route && S.route.name === 'downloads') renderView(S.route, scroller.scrollTop); });
     on('settingChanged', (k, v) => { try { S.settings[k] = JSON.parse(v); } catch (e) { S.settings[k] = v; } if (S.route && S.route.name === 'settings') renderView(S.route, scroller.scrollTop); });
     on('winState', (max) => setMaximized(max));
     on('discordStatus', (s) => { S.discordStatus = s; const n = el('s-dcstatus'); if (n) n.textContent = `status: ${s}`; });
-    on('accent', (ref, json) => { if (ref !== S.accentRef) return; try { applyAccent(JSON.parse(json)); } catch (e) { /* noop */ } });
+    on('accent', (ref, json) => { if (ref !== S.accentRef) return; try { applyAccent(JSON.parse(json)); } catch (e) {  } });
     on('lastfmStatus', (json) => { try { S.lastfm = JSON.parse(json); } catch (e) { return; } paintLastfm(); });
     on('lyricsStatus', (json) => { try { S.lyricsStore = JSON.parse(json); } catch (e) { return; } paintLyricsStore(); });
     on('localChanged', (json) => { try { applyLocal(JSON.parse(json)); } catch (e) { return; } renderSidebar(); toast(`local files: ${fmtInt(S.local.length)} tracks`, 'ok'); if (S.route && (S.route.name === 'local' || S.route.name === 'settings')) renderView(S.route, scroller.scrollTop); });
@@ -76,7 +72,7 @@
   }
 
   async function onInit(json) {
-    let p = {}; try { p = JSON.parse(json); } catch (e) { /* noop */ }
+    let p = {}; try { p = JSON.parse(json); } catch (e) {  }
     S.app = p.app || {};
     S.discordStatus = p.discordStatus || 'off';
     S.lastfm = p.lastfm || {};
@@ -101,8 +97,8 @@
     paintShuffleRepeat();
     renderRight();
     el('splash-st').textContent = (p.catalog && p.catalog.count) ? 'loading your library…' : 'downloading the catalog for the first time…';
-    try { const r = await fetch('covers/covers.json', { cache: 'no-store' }); if (r.ok) window.__eraCovers = await r.json(); } catch (e) { /* no bundled covers */ }
-    try { const r = await fetch('covers/discord_art.json', { cache: 'no-store' }); if (r.ok) window.__discordArt = await r.json(); } catch (e) { /* no public cover urls */ }
+    try { const r = await fetch('covers/covers.json', { cache: 'no-store' }); if (r.ok) window.__eraCovers = await r.json(); } catch (e) {  }
+    try { const r = await fetch('covers/discord_art.json', { cache: 'no-store' }); if (r.ok) window.__discordArt = await r.json(); } catch (e) {  }
     try { await loadCatalog(false); } catch (e) { Bridge.log('warning', 'catalog not ready: ' + e.message); }
     if (!S.route) go({ name: 'home' }, { replace: true });
     if (S.songs.length) hideSplash();
@@ -124,15 +120,12 @@
     ]);
     if (!r.ok) throw new Error('catalog unavailable');
     const data = await r.json();
-    // index of every lyric file saved on disk (shipped with the app + weekly refresh): id -> {t, a, e, d, w}
     S.lyricsIndex = new Map();
-    try { if (li && li.ok) for (const [id, e] of Object.entries((await li.json()).songs || {})) S.lyricsIndex.set(+id, e); } catch (e) { /* noop */ }
+    try { if (li && li.ok) for (const [id, e] of Object.entries((await li.json()).songs || {})) S.lyricsIndex.set(+id, e); } catch (e) {  }
     applyCatalog(data, isUpdate);
   }
 
-  // instrumentals, raw vocals and acapellas are not what people open "all music" for: they stay out of it
-  // (and out of "recently uploaded") and show under miscellaneous instead, whatever category the vault filed them in
-  const AUX_SUBS = new Set(['instrumental', 'raw', 'acapellas', 'acapella']); // not stems: stem edits are songs
+  const AUX_SUBS = new Set(['instrumental', 'raw', 'acapellas', 'acapella']);
   const AUX_TAG = /[\[({](?:instrumental|acapella|a cappella|raw vocals?|vocals? only)[\])}]/i;
   function isAux(s) { return AUX_SUBS.has(String(s.sub || '').toLowerCase()) || AUX_TAG.test(s.title || ''); }
   function catSongs(key) {
@@ -161,8 +154,6 @@
       if (s.eraKey) { let e = S.eras.get(s.eraKey); if (!e) { e = { key: s.eraKey, name: s.eraKey, count: 0, songs: [], raw: new Set() }; S.eras.set(s.eraKey, e); } e.count++; e.songs.push(s); e.raw.add(s.era); }
     }
     for (const e of S.eras.values()) e.songs.sort((a, b) => b.plays - a.plays);
-    // songs whose lyrics exist as files on disk: the catalog's flag plus the saved index. Local files match against
-    // this list, so matching keeps working even if the vault (or its catalog) is gone — the index ships with the app.
     const idx = S.lyricsIndex || new Map();
     S.lyricsCands = [];
     for (const s of S.songs) { const e = idx.get(s.id); if (e) { s.lyr = true; s.wt = s.wt || !!e.w; } if (s.lyr) S.lyricsCands.push(s); }
@@ -171,27 +162,23 @@
     if (cur && S.byId.has(cur)) S.current = S.byId.get(cur);
     renderSidebar();
     setStatus('ok', `${fmtInt(S.songs.length)} tracks · ${S.fetchedAt ? 'synced ' + fmtRelative(S.fetchedAt * 1000) : 'cached'}`);
-    if (isUpdate && S.route && S.route.name !== 'settings') renderView(S.route, scroller.scrollTop); // settings: keep what is being typed
+    if (isUpdate && S.route && S.route.name !== 'settings') renderView(S.route, scroller.scrollTop);
     if (S.songs.length) hideSplash();
   }
 
-  /** Local library entries live alongside the vault catalog in S.byId (negative ids), but not in S.songs. */
   function applyLocal(list) {
     for (const old of S.local) if (S.byId.get(old.id) === old) S.byId.delete(old.id);
     S.local = list || [];
     for (const s of S.local) {
       s.eraKey = null; s.nm = parseTitle(s.title).name; s.q = normalizeQuery(`${s.title} ${s.author} ${s.era || ''}`); S.byId.set(s.id, s);
-      // borrow synced lyrics from the vault song with the same (or near enough) title
       const m = U.lyricsMatch(s, S.lyricsCands || S.songs);
       s.lyrSrc = m ? { id: m.id, title: m.title, wt: !!m.wt } : null;
       s.lyr = !!m; s.wt = !!(m && m.wt); s.est = !!(m && m.est);
     }
   }
   function catalogStatusHTML() { return `${fmtInt(S.songs.length)} tracks · ${S.fetchedAt ? 'synced ' + fmtRelative(S.fetchedAt * 1000) : 'not synced'}${S.status && S.status.kind === 'err' ? ' · ' + esc(S.status.text) : ''}`; }
-  // a status change only touches the catalog row on the settings page; re-rendering the whole page would wipe what is being typed there
   function setStatus(kind, text) { S.status = { kind, text }; const n = el('s-catstatus'); if (n && kind !== 'busy') n.innerHTML = catalogStatusHTML(); }
 
-  // ───────────────────────── chrome ─────────────────────────
   function paintChrome() {
     el('brand-logo').innerHTML = I('logo'); el('splash-logo').innerHTML = I('logo');
     el('win-min').innerHTML = I('minimize'); el('win-max').innerHTML = I('maximize'); el('win-close').innerHTML = I('close');
@@ -257,7 +244,6 @@
     const sw = el('s-offline'); if (sw) sw.classList.toggle('on', on);
   }
 
-  // ───────────────────────── sidebar ─────────────────────────
   function navItem(icon, label, route, count, extra) {
     const b = h('button', { class: 'nav-item' + (extra || ''), dataset: { route: JSON.stringify(route) } });
     b.innerHTML = `${I(icon)}<span class="lbl">${esc(label)}</span>${count !== undefined ? `<span class="count">${fmtInt(count)}</span>` : ''}`;
@@ -269,7 +255,6 @@
     m.append(navItem('home', 'home', { name: 'home' }));
     const b = el('nav-browse'); b.innerHTML = '';
     for (const c of CATS) if (!['stems', 'remasters'].includes(c.key)) b.append(navItem(c.icon, c.name, { name: 'cat', key: c.key }, S.catCounts[c.key] || 0));
-    // "your collection": built-ins + playlists in one drag-to-reorder list (order saved in settings.collectionOrder)
     const entries = {
       liked: () => navItem('heart', 'liked songs', { name: 'liked' }, S.likes.size),
       downloads: () => navItem('download', 'downloads', { name: 'downloads' }, Object.keys(S.downloads).length),
@@ -282,7 +267,7 @@
     const hidden = new Set(S.settings.collectionHidden || []);
     const c = el('nav-collection'); c.innerHTML = ''; el('nav-playlists').innerHTML = '';
     for (const key of order) {
-      if (hidden.has(key)) continue; // hidden via right-click → unhide in settings
+      if (hidden.has(key)) continue;
       const item = entries[key](); item.dataset.key = key; item.draggable = true;
       if (!key.startsWith('pl:')) item.oncontextmenu = (e) => { e.preventDefault(); showMenu([{ header: collectionLabel(key) }, { label: 'open', icon: 'external', action: () => go(JSON.parse(item.dataset.route)) }, { sep: true }, { label: 'hide from sidebar', icon: 'eyeOff', action: () => hideCollectionItem(key) }], e.clientX, e.clientY); };
       c.append(item);
@@ -290,7 +275,6 @@
     bindCollectionDrag(c, order);
     paintNavActive();
   }
-  /** Names for "your collection" entries, used by the sidebar context menu and the settings "hidden items" card. */
   function collectionLabel(key) {
     if (key.startsWith('pl:')) { const pl = S.playlists.find((p) => 'pl:' + p.id === key); return pl ? pl.name : null; }
     return { liked: 'liked songs', downloads: 'downloads', local: 'local files', recent: 'recently played' }[key] || null;
@@ -310,7 +294,7 @@
   function bindCollectionDrag(container, order) {
     let dragKey = null;
     container.querySelectorAll('.nav-item').forEach((item) => {
-      item.addEventListener('dragstart', (e) => { dragKey = item.dataset.key; item.classList.add('dragging'); e.dataTransfer.effectAllowed = 'move'; try { e.dataTransfer.setData('text/plain', dragKey); } catch (err) { /* noop */ } });
+      item.addEventListener('dragstart', (e) => { dragKey = item.dataset.key; item.classList.add('dragging'); e.dataTransfer.effectAllowed = 'move'; try { e.dataTransfer.setData('text/plain', dragKey); } catch (err) {  } });
       item.addEventListener('dragend', () => { dragKey = null; container.querySelectorAll('.nav-item').forEach((x) => x.classList.remove('dragging', 'drop-before', 'drop-after')); });
       item.addEventListener('dragover', (e) => { if (!dragKey || item.dataset.key === dragKey) return; e.preventDefault(); e.dataTransfer.dropEffect = 'move'; const r = item.getBoundingClientRect(); const before = e.clientY < r.top + r.height / 2; item.classList.toggle('drop-before', before); item.classList.toggle('drop-after', !before); });
       item.addEventListener('dragleave', () => item.classList.remove('drop-before', 'drop-after'));
@@ -326,7 +310,6 @@
       });
     });
   }
-  /** Folds / unfolds "browse" or "your collection" (remembered in settings.navCollapsed). */
   function applyNavSections() {
     const closed = S.settings.navCollapsed || {};
     for (const sec of $$('.nav-sec[data-sec]')) {
@@ -341,7 +324,6 @@
     closed[key] = !closed[key];
     setSetting('navCollapsed', closed);
     applyNavSections();
-    // keep the highlight glued to the active item while the section folds
     const t0 = performance.now();
     const tick = () => { paintNavActive(); if (performance.now() - t0 < 380) requestAnimationFrame(tick); };
     requestAnimationFrame(tick);
@@ -350,10 +332,9 @@
     const cur = JSON.stringify(S.route && (S.route.name === 'search' || S.route.name === 'settings' || S.route.name === 'era' ? null : S.route));
     let active = null;
     for (const b of $$('.nav-item')) { const on = b.dataset.route === cur; b.classList.toggle('active', on); if (on) active = b; }
-    if (active && active.closest('.sec-body.closed')) active = null; // folded away: no highlight
+    if (active && active.closest('.sec-body.closed')) active = null;
     moveIndicator(el('nav-ind'), active, el('sidebar'));
   }
-  /** Slides a glass highlight onto `target`, matching its exact box (morphing selection). */
   function moveIndicator(ind, target, host) {
     if (!ind) return;
     if (!target) { ind.classList.remove('show'); return; }
@@ -361,14 +342,12 @@
     if (ind.parentElement !== parent) { parent.appendChild(ind); ind.style.transition = 'none'; requestAnimationFrame(() => { ind.style.transition = ''; }); }
     const pr = parent.getBoundingClientRect(), tr = target.getBoundingClientRect();
     const bw = parent.clientLeft || 0, bh = parent.clientTop || 0;
-    // whole-pixel geometry, no transform: keeps the pill edges and the text above it crisp
     ind.style.left = `${Math.round(tr.left - pr.left - bw + parent.scrollLeft)}px`;
     ind.style.width = `${Math.round(tr.width)}px`;
     ind.style.height = `${Math.round(tr.height)}px`;
     ind.style.top = `${Math.round(tr.top - pr.top - bh + parent.scrollTop)}px`;
     ind.classList.add('show');
   }
-  /** Lens displacement map (edge-only, inward = convex glass rim) for the SVG refraction filter. */
   function buildRefractionMap() {
     const n = 96, c = document.createElement('canvas'); c.width = c.height = n;
     const g = c.getContext('2d'); const im = g.createImageData(n, n);
@@ -384,7 +363,6 @@
     if (map) map.setAttribute('href', c.toDataURL());
   }
 
-  // ───────────────────────── router ─────────────────────────
   function go(route, opts = {}) {
     if (S.route && !opts.replace) { S.stack.push({ route: S.route, scroll: scroller.scrollTop }); if (S.stack.length > 60) S.stack.shift(); S.fwd = []; }
     S.route = route;
@@ -408,7 +386,6 @@
     requestAnimationFrame(() => { scroller.scrollTop = scrollTop || 0; if (S.list && S.list.vl) S.list.vl._schedule(true); paintNavActive(); });
   }
 
-  // ───────────────────────── shared pieces ─────────────────────────
   function imgTag(song, w, cls, attrs = '') {
     const t = coverUrl(song, w), f = imageUrl(song);
     if (!t) return `<div class="ph">${I('music')}</div>`;
@@ -420,7 +397,6 @@
     const chips = songChips(song).slice(0, max);
     return chips.length ? `<span class="chips">${chips.map((c) => `<span class="chip ${/stem|instrumental|acapella/i.test(c) ? 'accent' : ''}">${esc(c)}</span>`).join('')}</span>` : '';
   }
-  /** the era name as a link to its page (rows, cards, player bar); plain text when the era has no page */
   function eraLink(song) {
     if (!song.era) return '';
     return song.eraKey && S.eras.has(song.eraKey) ? `<a class="era-link" data-era="${esc(song.eraKey)}" href="#">${esc(song.era)}</a>` : esc(song.era);
@@ -470,7 +446,6 @@
     }
   }
 
-  /** Track list with toolbar + virtual rows. */
   function trackList(host, baseItems, opts = {}) {
     const key = opts.ctxKey || 'list';
     const prefs = S.listPrefs[key] || (S.listPrefs[key] = { q: '', era: null, lyr: false, sort: opts.defaultSort || 'default' });
@@ -536,8 +511,6 @@
     return { get items() { return items; }, recompute: compute };
   }
 
-  // custom playlist covers live only on this device (local storage of this app), never on the server:
-  // a 512px square jpeg per playlist, picked from a file by clicking the playlist's cover tile
   const plCoverKey = (id) => `jv.plcover.${id}`;
   function plCover(id) { try { return localStorage.getItem(plCoverKey(id)) || ''; } catch (e) { return ''; } }
   function setPlCover(id, dataUrl) { try { if (dataUrl) localStorage.setItem(plCoverKey(id), dataUrl); else localStorage.removeItem(plCoverKey(id)); return true; } catch (e) { toast('could not save the cover on this device', 'err'); return false; } }
@@ -600,10 +573,8 @@
     container.addEventListener('contextmenu', (e) => { const card = e.target.closest('.card'); if (!card) return; e.preventDefault(); const id = +card.dataset.id; showMenu(songMenu(S.byId.get(id), { items: songs, index: songs.findIndex((s) => s.id === id) }), e.clientX, e.clientY); });
   }
 
-  // ───────────────────────── views ─────────────────────────
   const VIEWS = {
     home(node) {
-      // your playlists first, as a quick grid the way spotify opens (only when there are some)
       if (S.playlists.length) {
         const quick = S.playlists.map((pl) => ({ pl, cover: plCover(pl.id) }));
         const q = h('div', { class: 'shelf' });
@@ -660,7 +631,7 @@
       if (!e) { node.innerHTML = `<div class="empty">${I('layers')}<h3>unknown era</h3></div>`; return; }
       const items = e.songs.slice();
       const raw = [...e.raw].filter((r) => r !== e.name);
-      node.innerHTML = headerHTML({ eyebrow: `era${ERA_YEARS[e.name] ? ' · ' + ERA_YEARS[e.name] : ''}`, icon: 'layers', title: e.name, sub: `<b>${fmtInt(items.length)} tracks</b><span class="dot"></span><span>${fmtLong(items.reduce((a, s) => a + s.dur, 0))}</span>${raw.length ? `<span class="dot"></span><span>also tagged: ${esc(raw.join(', '))}</span>` : ''}`, art: items.length ? { song: items[0] } : { icon: 'layers' } }); // one cover for the era, never a four-tile mosaic
+      node.innerHTML = headerHTML({ eyebrow: `era${ERA_YEARS[e.name] ? ' · ' + ERA_YEARS[e.name] : ''}`, icon: 'layers', title: e.name, sub: `<b>${fmtInt(items.length)} tracks</b><span class="dot"></span><span>${fmtLong(items.reduce((a, s) => a + s.dur, 0))}</span>${raw.length ? `<span class="dot"></span><span>also tagged: ${esc(raw.join(', '))}</span>` : ''}`, art: items.length ? { song: items[0] } : { icon: 'layers' } });
       const tl = trackList(node, items, { ctxKey: 'era:' + e.key, defaultSort: 'plays' });
       headerActions(node, tl.items, { ctxKey: 'era:' + e.key });
     },
@@ -829,7 +800,6 @@
     return `<div class="tile ${big ? 'lg' : ''}" data-key="${esc(e.key)}" style="--tile-grad:${TILE_GRADS[i % TILE_GRADS.length]}"><div class="mosaic">${e.songs.slice(0, 4).map((s) => imgTag(s, 96)).join('')}</div><h3>${esc(e.name)}</h3><div class="s">${fmtInt(e.count)} tracks${ERA_YEARS[e.name] ? ' · ' + ERA_YEARS[e.name] : ''}</div></div>`;
   }
 
-  // ───────────────────────── playback ─────────────────────────
   function playFrom(items, index, ctxKey) {
     if (!items || !items.length) return;
     const ids = items.map((s) => s.id);
@@ -861,7 +831,6 @@
     S.scrob = { id: s.id, started: Math.floor(Date.now() / 1000), played: 0, lastT: null, done: false, np: false };
   }
 
-  // last.fm: now-playing on first play, one scrobble per listen once half the track (or 4 min) has actually played
   function lastfmPayload(s) { return { artist: s.author, track: s.nm, album: s.era || null, duration: Math.round(engine.duration || s.dur || 0) }; }
   function lastfmTick(t) {
     const sc = S.scrob; if (!sc || sc.done || !S.current || S.current.id !== sc.id) return;
@@ -894,7 +863,6 @@
     if (d) d.classList.toggle('hidden', !l.connected);
   }
 
-  // discord rich presence: pushed on track change, play/pause and seeks (debounced; python throttles further)
   let presTimer = 0, presLast = null;
   function pushPresence(force) {
     clearTimeout(presTimer);
@@ -902,9 +870,6 @@
       const s = S.current;
       if (!s || engine.state === 'idle') { Bridge.fire('presence', ''); return; }
       const playing = engine.state === 'playing' || engine.state === 'loading';
-      // Discord image: honor any era override from discord_art.json (trusted list; any https
-      // URL Discord's image proxy can fetch is fair game). Fall back to the per-song art piped
-      // through the vault's _next/image optimizer so Discord sees proper image/* content-type.
       const ck = U.coverEraKey(s);
       const override = ck && window.__discordArt && window.__discordArt[ck];
       let art = '';
@@ -939,15 +904,13 @@
   function removeFromQueue(i) { if (i === S.qIndex) return; S.queue.splice(i, 1); if (i < S.qIndex) S.qIndex--; renderQueueIfOpen(); }
   function clearQueue() { const cur = S.queue[S.qIndex]; S.queue = cur ? [cur] : []; S.queueSource = S.queue.slice(); S.qIndex = cur ? 0 : -1; renderQueueIfOpen(); }
 
-  /** ask the engine to collect garbage in idle time (only exists when the app exposes gc()); `force` also runs while paused */
   function sweepGarbage(force) {
     if (typeof window.gc !== 'function') return;
     if (!force && !(engine.state === 'playing' || S.npvOpen)) return;
-    const run = () => { try { window.gc(); } catch (e) { /* noop */ } };
+    const run = () => { try { window.gc(); } catch (e) {  } };
     if (typeof requestIdleCallback === 'function') requestIdleCallback(run, { timeout: 4000 }); else run();
   }
 
-  // engine events
   let rafPending = false;
   engine.addEventListener('time', () => { if (rafPending) return; rafPending = true; requestAnimationFrame(() => { rafPending = false; paintTime(); }); });
   engine.addEventListener('state', (e) => {
@@ -961,10 +924,6 @@
     if (navigator.mediaSession) navigator.mediaSession.playbackState = st === 'playing' ? 'playing' : 'paused';
   });
   engine.addEventListener('ended', () => next(true));
-  // the embedded browser does not collect the garbage that animated lyrics and css keyframe animations
-  // produce (style objects pile up at ~7-10 MB/s until memory runs out), in any state: a song that has ended
-  // on a breathing interlude line leaks just like a playing one. with gc() exposed by the app, sweep it in
-  // idle time every few seconds no matter what is going on. a no-op in a normal browser.
   if (typeof window.gc === 'function') setInterval(() => sweepGarbage(true), 10000);
   engine.addEventListener('error', (e) => {
     toast(`couldn’t play “${S.current ? S.current.nm : 'track'}” — ${e.detail || 'unknown error'}`, 'err');
@@ -983,10 +942,9 @@
       navigator.mediaSession.setActionHandler('previoustrack', prev);
       navigator.mediaSession.setActionHandler('nexttrack', () => next());
       navigator.mediaSession.setActionHandler('seekto', (d) => engine.seek(d.seekTime));
-    } catch (e) { /* noop */ }
+    } catch (e) {  }
   }
 
-  // ───────────────────────── player bar ─────────────────────────
   function makeSlider(root, { onInput, onChange }) {
     let dragging = false;
     const ratio = (e) => { const r = root.getBoundingClientRect(); return clamp((e.clientX - r.left) / r.width, 0, 1); };
@@ -1004,7 +962,7 @@
     el('p-shuffle').onclick = () => { S.shuffle = !S.shuffle; setSetting('shuffle', S.shuffle); paintShuffleRepeat(); reshuffleQueueKeepCurrent(); toast(S.shuffle ? 'shuffle on' : 'shuffle off'); };
     el('p-repeat').onclick = () => { S.repeat = S.repeat === 'off' ? 'all' : S.repeat === 'all' ? 'one' : 'off'; setSetting('repeat', S.repeat); paintShuffleRepeat(); toast(S.repeat === 'off' ? 'repeat off' : S.repeat === 'all' ? 'repeat all' : 'repeat one'); };
     el('p-mute').onclick = () => { engine.setMuted(!engine.muted); setSetting('muted', engine.muted); paintVolume(); };
-    el('p-mute').oncontextmenu = (e) => { e.preventDefault(); e.stopPropagation(); volumeMenu(e.clientX, e.clientY); }; // right click: type a volume %
+    el('p-mute').oncontextmenu = (e) => { e.preventDefault(); e.stopPropagation(); volumeMenu(e.clientX, e.clientY); };
     el('p-like').onclick = () => S.current && toggleLike(S.current.id);
     el('p-download').onclick = () => S.current && download(S.current.id);
     el('p-lyrics').onclick = () => toggleRightTab('lyrics'); el('p-queue').onclick = () => toggleRightTab('queue'); el('p-info').onclick = () => toggleRightTab('details');
@@ -1039,7 +997,7 @@
     const t = engine.currentTime, d = engine.duration;
     if (!seekSlider.dragging) { const ct = fmtTime(t), ce = el('p-cur'); if (ce.textContent !== ct) ce.textContent = ct; seekSlider.set(d ? t / d : 0); }
     const dt = fmtTime(d), de = el('p-dur'); if (de.textContent !== dt) de.textContent = dt;
-    try { const b = engine.mode === 'html5' && engine.cur.buffered; if (b && b.length && d) el('p-slider').style.setProperty('--b', clamp(b.end(b.length - 1) / d, 0, 1)); } catch (e) { /* noop */ }
+    try { const b = engine.mode === 'html5' && engine.cur.buffered; if (b && b.length && d) el('p-slider').style.setProperty('--b', clamp(b.end(b.length - 1) / d, 0, 1)); } catch (e) {  }
     if (lyPanel && S.rightOpen && S.rightTab === 'lyrics') lyPanel.update(t);
     if (lyFull && S.npvOpen) lyFull.update(t);
     if (engine.state === 'playing') {
@@ -1049,7 +1007,7 @@
       lastfmTick(t);
     }
   }
-  function volumeMenu(x, y) { // a small popover with the volume as a number (0-100) and a few presets
+  function volumeMenu(x, y) {
     showMenu([], x, y, { cls: 'vol-menu' });
     const m = openMenu.el;
     const row = h('div', { class: 'vol-row' });
@@ -1067,7 +1025,7 @@
     const presets = h('div', { class: 'vol-presets' });
     for (const n of [25, 50, 75, 100]) { const b = h('button', {}, n + '%'); b.onclick = (e) => { e.stopPropagation(); inp.value = n; apply(); closeMenus(); }; presets.appendChild(b); }
     m.appendChild(presets);
-    const r = m.getBoundingClientRect(); // the popover grew after showMenu measured it: park it just above the player bar
+    const r = m.getBoundingClientRect();
     const bar = el('player').getBoundingClientRect();
     m.style.left = `${clamp(x - r.width / 2, 8, window.innerWidth - r.width - 8)}px`;
     m.style.top = `${clamp(bar.top - r.height - 10, 8, window.innerHeight - r.height - 8)}px`;
@@ -1077,7 +1035,6 @@
   function paintShuffleRepeat() { el('p-shuffle').classList.toggle('on', S.shuffle); el('p-repeat').classList.toggle('on', S.repeat !== 'off'); el('p-repeat').innerHTML = I(S.repeat === 'one' ? 'repeat1' : 'repeat'); el('p-repeat').title = `repeat: ${S.repeat}`; }
   function updateCards() { for (const c of $$('.card')) { const id = +c.dataset.id; const on = S.current && S.current.id === id; c.classList.toggle('playing', !!on); const b = c.querySelector('.play'); if (b) b.innerHTML = I(on && engine.state === 'playing' ? 'pause' : 'play'); } }
 
-  // accent colour follows the artwork (computed in python, see bridge.requestAccent)
   function requestAccent(song) {
     const ref = U.localCover(song) || U.coverUrl(song, 256) || '';
     S.accentRef = ref;
@@ -1090,7 +1047,6 @@
     r.setProperty('--accent', a.hex);
   }
 
-  // ambient backdrops (app + now playing view), crossfaded between two layers each
   const ambPairs = [{ a: 'amb-a', b: 'amb-b', flip: false, direct: true }, { a: 'npv-bg-a', b: 'npv-bg-b', flip: false, direct: false }];
   let ambUrl = '';
   function setAmbient(song) {
@@ -1107,7 +1063,6 @@
     img.src = url;
   }
 
-  // ───────────────────────── right panel ─────────────────────────
   function toggleRight(open) { S.rightOpen = open === undefined ? !S.rightOpen : open; el('workspace').classList.toggle('right-closed', !S.rightOpen); setSetting('rightPanelOpen', S.rightOpen); paintPanelButtons(); if (S.rightOpen) renderRight(); setTimeout(() => S.list && S.list.vl && S.list.vl._schedule(true), 300); }
   function toggleRightTab(tab) { if (S.rightOpen && S.rightTab === tab) { toggleRight(false); return; } S.rightTab = tab; setSetting('rightPanel', tab); if (!S.rightOpen) toggleRight(true); else renderRight(); }
   function paintPanelButtons() { for (const [k, id] of [['lyrics', 'p-lyrics'], ['queue', 'p-queue'], ['details', 'p-info']]) el(id).classList.toggle('on', S.rightOpen && S.rightTab === k); }
@@ -1160,12 +1115,10 @@
     const ad = h('button', { class: 'btn sm ghost' }); ad.innerHTML = I('plus') + 'playlist'; ad.onclick = () => addToPlaylistFlow([s.id]);
     a.append(pl, lk, dl, ad);
     body.appendChild(d);
-    // only ask once: a cached miss (null) must not re-request, or this re-renders in a tight loop
     if (!S.detailCache.has(s.id)) loadDetail(s.id).then(() => { if (S.rightTab === 'details' && (S.detailTarget || S.current) === s) renderRight(); });
   }
   function openDetails(s) { S.detailTarget = s; S.rightTab = 'details'; setSetting('rightPanel', 'details'); if (!S.rightOpen) toggleRight(true); else renderRight(); }
 
-  // lyrics data
   function loadDetail(id) {
     if (S.detailCache.has(id)) return Promise.resolve(S.detailCache.get(id));
     return new Promise((resolve) => { const w = S.detailWaiters.get(id); if (w) { w.push(resolve); return; } S.detailWaiters.set(id, [resolve]); Bridge.fire('getDetail', id); setTimeout(() => { const ww = S.detailWaiters.get(id); if (ww) { S.detailWaiters.delete(id); ww.forEach((r) => r(null)); } }, 20000); });
@@ -1173,13 +1126,13 @@
   async function loadDetailFor(song) {
     S.lyFor = null; S.lyParsed = null;
     if (!song.lyr) { S.lyFor = song.id; S.lyParsed = null; applyLyricsTo(lyPanel); applyLyricsTo(lyFull); sweepGarbage(true); return; }
-    const d = await loadDetail(song.lyrSrc ? song.lyrSrc.id : song.id); // local files read the matched vault song
+    const d = await loadDetail(song.lyrSrc ? song.lyrSrc.id : song.id);
     if (!S.current || S.current.id !== song.id) return;
     S.lyFor = song.id;
     S.lyParsed = d && d.lyrics ? Lyrics.parseLRC(d.lyrics) : null;
     S.lyMeta = d ? { offsetMs: d.offsetMs || 0, estimated: !!d.estimated, words: d.words, from: song.lyrSrc ? song.lyrSrc.title : null } : {};
     applyLyricsTo(lyPanel); applyLyricsTo(lyFull);
-    sweepGarbage(true); // the previous song's lyrics are garbage now: free them right away instead of on the next sweep
+    sweepGarbage(true);
     if (S.rightTab === 'details' && !S.detailTarget) renderRight();
   }
   function applyLyricsTo(view) {
@@ -1193,7 +1146,6 @@
     view.setPlaying(engine.state === 'playing');
   }
 
-  // ───────────────────────── now playing view ─────────────────────────
   function openNPV(open) {
     S.npvOpen = !!open;
     el('npv').classList.toggle('open', S.npvOpen);
@@ -1209,7 +1161,6 @@
     if (S.npvOpen) applyLyricsTo(lyFull);
   }
 
-  // ───────────────────────── likes / playlists / downloads ─────────────────────────
   function toggleLike(id) {
     const liked = !S.likes.has(id);
     if (liked) { S.likes.add(id); S.likedAt[id] = Date.now() / 1000; } else { S.likes.delete(id); delete S.likedAt[id]; }
@@ -1289,7 +1240,6 @@
     ].filter(Boolean);
   }
 
-  // ───────────────────────── menus / modals / toasts ─────────────────────────
   let openMenu = null;
   function closeMenus() { if (openMenu) { openMenu.el.remove(); openMenu.onClose && openMenu.onClose(); openMenu = null; } }
   function showMenu(items, x, y, { onClose, cls } = {}) {
@@ -1353,7 +1303,6 @@
     setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 260); }, ms);
   }
 
-  // ───────────────────────── updates ─────────────────────────
   function updateCardHTML() {
     const u = S.update || {}, st = S.settings, cur = u.current || S.app.version || 'dev';
     const pct = u.total ? Math.min(100, Math.round((u.done || 0) / u.total * 100)) : 0;
@@ -1390,7 +1339,6 @@
     if (prev && prev.state !== st && st === 'none' && prev.state === 'checking' && S.route && S.route.name === 'settings') toast('you have the latest version', 'ok');
   }
 
-  // ───────────────────────── keyboard ─────────────────────────
   function bindKeyboard() {
     document.addEventListener('keydown', (e) => {
       const tag = (e.target.tagName || '').toLowerCase();
@@ -1420,7 +1368,6 @@
     });
   }
 
-  // ───────────────────────── selftest ─────────────────────────
   async function selftest() {
     const res = { ok: false, bridge: Bridge.connected, songs: S.songs.length, canPlay: engine.canPlay(), steps: [] };
     const wait = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -1438,6 +1385,5 @@
     window.__selftestResult = res;
   }
 
-  // ───────────────────────── public (dev) API ─────────────────────────
   window.app = { S, go, back, playSong, playFrom, next, prev, togglePlay, openNPV, toggleRight, toggleRightTab, toast, engine, openDetails, showMenu };
 })();

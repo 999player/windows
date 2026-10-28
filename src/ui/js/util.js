@@ -1,4 +1,3 @@
-/* Shared helpers: formatting, DOM, title parsing, eras, URLs. */
 (function () {
   'use strict';
 
@@ -92,10 +91,8 @@
 
   function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
 
-  // ---- URLs
-  let isDownloaded = () => false; // app.js plugs in the downloads map
+  let isDownloaded = () => false;
   function setDownloadedCheck(fn) { isDownloaded = fn; }
-  /** Playback url. Downloaded songs play from disk (so they work offline); `stream` forces the vault url. */
   function audioUrl(song, stream) {
     if (song.local) return `/__local/${Math.abs(song.id)}`;
     if (!stream && song.id > 0 && isDownloaded(song.id)) return `/__dl/${song.id}`;
@@ -103,7 +100,6 @@
     if (/^https?:\/\//i.test(p)) return p;
     return `${MEDIA}/songs/${p.replace(/^\/+/, '')}`;
   }
-  // fuzzy era → album key; released tracks keep the vault's own art
   const COVER_KEYWORDS = [
     ['heartbroken', 'Heartbroken In Hollywood 999'], ['hih', 'Heartbroken In Hollywood 999'],
     ['juiced up', 'JUICED UP THE EP'], ['jute', 'JUICED UP THE EP'],
@@ -124,7 +120,6 @@
     if (song.eraKey && m[song.eraKey]) return song.eraKey;
     const raw = String(song.era || '').toLowerCase().trim();
     if (song.local) {
-      // local files: look at the album tag, the title and the file path for album words
       const hay = `${raw} ${song.title || ''} ${song.path || ''}`.toLowerCase().replace(/[_\-]+/g, ' ');
       for (const [kw, key] of COVER_KEYWORDS) {
         const hit = kw.length <= 4 ? new RegExp(`(^|[^a-z0-9])${kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^a-z0-9]|$)`).test(hay) : hay.includes(kw);
@@ -139,12 +134,10 @@
     }
     return null;
   }
-  /** Bundled album cover for the song's era (ui/covers/covers.json), if one applies. */
   function localCover(song) {
     const k = coverEraKey(song);
     return k ? window.__eraCovers[k] : null;
   }
-  /** The vault's own per-song artwork (always remote). */
   function remoteImageUrl(song) {
     if (song && song.local) return song.localArt ? `/__localart/${Math.abs(song.id)}` : null;
     const p = song && song.img;
@@ -167,7 +160,6 @@
   }
   function ext(song) { const m = /\.([a-z0-9]{2,5})(\?|$)/i.exec(song.path || ''); return m ? m[1].toLowerCase() : 'mp3'; }
 
-  // ---- title parsing: "Heart Racing [Sessions] (v1)" -> {name, tags}
   const VERSION_RE = /^\(?v\d+(?:\.\d+)*\)?$/i;
   function parseTitle(title) {
     let name = String(title || '').trim();
@@ -179,7 +171,6 @@
     return { name, tags };
   }
 
-  // ---- eras
   const ERA_ALIASES = {
     'gb&gr': 'Goodbye & Good Riddance', 'gb&gr (5yae)': 'Goodbye & Good Riddance', 'gb&gr (ae)': 'Goodbye & Good Riddance',
     'goodbye & good riddance': 'Goodbye & Good Riddance',
@@ -247,11 +238,8 @@
     return chips.slice(0, 3);
   }
 
-  // ---- local file → vault song matching (so your own files get the vault's synced lyrics)
   const _alnum = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();
-  /** title with every qualifier kept as words: "Cheat Code [Sessions] (1)" -> "cheat code sessions" */
   function titleFull(t) { return _alnum(String(t || '').replace(/\s*\(\d+\)\s*$/, '').replace(/^\s*juice\s*wrld\s*[-–—]\s*/i, '')); }
-  /** bare song name: "Cheat Code (Session Edit) (feat. X)" -> "cheat code" */
   function titleBase(t) {
     let n = parseTitle(String(t || '').replace(/\s*\(\d+\)\s*$/, '').replace(/^\s*juice\s*wrld\s*[-–—]\s*/i, '')).name;
     n = n.replace(/\((?:feat|ft|with|prod)\.?[^)]*\)/gi, ' ').replace(/\s(?:feat|ft)\.?\s.*$/i, ' ').replace(/\([^)]*\)/g, ' ').replace(/\s[-–—]\s.*$/, ' ');
@@ -265,10 +253,6 @@
     for (const v of B.values()) nb += v;
     return (2 * inter) / (na + nb);
   }
-  /**
-   * Best vault song (with lyrics) for a local file, or null. Same bare title always qualifies; otherwise the full
-   * titles must be close (dice ≥ .8). Ranking: identical length ≫ close length, word timing, same artist; stems last.
-   */
   function lyricsMatch(local, songs) {
     const lf = titleFull(local.title), lb = titleBase(local.title);
     if (!lb) return null;
@@ -277,7 +261,7 @@
     for (const s of songs) {
       if (!s.lyr || s.id === local.id) continue;
       const sb = s._tb !== undefined ? s._tb : (s._tb = titleBase(s.title));
-      if (sb !== lb && Math.abs(sb.length - lb.length) > 10) continue; // cheap prefilter before the bigram compare
+      if (sb !== lb && Math.abs(sb.length - lb.length) > 10) continue;
       const sf = s._tf !== undefined ? s._tf : (s._tf = titleFull(s.title));
       const d = dice(lf, sf);
       let score;

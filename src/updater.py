@@ -1,6 +1,3 @@
-"""auto updates: asks github for the latest release, downloads the setup exe into the updates folder under %localappdata%/999player,
-checks it against the published sha256, and hands it to the installer's --update mode (which closes the app,
-unpacks over the install folder and opens the app again)."""
 from __future__ import annotations
 
 import hashlib
@@ -49,7 +46,6 @@ def newer(candidate: str | None, than: str = APP_VERSION) -> bool:
 
 
 def install_dir() -> Path | None:
-    """the folder the running exe lives in (None when running from source)."""
     if not FROZEN:
         return None
     d = Path(sys.executable).resolve().parent
@@ -57,7 +53,6 @@ def install_dir() -> Path | None:
 
 
 def check(timeout: float = 15) -> Release | None:
-    """the latest published release, or None when there is none / it has no setup exe."""
     r = requests.get(API, headers=HEADERS, timeout=timeout)
     if r.status_code == 404:
         return None
@@ -95,14 +90,13 @@ def _write_meta(exe: Path, meta: dict) -> None:
 
 def _looks_like_setup(path: Path) -> bool:
     try:
-        with zipfile.ZipFile(path) as zf:   # the setup exe carries the app zip on its tail
+        with zipfile.ZipFile(path) as zf:
             return "999player.exe" in zf.namelist()
     except Exception:
         return False
 
 
 def have(rel: Release) -> Path | None:
-    """an already downloaded and verified copy of this release, if any."""
     exe = local_file(rel.version)
     meta = _read_meta(exe)
     if exe.exists() and meta.get("version") == rel.version and (not rel.sha256 or meta.get("sha256") == rel.sha256) \
@@ -117,7 +111,7 @@ def download(rel: Release, progress: Callable[[int, int], None] | None = None, c
         return exe
     UPDATES_DIR.mkdir(parents=True, exist_ok=True)
     exe = local_file(rel.version)
-    for old in UPDATES_DIR.iterdir():   # one pending update at a time
+    for old in UPDATES_DIR.iterdir():
         if old.stem.split(".")[0] != exe.stem:
             try:
                 old.unlink()
@@ -154,7 +148,6 @@ def download(rel: Release, progress: Callable[[int, int], None] | None = None, c
 
 
 def pending() -> tuple[Path, str] | None:
-    """a verified setup exe for a newer version that was downloaded earlier and not tried yet."""
     try:
         metas = sorted(UPDATES_DIR.glob("999player-setup-*.json"))
     except OSError:
@@ -169,7 +162,6 @@ def pending() -> tuple[Path, str] | None:
 
 
 def cleanup() -> None:
-    """drops downloads that are not newer than the running app (the update went through, or was superseded)."""
     try:
         for mp in UPDATES_DIR.glob("999player-setup-*.json"):
             exe = mp.with_suffix(".exe")
@@ -181,8 +173,6 @@ def cleanup() -> None:
 
 
 def apply(exe: Path, version: str) -> bool:
-    """starts the setup in update mode on this install folder; the caller quits the app right after. marked as tried first
-    so a setup that fails is not started again at every launch."""
     target = install_dir()
     if not target or not exe.exists():
         return False

@@ -1,4 +1,3 @@
-"""Serves the bundled UI and in-memory data to the embedded browser over the custom jv:// scheme."""
 from __future__ import annotations
 
 import logging
@@ -30,7 +29,6 @@ MIME = {
 
 
 def register_scheme() -> None:
-    """Must run before QApplication is constructed."""
     scheme = QWebEngineUrlScheme(SCHEME)
     scheme.setSyntax(QWebEngineUrlScheme.Syntax.Host)
     F = QWebEngineUrlScheme.Flag
@@ -46,8 +44,8 @@ class JvSchemeHandler(QWebEngineUrlSchemeHandler):
         super().__init__(parent)
         self.ui_dir = ui_dir.resolve()
         self.catalog_bytes = catalog_bytes
-        self.lyrics_index = lyrics_index  # saved-lyrics index (id -> title/artist/era/length) for offline matching
-        self.local_file = local_file  # (id, want_art) -> (path, mime) for the user's local library
+        self.lyrics_index = lyrics_index
+        self.local_file = local_file
         self._qwebchannel_js = self._load_resource(":/qtwebchannel/qwebchannel.js")
 
     @staticmethod
@@ -84,7 +82,6 @@ class JvSchemeHandler(QWebEngineUrlSchemeHandler):
                 return
             if path.startswith("/__local/") or path.startswith("/__localart/") or path.startswith("/__dl/"):
                 sid = int(path.rsplit("/", 1)[-1].split(".")[0])
-                # /__dl/<id>: a vault song the user downloaded (positive id); /__local*: their own library (negative id)
                 key = abs(sid) if path.startswith("/__dl/") else -abs(sid)
                 hit = self.local_file(key, path.startswith("/__localart/")) if self.local_file else None
                 if not hit:

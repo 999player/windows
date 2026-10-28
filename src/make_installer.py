@@ -1,12 +1,3 @@
-"""Builds the glass installer:  dist\\999 player setup.exe
-
-  1. zips dist\\999player (the one-folder app from build_exe.ps1) → build\\installer\\payload.zip
-  2. PyInstaller one-file build of installer.py (QtWidgets only, ~45 MB)
-  3. glues the zip onto the end of that exe — python's zipfile reads it straight from sys.executable,
-     and PyInstaller's bootloader finds its own archive by scanning back from the end, so both coexist.
-
-usage:  py make_installer.py [--skip-zip] [--copy-to "C:\\Users\\you\\Downloads"]
-"""
 from __future__ import annotations
 
 import shutil
@@ -69,13 +60,13 @@ def glue(stub: Path) -> Path:
     out_path = OUT
     try:
         out = open(out_path, "wb")
-    except PermissionError:  # the previous installer is still running — write beside it
+    except PermissionError:
         out_path = OUT.with_name(OUT.stem + " (new)" + OUT.suffix)
         out = open(out_path, "wb")
     with out, open(stub, "rb") as a, open(PAYLOAD, "rb") as b:
         shutil.copyfileobj(a, out, 1 << 22)
         shutil.copyfileobj(b, out, 1 << 22)
-    with zipfile.ZipFile(out_path) as zf:  # sanity: the glued exe must still open as a zip
+    with zipfile.ZipFile(out_path) as zf:
         n = len(zf.infolist())
     print(f"OK -> {out_path}  ({out_path.stat().st_size / 1e6:.0f} MB, {n} files inside)", flush=True)
     return out_path

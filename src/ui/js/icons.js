@@ -1,4 +1,3 @@
-/* Inline SVG icon set (24x24, stroke based). */
 (function () {
   'use strict';
   const P = {

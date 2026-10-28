@@ -1,4 +1,3 @@
-"""QWebChannel bridge: everything the web UI needs from the OS/Python side."""
 from __future__ import annotations
 
 import json
@@ -30,7 +29,7 @@ log = logging.getLogger("999player.bridge")
 
 
 class _Done(QObject):
-    finished = Signal(object, object)  # result, error
+    finished = Signal(object, object)
 
 
 class _Task(QRunnable):
@@ -47,33 +46,32 @@ class _Task(QRunnable):
         try:
             self.done.finished.emit(result, error)
         except RuntimeError:
-            pass  # receiver already destroyed (app shutting down)
+            pass
 
 
 class Bridge(QObject):
-    # ---- signals to JS
     init = Signal(str)
-    catalogChanged = Signal(int, int, float)       # count, version, fetchedAt
+    catalogChanged = Signal(int, int, float)
     catalogError = Signal(str)
     catalogProgress = Signal(int, int)
-    detail = Signal(int, str)                      # id, json
+    detail = Signal(int, str)
     detailError = Signal(int, str)
     downloadProgress = Signal(int, int, int)
     downloadDone = Signal(int, str, bool, str, int)
-    downloadsChanged = Signal(str)                 # json of downloads map
-    settingChanged = Signal(str, str)              # key, json value
-    winState = Signal(bool)                        # maximized
+    downloadsChanged = Signal(str)
+    settingChanged = Signal(str, str)
+    winState = Signal(bool)
     mediaKey = Signal(str)
     nativePosition = Signal(int, int)
     nativeState = Signal(str)
     nativeError = Signal(str)
-    toast = Signal(str, str)                       # kind, message
+    toast = Signal(str, str)
     discordStatus = Signal(str)
-    accent = Signal(str, str)                      # ref, json {rgb:[r,g,b], rgb2:[r,g,b], hex}
-    lastfmStatus = Signal(str)                     # json {connected, user, pending, error}
-    localChanged = Signal(str)                     # json list of local tracks
-    lyricsStatus = Signal(str)                     # json {user, bundled, synced, bundledAt, dir, busy, n, t, error}
-    updateStatus = Signal(str)                     # json {state, current, version, notes, size, done, total, error}
+    accent = Signal(str, str)
+    lastfmStatus = Signal(str)
+    localChanged = Signal(str)
+    lyricsStatus = Signal(str)
+    updateStatus = Signal(str)
 
     def __init__(self, window, catalog: Catalog, library: Library) -> None:
         super().__init__()
@@ -105,9 +103,8 @@ class Bridge(QObject):
         self._upd_busy = False
         self._upd_apply = False
 
-    # ---- local files
     def local_file(self, sid: int, art: bool):
-        if int(sid) > 0:  # a downloaded vault song: play the file on disk (works offline)
+        if int(sid) > 0:
             info = self.library.data["downloads"].get(str(int(sid)))
             p = info.get("path") if info else None
             return (p, localfiles.mime_for(p)) if p and Path(p).exists() and not art else None
@@ -156,7 +153,6 @@ class Bridge(QObject):
         self.settingChanged.emit("localFolders", json.dumps(folders))
         self.rescanLocal()
 
-    # ---- last.fm
     def _lastfm_state(self) -> dict[str, Any]:
         return {"enabled": bool(self.library.settings.get("lastfmEnabled", True)), "ready": self.lastfm.ready,
                 "connected": self.lastfm.connected, "user": self.lastfm.user, "pending": bool(self._lastfm_token),
@@ -181,7 +177,6 @@ class Bridge(QObject):
 
     @Slot()
     def lastfmConnect(self) -> None:
-        """Step 1: get a request token and open the approval page in the browser."""
         if not self.lastfm.ready:
             self._lastfm_error = "enter your api key and shared secret first"
             self._emit_lastfm()
@@ -202,7 +197,6 @@ class Bridge(QObject):
 
     @Slot()
     def lastfmFinish(self) -> None:
-        """Step 2 (after the user approved in the browser): exchange the token for a session key."""
         token = self._lastfm_token
         if not token:
             self._lastfm_error = "press connect first"
@@ -260,7 +254,6 @@ class Bridge(QObject):
         log.warning("last.fm: %s", err)
         self._emit_lastfm()
 
-    # ---- helpers
     def _bg(self, fn: Callable[[], Any], on_done: Callable[[Any, Any], None]) -> None:
         done = _Done()
         self._keep.append(done)
@@ -285,7 +278,6 @@ class Bridge(QObject):
             "history": d["history"][-200:], "playCounts": d["playCounts"], "downloads": d["downloads"],
         }
 
-    # ---- lifecycle
     @Slot()
     def ready(self) -> None:
         payload = {
@@ -304,9 +296,7 @@ class Bridge(QObject):
         self.init.emit(json.dumps(payload, ensure_ascii=False))
         st = self.library.settings
         self.discord.configure(str(st.get("discordClientId") or ""), bool(st.get("discordEnabled", True)))
-        # every launch syncs with the vault; the saved copy keeps the app usable if that fails
         self.refreshCatalog()
-        # offline lyrics ship with the app; refresh the user's copy quietly about once a week so new ones land on their own
         synced = lyrics_store.status().get("synced") or 0
         if time.time() - float(synced) > 7 * 86400:
             QTimer.singleShot(20_000, lambda: self._sync_lyrics(quiet=True))
@@ -314,7 +304,6 @@ class Bridge(QObject):
         self._periodic.setInterval(15 * 60 * 1000)
         self._periodic.timeout.connect(self.refreshCatalog)
         self._periodic.start()
-        # updates: a quiet look at github half a minute in, then every six hours
         QTimer.singleShot(30_000, lambda: self._check_updates(quiet=True))
         self._upd_timer = QTimer(self)
         self._upd_timer.setInterval(6 * 3600 * 1000)
@@ -333,7 +322,6 @@ class Bridge(QObject):
                 self.catalogChanged.emit(len(self.catalog.songs), self.catalog.version, self.catalog.fetched_at)
         self._bg(work, done)
 
-    # ---- updates
     def _upd_emit(self, **changes: Any) -> None:
         self._upd.update(changes)
         self.updateStatus.emit(json.dumps(self._upd, ensure_ascii=False))
@@ -399,7 +387,6 @@ class Bridge(QObject):
 
     @Slot()
     def installUpdate(self) -> None:
-        """update button: download if needed, then hand over to the setup and quit."""
         rel = self._upd_rel
         if not rel:
             self._check_updates(quiet=False)
@@ -418,7 +405,6 @@ class Bridge(QObject):
         else:
             self._upd_emit(state="error", error="could not start the setup")
 
-    # ---- offline lyrics
     @Slot()
     def downloadLyrics(self) -> None:
         self._sync_lyrics(quiet=False)
@@ -457,7 +443,6 @@ class Bridge(QObject):
                  lambda res, err: self.detailError.emit(int(song_id), str(err)) if err
                  else self.detail.emit(int(song_id), json.dumps(res, ensure_ascii=False)))
 
-    # ---- library
     @Slot(int, bool)
     def setLiked(self, song_id: int, liked: bool) -> None:
         self.library.set_liked(int(song_id), bool(liked))
@@ -491,7 +476,6 @@ class Bridge(QObject):
     def getLibrary(self) -> str:
         return json.dumps(self.library_json(), ensure_ascii=False)
 
-    # ---- settings
     @Slot(str, str)
     def setSetting(self, key: str, value_json: str) -> None:
         try:
@@ -504,7 +488,6 @@ class Bridge(QObject):
     def getSettings(self) -> str:
         return json.dumps(self.library.settings)
 
-    # ---- downloads
     @Slot(int, str)
     def download(self, song_id: int, local_cover: str = "") -> None:
         song = self._song(int(song_id))
@@ -572,7 +555,6 @@ class Bridge(QObject):
             self.settingChanged.emit("downloadDir", json.dumps(folder))
         return folder or ""
 
-    # ---- artwork accent colour (browser can't read pixels of cross-origin covers)
     @Slot(str)
     def requestAccent(self, ref: str) -> None:
         if not ref:
@@ -603,7 +585,6 @@ class Bridge(QObject):
             self.accent.emit(ref, res)
         self._bg(work, done)
 
-    # ---- discord rich presence
     @Slot(str)
     def presence(self, payload_json: str) -> None:
         if not payload_json:
@@ -621,10 +602,8 @@ class Bridge(QObject):
         self.discord.configure(client_id, enabled)
         self.discordStatus.emit(self.discord.state)
 
-    # ---- native audio engine
     @Slot(str, bool)
     def nativeLoad(self, url: str, autoplay: bool) -> None:
-        # jv://app/__dl/<id> and /__local/<id> are files on disk: hand Qt the real path
         m = re.match(r"^(?:jv://app)?/__(dl|local)/(\d+)", url or "")
         if m:
             hit = self.local_file(int(m.group(2)) if m.group(1) == "dl" else -int(m.group(2)), False)
@@ -658,7 +637,6 @@ class Bridge(QObject):
     def nativeMuted(self, m: bool) -> None:
         self.native.set_muted(m)
 
-    # ---- window
     @Slot()
     def winMinimize(self) -> None:
         self.window.showMinimized()
@@ -697,7 +675,6 @@ class Bridge(QObject):
         if e:
             wh.startSystemResize(e)
 
-    # ---- misc
     @Slot(str)
     def openExternal(self, url: str) -> None:
         if url.startswith(("http://", "https://")):

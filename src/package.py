@@ -1,12 +1,3 @@
-"""Packs the deliverables into C:\\Projects\\JuicePlayer\\ (run after build_exe.ps1 + make_installer.py):
-
-  app-src.zip         everything needed to build the app (python, ui, assets, build scripts, docs)
-  installer-src.zip   just the installer: installer.py, make_installer.py, fonts, covers, icon
-  999player-setup.exe the one-file glass installer
-  999player-ptb.zip        portable build: unzip anywhere and run 999player.exe (no install)
-
-usage:  py package.py [--out C:\\Projects\\JuicePlayer]
-"""
 from __future__ import annotations
 
 import shutil
@@ -20,9 +11,10 @@ OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else Pa
 APP_DIR = ROOT / "dist" / "999player"
 INSTALLER = ROOT / "dist" / "999 player setup.exe"
 
-SKIP_DIRS = {"dist", "build", "__pycache__", ".git", ".pytest_cache", "x"}
+SKIP_DIRS = {"dist", "build", "__pycache__", ".git", ".pytest_cache", "x", "github", "web", "mobile", "keys", ".claude"}
 SKIP_FILES = {"README-for-friend.txt", "package2.py"}
-SKIP_SUFFIX = {".pyc", ".log", ".png"}  # screenshots etc. (assets/icon.png is re-added below)
+NEVER = (".dev.vars", "secrets.cmd", "Secrets.swift", ".env")
+SKIP_SUFFIX = {".pyc", ".log", ".png", ".spec"}
 INSTALLER_FILES = ["installer.py", "make_installer.py", "accent.py", "assets/icon.ico", "assets/icon.png", "HOW_TO_COMPILE.md"]
 INSTALLER_DIRS = ["ui/fonts/inter", "ui/covers"]
 
@@ -51,6 +43,8 @@ def app_src() -> int:
                 continue
             if rel.suffix in SKIP_SUFFIX and rel.as_posix() != "assets/icon.png":
                 continue
+            if rel.name in NEVER or rel.suffix == ".env":
+                sys.exit(f"refusing to pack {rel}: secrets never go in app-src.zip")
             zf.write(p, rel.as_posix())
             n += 1
     return n

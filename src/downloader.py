@@ -1,4 +1,3 @@
-"""Background audio downloader with progress, safe filenames and optional tagging."""
 from __future__ import annotations
 
 import logging
@@ -30,7 +29,6 @@ def ext_of(url: str) -> str:
 
 
 def tag_file(path: Path, song: dict[str, Any], cover: bytes | None) -> None:
-    """Write basic tags + cover art. Best effort; never raises."""
     try:
         import mutagen
         from mutagen.easyid3 import EasyID3
@@ -81,8 +79,8 @@ def tag_file(path: Path, song: dict[str, Any], cover: bytes | None) -> None:
 
 
 class _Signals(QObject):
-    progress = Signal(int, int, int)           # song_id, received, total
-    done = Signal(int, str, bool, str, int)    # song_id, path, ok, error, size
+    progress = Signal(int, int, int)
+    done = Signal(int, str, bool, str, int)
 
 
 class _Job(QRunnable):

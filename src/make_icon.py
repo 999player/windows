@@ -1,4 +1,3 @@
-"""Generates assets/icon.png and assets/icon.ico (glass gradient tile with a play glyph)."""
 from __future__ import annotations
 
 import os
@@ -35,7 +34,6 @@ def draw(size: int) -> QImage:
     glow.setColorAt(1.0, QColor(255, 255, 255, 0))
     p.fillPath(tile, QBrush(glow))
 
-    # glass highlight band
     p.save()
     p.setClipPath(tile)
     band = QLinearGradient(QPointF(0, rect.top()), QPointF(0, rect.center().y()))
@@ -44,12 +42,10 @@ def draw(size: int) -> QImage:
     p.fillRect(QRectF(rect.left(), rect.top(), rect.width(), rect.height() * 0.5), QBrush(band))
     p.restore()
 
-    # inner border
     p.setPen(QColor(255, 255, 255, 60))
     p.setBrush(Qt.BrushStyle.NoBrush)
     p.drawPath(tile)
 
-    # play glyph with soft shadow
     cx, cy = size * 0.54, size * 0.5
     w, h = size * 0.30, size * 0.36
     tri = QPolygonF([QPointF(cx - w * 0.45, cy - h / 2), QPointF(cx + w * 0.65, cy), QPointF(cx - w * 0.45, cy + h / 2)])
@@ -69,7 +65,6 @@ def main() -> None:
     QGuiApplication(sys.argv)
     big = draw(512)
     big.save(str(OUT / "icon.png"))
-    # Qt's ICO writer stores the given image; Windows picks the best size, so include a 256px master.
     ok = draw(256).save(str(OUT / "icon.ico"), "ICO")
     print("icon.png written; icon.ico", "written" if ok else "FAILED")
 

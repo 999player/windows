@@ -18,7 +18,7 @@ powershell -ExecutionPolicy Bypass -File .\build_exe.ps1
 
 The script installs the Python packages (`PySide6`, `requests`, `mutagen`, `pyinstaller`), generates the icon,
 runs PyInstaller and prunes unneeded Chromium files. Result: `dist\999player\999player.exe` (~360 MB folder,
-the Chromium runtime lives in `_internal` — keep the folder together). First build takes 3–5 minutes.
+the Chromium runtime lives in `_internal`, keep the folder together). First build takes a few minutes.
 
 Manual equivalent:
 
@@ -84,7 +84,7 @@ Dev flags: `--debug` (console log), `--devtools` (F12 → Chromium devtools), `-
 
 ## editing
 
-- Everything in `ui\` (html / css / js / covers / fonts) is plain data: after editing, copy `ui\` over `dist\999player\_internal\ui\` and restart — no rebuild.
+- Everything in `ui\` (html / css / js / covers / fonts) is plain data: after editing, copy `ui\` over `dist\999player\_internal\ui\` and restart, no rebuild.
 - `*.py` changes need a rebuild.
 - New era covers: drop a folder into your album-covers source dir, add a line to `MAP` in `make_covers.py`, run `py make_covers.py`,
   then add the era to `COVER_KEYWORDS` in `ui\js\util.js` and (for Discord) a public image URL to `ui\covers\discord_art.json`.

@@ -1,4 +1,3 @@
-/* Audio engine: HTML5 <audio> for mp3/wav/flac/opus, native (Qt) fallback for AAC/M4A or on decode errors. */
 (function () {
   'use strict';
   const NATIVE_EXT = new Set(['m4a', 'mp4', 'aac']);
@@ -79,13 +78,12 @@
       if (wantNative) { this._switchToNative(autoplay, startAt); return; }
       this.mode = 'html5';
       this._nativePos = 0; this._nativeDur = 0;
-      // swap to the preloaded element if it already holds this url
       const other = this.cur === this.a ? this.b : this.a;
       if (other.src === this.url) { this.cur.pause(); this.cur = other; }
       else { this.cur.pause(); this.cur.src = this.url; this.cur.load(); }
-      other.removeAttribute('src'); if (other !== this.cur) { try { other.load(); } catch (e) { /* noop */ } }
+      other.removeAttribute('src'); if (other !== this.cur) { try { other.load(); } catch (e) {  } }
       this.cur.volume = this.muted ? 0 : this.volume;
-      if (startAt) { try { this.cur.currentTime = startAt; } catch (e) { /* set after metadata */ this.cur.addEventListener('loadedmetadata', () => { this.cur.currentTime = startAt; }, { once: true }); } }
+      if (startAt) { try { this.cur.currentTime = startAt; } catch (e) {  this.cur.addEventListener('loadedmetadata', () => { this.cur.currentTime = startAt; }, { once: true }); } }
       this._set('loading');
       this._emit('time');
       if (autoplay) {
@@ -100,7 +98,7 @@
     _switchToNative(autoplay, startAt) {
       this._clearLoadTimer();
       this.mode = 'native';
-      try { this.cur.pause(); this.cur.removeAttribute('src'); this.cur.load(); } catch (e) { /* noop */ }
+      try { this.cur.pause(); this.cur.removeAttribute('src'); this.cur.load(); } catch (e) {  }
       this._nativePos = startAt || 0; this._nativeDur = (this.song && this.song.dur) || 0;
       Bridge.fire('nativeVolume', this.volume);
       Bridge.fire('nativeMuted', this.muted);
@@ -114,13 +112,13 @@
       if (!song || NATIVE_EXT.has(U.ext(song))) return;
       const url = U.audioUrl(song);
       const other = this.cur === this.a ? this.b : this.a;
-      if (other.src !== url) { other.src = url; try { other.load(); } catch (e) { /* noop */ } }
+      if (other.src !== url) { other.src = url; try { other.load(); } catch (e) {  } }
     }
 
     play() {
       if (!this.song) return;
       if (this.mode === 'native') { Bridge.fire('nativePlay'); this._set('loading'); return; }
-      if (this.state === 'ended') { try { this.cur.currentTime = 0; } catch (e) { /* noop */ } }
+      if (this.state === 'ended') { try { this.cur.currentTime = 0; } catch (e) {  } }
       const p = this.cur.play(); if (p && p.catch) p.catch(() => {});
     }
     pause() {
@@ -131,13 +129,13 @@
     stop() {
       this._clearLoadTimer();
       if (this.mode === 'native') Bridge.fire('nativeStop');
-      try { this.cur.pause(); this.cur.removeAttribute('src'); this.cur.load(); } catch (e) { /* noop */ }
+      try { this.cur.pause(); this.cur.removeAttribute('src'); this.cur.load(); } catch (e) {  }
       this.song = null; this.url = ''; this._set('idle'); this._emit('time');
     }
     seek(sec) {
       sec = Math.max(0, Math.min(sec, this.duration || sec));
       if (this.mode === 'native') { this._nativePos = sec; Bridge.fire('nativeSeek', Math.round(sec * 1000)); this._emit('time'); return; }
-      try { this.cur.currentTime = sec; } catch (e) { /* noop */ }
+      try { this.cur.currentTime = sec; } catch (e) {  }
       this._emit('time');
     }
     setVolume(v) {

@@ -1,4 +1,3 @@
-"""QMediaPlayer-backed fallback engine for formats Chromium cannot decode (AAC/M4A) or when HTML5 audio fails."""
 from __future__ import annotations
 
 import logging
@@ -10,8 +9,8 @@ log = logging.getLogger("999player.native")
 
 
 class NativePlayer(QObject):
-    position = Signal(int, int)       # pos_ms, dur_ms
-    state = Signal(str)               # playing | paused | stopped | loading | buffering | ended | error
+    position = Signal(int, int)
+    state = Signal(str)
     error = Signal(str)
 
     def __init__(self, parent: QObject | None = None) -> None:

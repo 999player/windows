@@ -1,4 +1,3 @@
-/* QWebChannel wrapper: promise-based calls + a tiny event bus. */
 (function () {
   'use strict';
 

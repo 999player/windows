@@ -1,5 +1,3 @@
-# windows version resource for the exe (pyinstaller --version-file): what task manager, the properties
-# dialog and the taskbar group show as the program's name.
 VSVersionInfo(
   ffi=FixedFileInfo(
     filevers=(2, 1, 0, 0),

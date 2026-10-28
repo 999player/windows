@@ -1,4 +1,3 @@
-"""App directories, logging, and the local library store (likes, playlists, history, settings, downloads)."""
 from __future__ import annotations
 
 import json
@@ -14,7 +13,7 @@ from typing import Any
 
 APP_NAME = "999 player"
 APP_ID = "999player"
-OLD_APP_ID = "JuiceVault"   # builds before 2.1.0: their data folder is adopted on first start
+OLD_APP_ID = "JuiceVault"
 
 FROZEN = getattr(sys, "frozen", False)
 BUNDLE_DIR = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
@@ -27,13 +26,12 @@ LOG_DIR = DATA_DIR / "logs"
 
 
 def _adopt_old_data() -> None:
-    """likes, playlists, settings and lyrics from a build that still called itself JuiceVault: the folder is renamed, nothing is lost."""
     if DATA_DIR.exists() or not OLD_DATA_DIR.exists():
         return
     try:
         OLD_DATA_DIR.rename(DATA_DIR)
     except OSError:
-        pass   # something has it open; the app starts fresh and the old folder stays for a later run
+        pass
 
 
 _adopt_old_data()
@@ -76,9 +74,9 @@ DEFAULT_SETTINGS: dict[str, Any] = {
     "volume": 0.8,
     "muted": False,
     "shuffle": False,
-    "repeat": "off",          # off | all | one
-    "glass": "full",          # full | reduced | off
-    "rightPanel": "lyrics",   # lyrics | queue | details | none
+    "repeat": "off",
+    "glass": "full",
+    "rightPanel": "lyrics",
     "rightPanelOpen": True,
     "sidebarCollapsed": False,
     "tagAudio": True,
@@ -97,18 +95,17 @@ DEFAULT_SETTINGS: dict[str, Any] = {
 
 
 class Library:
-    """Single JSON document, written atomically, guarded by a lock."""
 
     def __init__(self, path: Path = LIBRARY_FILE) -> None:
         self.path = path
         self._lock = threading.RLock()
         self.data: dict[str, Any] = {
-            "likes": [],            # [songId,...] newest last
-            "likedAt": {},          # songId -> epoch
-            "playlists": [],        # [{id, name, songs:[ids], created, updated, cover?}]
-            "history": [],          # [{id, at}] newest last (max 500)
-            "playCounts": {},       # songId -> int
-            "downloads": {},        # songId -> {path, title, author, size, at}
+            "likes": [],
+            "likedAt": {},
+            "playlists": [],
+            "history": [],
+            "playCounts": {},
+            "downloads": {},
             "settings": dict(DEFAULT_SETTINGS),
         }
         self._load()
@@ -122,7 +119,7 @@ class Library:
                         self.data["settings"].update(v or {})
                     else:
                         self.data[k] = v
-        except Exception as e:  # corrupt file: keep defaults, back it up
+        except Exception as e:
             try:
                 self.path.rename(self.path.with_suffix(f".corrupt-{int(time.time())}.json"))
             except Exception:
@@ -131,8 +128,6 @@ class Library:
         self._adopt_old_music_dir()
 
     def _adopt_old_music_dir(self) -> None:
-        """downloads used to go to music/juice wrld vault; when that folder is still the download folder it is renamed to
-        music/999 player and every saved download path follows. a custom folder is left alone."""
         old, new = old_music_dir(), default_music_dir()
         cur = str(self.data["settings"].get("downloadDir") or "")
         if cur.lower().rstrip("\\/") != str(old).lower() or not old.exists():
@@ -143,7 +138,7 @@ class Library:
             except OSError:
                 return
         elif any(old.iterdir()):
-            return   # both exist with files in them: keep using the old one rather than guess
+            return
         self.data["settings"]["downloadDir"] = str(new)
         prefix = str(old).lower()
         for info in self.data["downloads"].values():
@@ -161,7 +156,6 @@ class Library:
             tmp.write_text(json.dumps(self.data, ensure_ascii=False, indent=1), encoding="utf-8")
             tmp.replace(self.path)
 
-    # ---- likes
     def set_liked(self, song_id: int, liked: bool) -> None:
         with self._lock:
             likes = self.data["likes"]
@@ -173,7 +167,6 @@ class Library:
                 self.data["likedAt"].pop(str(song_id), None)
             self.save()
 
-    # ---- playlists
     def create_playlist(self, name: str, song_ids: list[int] | None = None) -> dict[str, Any]:
         with self._lock:
             pl = {"id": uuid.uuid4().hex[:12], "name": name.strip() or "New Playlist",
@@ -212,7 +205,6 @@ class Library:
             self.save()
             return len(self.data["playlists"]) < before
 
-    # ---- history
     def record_play(self, song_id: int) -> None:
         with self._lock:
             hist = self.data["history"]
@@ -223,7 +215,6 @@ class Library:
             pc[str(song_id)] = int(pc.get(str(song_id), 0)) + 1
             self.save()
 
-    # ---- downloads
     def set_download(self, song_id: int, info: dict[str, Any] | None) -> None:
         with self._lock:
             if info is None:
@@ -240,7 +231,6 @@ class Library:
             if gone:
                 self.save()
 
-    # ---- settings
     def set_setting(self, key: str, value: Any) -> None:
         with self._lock:
             self.data["settings"][key] = value

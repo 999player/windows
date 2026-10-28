@@ -1,4 +1,3 @@
-"""999 player desktop, entry point."""
 from __future__ import annotations
 
 import argparse
@@ -8,7 +7,6 @@ import sys
 import time
 from pathlib import Path
 
-# Frozen builds: make Qt's ffmpeg DLLs (PySide6\av*.dll) discoverable for the multimedia plugin.
 if getattr(sys, "frozen", False):
     _pyside_dir = os.path.join(sys._MEIPASS, "PySide6")  # type: ignore[attr-defined]
     if os.path.isdir(_pyside_dir):
@@ -18,14 +16,12 @@ if getattr(sys, "frozen", False):
         except Exception:
             pass
 
-# `999player.exe --uninstall` (from Programs & Features): the glass uninstaller, no WebEngine needed.
 if "--uninstall" in sys.argv:
     from installer import run_uninstall
     sys.exit(run_uninstall())
 
 
 def _gpu_off_requested() -> bool:
-    """`--no-gpu` on the command line, or the "gpu acceleration" switch in settings (read raw: Qt isn't up yet)."""
     if "--no-gpu" in sys.argv:
         return True
     try:
@@ -37,7 +33,6 @@ def _gpu_off_requested() -> bool:
 
 
 _CHROMIUM_FLAGS = "--autoplay-policy=no-user-gesture-required --disable-features=TranslateUI --js-flags=--expose-gc"
-# GPU drivers that misbehave take the whole page down; software rendering is slower but never does.
 _CHROMIUM_FLAGS += " --disable-gpu --disable-gpu-compositing" if _gpu_off_requested() else " --enable-gpu-rasterization"
 os.environ.setdefault("QTWEBENGINE_CHROMIUM_FLAGS", _CHROMIUM_FLAGS)
 
@@ -60,7 +55,6 @@ log.info("chromium flags: %s", os.environ.get("QTWEBENGINE_CHROMIUM_FLAGS"))
 
 
 def _install_crash_logging() -> None:
-    """Hard crashes (access violations in Qt/Chromium/ffmpeg) and unhandled Python errors land in logs\\crash.log."""
     import faulthandler
     import threading
     try:
@@ -95,7 +89,7 @@ class Page(QWebEnginePage):
 
 
 class MainWindow(QMainWindow):
-    MIN_W, MIN_H = 1140, 680  # smallest window where sidebar + list + lyrics pane (and the now playing view) still fit side by side
+    MIN_W, MIN_H = 1140, 680
 
     def __init__(self, args: argparse.Namespace) -> None:
         super().__init__()
@@ -112,8 +106,6 @@ class MainWindow(QMainWindow):
         self.profile = QWebEngineProfile("999player", self)
         self.profile.setCachePath(str(CACHE_DIR / "web"))
         self.profile.setPersistentStoragePath(str(DATA_DIR / "webstorage"))
-        # In-memory only: a disk cache was serving stale UI assets across runs,
-        # which stopped new CSS/JS from loading after we iterated on the UI.
         self.profile.setHttpCacheType(QWebEngineProfile.HttpCacheType.MemoryHttpCache)
         self.profile.setHttpCacheMaximumSize(256 * 1024 * 1024)
         self.handler = JvSchemeHandler(UI_DIR, lambda: self.catalog.json_bytes, self, local_file=lambda sid, art: self.bridge.local_file(sid, art),
@@ -157,7 +149,6 @@ class MainWindow(QMainWindow):
             QShortcut(QKeySequence("F12"), self, activated=self._open_devtools)
         self._devtools = None
 
-    # ---- geometry
     def _restore_geometry(self) -> None:
         geo = self.library.settings.get("windowGeometry")
         screen = QApplication.primaryScreen().availableGeometry()
@@ -179,8 +170,6 @@ class MainWindow(QMainWindow):
             self.bridge.winState.emit(self.isMaximized())
         super().changeEvent(ev)
 
-    # ---- windows: the frameless window keeps the system frame styles, so it snaps like any other window (drag to a screen
-    # edge, win+arrow, shake); WM_NCCALCSIZE then hands the whole window to our own chrome and nothing of that frame is drawn
     def showEvent(self, ev) -> None:  # noqa: N802
         super().showEvent(ev)
         if sys.platform == "win32" and not getattr(self, "_snap_ready", False):
@@ -192,7 +181,7 @@ class MainWindow(QMainWindow):
                 GWL_STYLE = -16
                 WS_CAPTION, WS_THICKFRAME, WS_MINIMIZEBOX, WS_MAXIMIZEBOX = 0x00C00000, 0x00040000, 0x00020000, 0x00010000
                 u.SetWindowLongW(hwnd, GWL_STYLE, u.GetWindowLongW(hwnd, GWL_STYLE) | WS_CAPTION | WS_THICKFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX)
-                u.SetWindowPos(hwnd, 0, 0, 0, 0, 0, 0x0020 | 0x0002 | 0x0001 | 0x0004)  # SWP_FRAMECHANGED | SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER
+                u.SetWindowPos(hwnd, 0, 0, 0, 0, 0, 0x0020 | 0x0002 | 0x0001 | 0x0004)
             except Exception:
                 log.exception("window frame styles")
 
@@ -202,13 +191,13 @@ class MainWindow(QMainWindow):
                 import ctypes
                 from ctypes import wintypes
                 msg = wintypes.MSG.from_address(int(message))
-                if msg.message == 0x0083 and msg.wParam:  # WM_NCCALCSIZE: the client area is the whole window, no system frame
+                if msg.message == 0x0083 and msg.wParam:
                     u = ctypes.windll.user32
-                    if u.IsZoomed(msg.hWnd):  # maximized: windows pushes the (invisible) frame off screen, pull the content back in
-                        rect = wintypes.RECT.from_address(msg.lParam)  # NCCALCSIZE_PARAMS starts with rgrc[0]
+                    if u.IsZoomed(msg.hWnd):
+                        rect = wintypes.RECT.from_address(msg.lParam)
                         dpi = u.GetDpiForWindow(msg.hWnd) or 96
-                        fx = u.GetSystemMetricsForDpi(32, dpi) + u.GetSystemMetricsForDpi(92, dpi)  # SM_CXSIZEFRAME + SM_CXPADDEDBORDER
-                        fy = u.GetSystemMetricsForDpi(33, dpi) + u.GetSystemMetricsForDpi(92, dpi)  # SM_CYSIZEFRAME + SM_CXPADDEDBORDER
+                        fx = u.GetSystemMetricsForDpi(32, dpi) + u.GetSystemMetricsForDpi(92, dpi)
+                        fy = u.GetSystemMetricsForDpi(33, dpi) + u.GetSystemMetricsForDpi(92, dpi)
                         rect.left += fx; rect.top += fy; rect.right -= fx; rect.bottom -= fy
                     return True, 0
             except Exception:
@@ -227,7 +216,6 @@ class MainWindow(QMainWindow):
             pass
         super().closeEvent(ev)
 
-    # ---- dev helpers
     def _open_devtools(self) -> None:
         if self._devtools is None:
             self._devtools = QWebEngineView()
@@ -250,11 +238,10 @@ class MainWindow(QMainWindow):
             QTimer.singleShot(1200, self._poll_selftest)
 
     def _on_render_crash(self, status, code) -> None:
-        """Chromium's renderer died (usually a GPU driver fault): log it and bring the UI back instead of a blank window."""
         self._render_crashes += 1
         log.error("web renderer terminated: status=%s code=%s (#%d) — reloading", status, code, self._render_crashes)
         if self._render_crashes >= 3 and not _gpu_off_requested():
-            try:  # keep failing → flip the gpu switch so the next start uses software rendering
+            try:
                 self.library.set_setting("gpuOff", True)
                 log.error("repeated renderer crashes: gpu acceleration turned off for the next start")
             except Exception:
@@ -328,7 +315,7 @@ def main() -> int:
         except Exception:
             pass
     if not (args.no_update or args.selftest or args.screenshot):
-        waiting = updater.pending()   # a newer setup downloaded on an earlier run: let it do its thing instead of us
+        waiting = updater.pending()
         if waiting and updater.apply(*waiting):
             log.info("installing update %s", waiting[1])
             return 0

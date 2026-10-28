@@ -1,5 +1,3 @@
-# Builds dist\999player\999player.exe (one-folder app; fast startup, ~250 MB with Chromium runtime).
-# Usage:  powershell -ExecutionPolicy Bypass -File .\build_exe.ps1
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 
@@ -34,7 +32,6 @@ $loc = Get-ChildItem -Recurse -Directory "$root\_internal" -Filter "qtwebengine_
 if ($loc) { Get-ChildItem $loc.FullName -Filter "*.pak" | Where-Object { $_.Name -notin @("en-US.pak", "en-GB.pak") } | Remove-Item -Force }
 $tr = Get-ChildItem -Recurse -Directory "$root\_internal" -Filter "translations" -ErrorAction SilentlyContinue | Where-Object { $_.FullName -notlike "*qtwebengine_locales*" } | Select-Object -First 1
 if ($tr) { Get-ChildItem $tr.FullName -File -Filter "*.qm" | Remove-Item -Force -ErrorAction SilentlyContinue }
-# debug-only devtools bundle (72 MB) is never needed at runtime
 Get-ChildItem -Recurse -File "$root\_internal" -Filter "qtwebengine_devtools_resources.debug.pak" | Remove-Item -Force -ErrorAction SilentlyContinue
 
 $size = (Get-ChildItem -Recurse -File $root | Measure-Object -Property Length -Sum).Sum / 1MB

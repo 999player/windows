@@ -1,4 +1,3 @@
-"""Dominant-colour extraction for artwork → a usable UI accent (saturated, mid-light) plus a hue-shifted partner."""
 from __future__ import annotations
 
 import colorsys
@@ -34,7 +33,6 @@ def accent_from_bytes(data: bytes) -> dict:
             vsum += v * w
             wsum += w
     if wsum < 1.0:
-        # mostly monochrome art: a neutral, slightly cool accent
         base = (0.68, 0.18, 0.72)
     else:
         h = (math.atan2(sy, sx) / (2 * math.pi)) % 1.0

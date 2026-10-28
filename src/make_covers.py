@@ -1,5 +1,3 @@
-"""Normalizes era album covers from a source folder into ui/covers/*.jpg and writes ui/covers/covers.json
-(canonical era name -> relative cover path). Usage: py make_covers.py [source_dir]"""
 from __future__ import annotations
 
 import json
@@ -15,7 +13,6 @@ SRC = Path(sys.argv[1] if len(sys.argv) > 1 else r"C:\Users\Administrator\Downlo
 OUT = Path(__file__).resolve().parent / "ui" / "covers"
 OUT.mkdir(parents=True, exist_ok=True)
 
-# (substring of source folder name, canonical era key as produced by ui/js/util.js canonEra, output slug)
 MAP = [
     ("JUICED UP THE EP", "JUICED UP THE EP", "juiced-up-the-ep"),
     ("affliction", "Affliction", "affliction"),

@@ -1,13 +1,3 @@
-"""Offline lyrics: every vault song's LRC + word timing saved as plain files, so lyrics survive the site going away.
-
-Two locations are read, user first:
-  %LOCALAPPDATA%\\999player\\lyrics\\   written by "download all lyrics" in settings
-  <bundle>\\assets\\lyrics\\              shipped inside the build (populated with `py lyrics_store.py`)
-
-Per song:  <id>.lrc   portable LRC with [id:] [ti:] [ar:] [al:] header tags
-           <id>.json  normalized detail the app consumes (lyrics, words, offsetMs, …)
-Plus index.json listing every saved song (id → title / artist / era / has words).
-"""
 from __future__ import annotations
 
 import json
@@ -54,7 +44,6 @@ def status() -> dict[str, Any]:
 
 
 def get(song_id: int) -> dict[str, Any] | None:
-    """Saved lyric detail for a song (user copy wins over the bundled one), or None."""
     for d in (USER_DIR, BUNDLED_DIR):
         p = d / f"{int(song_id)}.json"
         if p.exists():
@@ -70,7 +59,6 @@ def has(song_id: int) -> bool:
 
 
 def index_bytes() -> bytes:
-    """Every saved song (bundled + user, user wins) as JSON for the UI: {songs: {id: {t, a, e, d, w}}}."""
     songs: dict[str, Any] = {}
     for d in (BUNDLED_DIR, USER_DIR):
         songs.update(_index(d).get("songs") or {})
@@ -93,8 +81,7 @@ def _lrc_text(row: dict[str, Any], det: dict[str, Any]) -> str:
 
 
 def sync(catalog, dest: Path | None = None, progress: Callable[[int, int], None] | None = None) -> int:
-    """Blocking: downloads every song that has lyrics into `dest` (default: the user folder). Returns the count."""
-    from catalog import normalize_detail  # local import: catalog imports nothing from here, avoid cycles at module load
+    from catalog import normalize_detail
 
     dest = dest or USER_DIR
     dest.mkdir(parents=True, exist_ok=True)
@@ -135,7 +122,7 @@ def sync(catalog, dest: Path | None = None, progress: Callable[[int, int], None]
     return n
 
 
-if __name__ == "__main__":  # `py lyrics_store.py [dest]` — fills assets\lyrics for the build
+if __name__ == "__main__":
     import sys
     from catalog import Catalog
 

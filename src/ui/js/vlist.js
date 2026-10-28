@@ -1,4 +1,3 @@
-/* Minimal fixed-height virtual list that lives inside an arbitrary scroll container. */
 (function () {
   'use strict';
   class VirtualList {
@@ -7,11 +6,11 @@
       this.container = container;
       this.rowHeight = rowHeight;
       this.overscan = overscan;
-      this.render = render;      // (item, index) -> HTMLElement
-      this.update = update;      // (el, item, index) -> void   (reuse)
+      this.render = render;
+      this.update = update;
       this.key = key || ((item) => item.id);
       this.items = [];
-      this.pool = new Map();     // key -> element
+      this.pool = new Map();
       this.container.classList.add('vlist');
       this.container.style.position = 'relative';
       this._onScroll = () => this._schedule();

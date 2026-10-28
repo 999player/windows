@@ -1,7 +1,3 @@
-/* LRC parsing, word-timing alignment and an Apple Music–style synced lyrics renderer.
-   Motion model: every line is translated by a shared --ty variable and transitions on its own
-   compositor layer with a per-line delay (the cascade), while the active line's words fill with a
-   feathered gradient updated every frame. Long instrumental gaps show interlude dots. */
 (function () {
   'use strict';
 
@@ -31,7 +27,6 @@
 
   const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']+/g, '');
 
-  /** Feathered fill edge that stays fully inside the word: unsung words are entirely dim, sung words entirely bright. */
   function setFill(el, p) {
     const F = 9;
     let a, b;
@@ -124,8 +119,6 @@
       this.el.classList.remove('browsing');
       this.padTop = document.createElement('div'); this.padTop.className = 'lyx-pad';
       this.padBot = document.createElement('div'); this.padBot.className = 'lyx-pad';
-      // Pill sits at the top of the scroll content (before padTop) so it's visible at rest
-      // and translates up with the rest of the lyrics when the user scrolls down.
       const noteText = !parsed.timed ? 'lyrics aren’t time-synced for this track yet.' : estimated ? 'timing is estimated and may drift slightly.' : null;
       if (noteText) { const n = U.h('div', { class: 'ly-note' }); n.innerHTML = `<span>${U.esc(noteText)}</span>`; this.inner.appendChild(n); }
       this.inner.appendChild(this.padTop);
@@ -167,18 +160,14 @@
       this._ensureLoop();
     }
 
-    // ---- time
     update(t) { this.baseT = t; this.baseAt = performance.now(); this._sync(); this._ensureLoop(); }
     setPlaying(p) { this.playing = !!p; this.el.classList.toggle('playing', this.playing); if (this.playing) this.baseAt = performance.now(); this._ensureLoop(); }
     now() { return this.playing ? this.baseT + (performance.now() - this.baseAt) / 1000 : this.baseT; }
 
     _ensureLoop() { if (!this._raf) this._raf = requestAnimationFrame(() => this._tick()); }
-    /** not on screen: detached, collapsed, or inside something transparent / visibility:hidden (the closed
-        now playing view). the per-frame loop must sleep then, or it restyles hidden text 60 times a second
-        for hours; the next update() from the player wakes it when the view is shown again. */
     _hidden() {
       if (!this.el.isConnected || this.el.clientHeight === 0) return true;
-      if (typeof this.el.checkVisibility === 'function') { try { return !this.el.checkVisibility({ visibilityProperty: true, opacityProperty: true }); } catch (e) { /* older engine */ } }
+      if (typeof this.el.checkVisibility === 'function') { try { return !this.el.checkVisibility({ visibilityProperty: true, opacityProperty: true }); } catch (e) {  } }
       return false;
     }
     _tick() {
@@ -234,7 +223,6 @@
       }
     }
 
-    // ---- scrolling
     _layout(snap) {
       const vh = this.el.clientHeight; if (!vh) return;
       const f = this.mode === 'full' ? 0.4 : 0.36;

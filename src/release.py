@@ -1,15 +1,3 @@
-"""one command from source to a published update:
-
-  py release.py 2.1.0 --notes "what changed"          build, package, publish v2.1.0 on github (the app picks it up)
-  py release.py 2.1.0 --notes-file notes.txt           same, notes from a file (markdown is fine)
-  py release.py 2.1.0 --draft ...                      publish as a draft: nothing updates until you press publish on github
-  py release.py 2.1.0 --skip-build ...                 reuse dist\\ from the last build (only when nothing changed)
-  py release.py 2.1.0 --bump-only                      just write the version into version.py + the exe version resources
-
-steps: version bump -> build_exe.ps1 -> make_installer.py -> package.py -> gh release create vX.Y.Z with
-999player-setup.exe (what installed apps download) and 999player-ptb.zip (portable). the repo is UPDATE_REPO in version.py;
-it has to be public for installed apps to download from it. needs the github cli logged in (gh auth status).
-"""
 from __future__ import annotations
 
 import argparse
@@ -26,6 +14,7 @@ from version import UPDATE_REPO  # noqa: E402
 
 INSTALLER = ROOT / "dist" / "999 player setup.exe"
 ASSET = ROOT / "dist" / "999player-setup.exe"
+SRC = ROOT / "dist" / "999player-src.zip"
 PORTABLE = Path(r"C:\Projects\JuicePlayer") / "999player-ptb.zip"
 
 
@@ -61,10 +50,12 @@ def publish(version: str, notes: str, draft: bool) -> None:
         sys.exit(f"{INSTALLER} missing, run without --skip-build")
     if not PORTABLE.exists():
         sys.exit(f"{PORTABLE} missing, run without --skip-build")
-    shutil.copy2(INSTALLER, ASSET)   # the asset name the app looks for (no spaces in the download url)
+    shutil.copy2(INSTALLER, ASSET)
+    shutil.copy2(PORTABLE.with_name("app-src.zip"), SRC)
     tag = f"v{version}"
     cmd = ["gh", "release", "create", tag, "--repo", UPDATE_REPO, "--title", f"999 player {version}", "--notes", notes or f"999 player {version}",
-           f"{ASSET}#999 player {version} setup (windows)", f"{PORTABLE}#999 player {version} portable (windows, unzip and run)"]
+           f"{ASSET}#999 player {version} setup (windows)", f"{PORTABLE}#999 player {version} portable (windows, unzip and run)",
+           f"{SRC}#source code (windows app + installer)"]
     if draft:
         cmd.append("--draft")
     run(cmd)

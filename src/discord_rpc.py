@@ -1,14 +1,3 @@
-"""Minimal Discord Rich Presence client over Discord's local IPC pipe (no third-party dependency).
-
-Sends a "listening" activity (type 2) so Discord renders the Spotify-style card:
-title / artist / album, cover art, and a progress bar driven by start/end timestamps.
-
-Windows serializes I/O on a synchronous pipe handle, so the protocol is strictly
-request/response on one background thread: write a frame, then read the reply.
-
-Every Discord client on the pc (stable, ptb, canary, a second account) opens its own pipe
-(discord-ipc-0, -1, -2 …); the presence goes to all of them so it shows no matter which one a friend uses.
-"""
 from __future__ import annotations
 
 import json
@@ -24,7 +13,7 @@ from PySide6.QtCore import QObject, QTimer, Signal
 log = logging.getLogger("999player.discord")
 
 OP_HANDSHAKE, OP_FRAME, OP_CLOSE, OP_PING, OP_PONG = 0, 1, 2, 3, 4
-MIN_INTERVAL = 1.2  # seconds between SET_ACTIVITY calls (Discord allows ~5 per 20 s)
+MIN_INTERVAL = 1.2
 
 
 def _clip(s: str, limit: int = 128) -> str:
@@ -35,7 +24,6 @@ def _clip(s: str, limit: int = 128) -> str:
 
 
 def build_activity(p: dict) -> dict:
-    """p: {title, artist, album, image, pos (s), dur (s), playing}."""
     act = {
         "type": 2,
         "details": _clip(p.get("title") or "untitled"),
@@ -55,7 +43,6 @@ def build_activity(p: dict) -> dict:
         start = int((time.time() - pos) * 1000)
         act["timestamps"] = {"start": start, "end": start + int(dur * 1000)}
     else:
-        # paused: say so instead of leaving a timer that looks like listening time
         act["state"] = _clip("paused · " + (p.get("artist") or "juice wrld"))
         act["assets"]["small_text"] = "paused"
     return act
@@ -68,8 +55,8 @@ class DiscordRPC(QObject):
         super().__init__(parent)
         self.client_id = ""
         self.enabled = False
-        self.pipes: dict[int, object] = {}      # pipe index -> open handle, one per running discord client
-        self._sent: dict[int, int] = {}         # pipe index -> last activity seq delivered to it
+        self.pipes: dict[int, object] = {}
+        self._sent: dict[int, int] = {}
         self._io = threading.RLock()
         self._state = "off"
         self._pending: dict | None = None
@@ -81,14 +68,12 @@ class DiscordRPC(QObject):
         self._timer.setInterval(20000)
         self._timer.timeout.connect(self._tick)
 
-    # ---- public
     @property
     def state(self) -> str:
         return self._state
 
     @property
     def pipe(self):
-        """first open pipe (kept for callers that only ask "is it connected")"""
         return next(iter(self.pipes.values()), None)
 
     def configure(self, client_id: str, enabled: bool) -> None:
@@ -123,7 +108,6 @@ class DiscordRPC(QObject):
         self._schedule_flush()
 
     def close(self, state: str = "off") -> None:
-        """Synchronous close of every pipe (main thread on shutdown)."""
         pipes, self.pipes = self.pipes, {}
         self._sent = {}
         for pipe in pipes.values():
@@ -133,7 +117,6 @@ class DiscordRPC(QObject):
                 pass
         self._set_state(state)
 
-    # ---- internals (background threads only beyond this line, except _set_state)
     def _set_state(self, s: str) -> None:
         if s != self._state:
             self._state = s
@@ -144,7 +127,6 @@ class DiscordRPC(QObject):
         return "connected" if n <= 1 else f"connected · {n} discord clients"
 
     def _tick(self) -> None:
-        # every 20 s: reconnect if nothing is attached, and look for clients opened since (a second discord)
         if self.enabled and not self._fatal:
             threading.Thread(target=self._bg_flush, daemon=True).start()
 
@@ -202,7 +184,6 @@ class DiscordRPC(QObject):
                     self._sent[i] = seq
 
     def _connect(self) -> bool:
-        """Attaches to every discord pipe that is not attached yet. True if at least one client is connected."""
         if self._fatal or not self.enabled or not self.client_id.isdigit():
             return False
         for i in range(10):
@@ -231,7 +212,7 @@ class DiscordRPC(QObject):
                 pipe.close()
             except Exception:
                 pass
-            if self._fatal:  # the client answered the handshake with a close frame (bad application id)
+            if self._fatal:
                 self.close(self._state)
                 return False
             if reply and (reply.get("evt") == "ERROR" or "code" in reply):
@@ -273,7 +254,6 @@ class DiscordRPC(QObject):
             return op, {}
 
     def _read_reply(self, pipe):
-        """Reads frames until a command reply/event arrives; answers pings; None if the pipe closed."""
         for _ in range(8):
             op, msg = self._read_frame(pipe)
             if op is None:

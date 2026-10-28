@@ -1,4 +1,3 @@
-"""Minimal Last.fm scrobbling client (desktop auth flow, now-playing, scrobble)."""
 from __future__ import annotations
 
 import hashlib
@@ -54,7 +53,6 @@ class LastFM:
             raise LastFMError(f"{data.get('message') or 'error'} ({data.get('error')})")
         return data
 
-    # ---- auth
     def get_token(self) -> str:
         return self._call("auth.getToken", {})["token"]
 
@@ -66,7 +64,6 @@ class LastFM:
         self.session_key, self.user = d["key"], d["name"]
         return self.session_key, self.user
 
-    # ---- scrobbling
     def now_playing(self, artist: str, track: str, album: str | None, duration: int | None) -> None:
         p = {"artist": artist, "track": track, "sk": self.session_key}
         if album:
