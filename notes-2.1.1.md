@@ -1,0 +1,2 @@
+- the queue stays put. songs you add with play next or add to queue are kept when you play something else, like a search result, an album or an era, and they play right after it. same when you switch shuffle on or off.
+- a few session mixes and masters are no longer listed.

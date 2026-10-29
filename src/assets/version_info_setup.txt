@@ -1,7 +1,7 @@
 VSVersionInfo(
   ffi=FixedFileInfo(
-    filevers=(2, 1, 0, 0),
-    prodvers=(2, 1, 0, 0),
+    filevers=(2, 1, 1, 0),
+    prodvers=(2, 1, 1, 0),
     mask=0x3f,
     flags=0x0,
     OS=0x40004,
@@ -14,12 +14,12 @@ VSVersionInfo(
       StringTable('040904B0', [
         StringStruct('CompanyName', '999 player'),
         StringStruct('FileDescription', '999 player setup'),
-        StringStruct('FileVersion', '2.1.0'),
+        StringStruct('FileVersion', '2.1.1'),
         StringStruct('InternalName', '999 player setup'),
         StringStruct('LegalCopyright', ''),
         StringStruct('OriginalFilename', '999player-setup.exe'),
         StringStruct('ProductName', '999 player'),
-        StringStruct('ProductVersion', '2.1.0')
+        StringStruct('ProductVersion', '2.1.1')
       ])
     ]),
     VarFileInfo([VarStruct('Translation', [1033, 1200])])

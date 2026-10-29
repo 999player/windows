@@ -1,5 +1,10 @@
 # changelog
 
+## 2.1.1
+
+- the queue stays put. songs you add with play next or add to queue are kept when you play something else, like a search result, an album or an era, and they play right after it. same when you switch shuffle on or off.
+- a few session mixes and masters are no longer listed.
+
 ## 2.1.0
 
 - auto updates. the app checks for new versions on launch and every few hours, downloads them in the background and installs next time you open it. there is a switch in settings → updates.

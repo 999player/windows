@@ -8,7 +8,7 @@
     songs: [], byId: new Map(), eras: new Map(), catCounts: {}, fetchedAt: 0, catalogVersion: 0,
     likes: new Set(), likedAt: {}, playlists: [], history: [], playCounts: {}, downloads: {},
     settings: {}, app: {},
-    queue: [], qIndex: -1, queueSource: [], shuffle: false, repeat: 'off', ctx: null,
+    queue: [], qManual: [], qIndex: -1, queueSource: [], shuffle: false, repeat: 'off', ctx: null,
     current: null, playCounted: false, errStreak: 0,
     route: null, stack: [], fwd: [], list: null, listPrefs: {},
     rightTab: 'lyrics', rightOpen: true, npvOpen: false, maximized: false,
@@ -125,6 +125,9 @@
     applyCatalog(data, isUpdate);
   }
 
+  const BANNED = /yawaya/i;
+  const BAN_FIELDS = ['title', 'author', 'prod', 'eng', 'up', 'path', 'img', 'disp', 'src', 'loc', 'leakType'];
+  function banned(s) { return BAN_FIELDS.some((k) => BANNED.test(s[k] || '')) || (s.alt || []).some((t) => BANNED.test(t)); }
   const AUX_SUBS = new Set(['instrumental', 'raw', 'acapellas', 'acapella']);
   const AUX_TAG = /[\[({](?:instrumental|acapella|a cappella|raw vocals?|vocals? only)[\])}]/i;
   function isAux(s) { return AUX_SUBS.has(String(s.sub || '').toLowerCase()) || AUX_TAG.test(s.title || ''); }
@@ -138,7 +141,7 @@
     const raw = S._catalogRaw;
     if (!raw) return;
     const cur = S.current && S.current.id;
-    const sourceSongs = raw.songs || [];
+    const sourceSongs = (raw.songs || []).filter((s) => !banned(s));
     S.songs = S.settings.offlineOnly ? sourceSongs.filter((s) => !!S.downloads[String(s.id)]) : sourceSongs;
     S.fetchedAt = raw.fetched || 0;
     S.byId = new Map(); S.eras = new Map(); S.catCounts = { all: 0 };
@@ -157,7 +160,7 @@
     const idx = S.lyricsIndex || new Map();
     S.lyricsCands = [];
     for (const s of S.songs) { const e = idx.get(s.id); if (e) { s.lyr = true; s.wt = s.wt || !!e.w; } if (s.lyr) S.lyricsCands.push(s); }
-    for (const [id, e] of idx) if (!S.byId.has(id)) S.lyricsCands.push({ id, title: e.t || '', author: e.a || 'Juice WRLD', era: e.e || null, dur: e.d || 0, lyr: true, wt: !!e.w, cat: 'unreleased', fromIndex: true });
+    for (const [id, e] of idx) if (!S.byId.has(id) && !BANNED.test(e.t || '')) S.lyricsCands.push({ id, title: e.t || '', author: e.a || 'Juice WRLD', era: e.e || null, dur: e.d || 0, lyr: true, wt: !!e.w, cat: 'unreleased', fromIndex: true });
     applyLocal(S.pendingLocal || S.local || []); S.pendingLocal = null;
     if (cur && S.byId.has(cur)) S.current = S.byId.get(cur);
     renderSidebar();
@@ -800,18 +803,25 @@
     return `<div class="tile ${big ? 'lg' : ''}" data-key="${esc(e.key)}" style="--tile-grad:${TILE_GRADS[i % TILE_GRADS.length]}"><div class="mosaic">${e.songs.slice(0, 4).map((s) => imgTag(s, 96)).join('')}</div><h3>${esc(e.name)}</h3><div class="s">${fmtInt(e.count)} tracks${ERA_YEARS[e.name] ? ' · ' + ERA_YEARS[e.name] : ''}</div></div>`;
   }
 
+  function pendingManual(skip) { if (S.qIndex < 0) return []; return S.queue.slice(S.qIndex + 1).filter((id, k) => S.qManual[S.qIndex + 1 + k] && id !== skip); }
+  function buildQueue(before, keep, after) {
+    S.queue = before.concat(keep, after);
+    S.qManual = before.map(() => false).concat(keep.map(() => true), after.map(() => false));
+  }
   function playFrom(items, index, ctxKey) {
     if (!items || !items.length) return;
     const ids = items.map((s) => s.id);
+    const keep = pendingManual(ids[index]);
     S.ctx = ctxKey; S.queueSource = ids;
-    if (S.shuffle) { const first = ids[index]; S.queue = [first, ...shuffle(ids.filter((_, i) => i !== index))]; S.qIndex = 0; }
-    else { S.queue = ids; S.qIndex = index; }
+    if (S.shuffle) { buildQueue([ids[index]], keep, shuffle(ids.filter((_, i) => i !== index))); S.qIndex = 0; }
+    else { buildQueue(ids.slice(0, index + 1), keep, ids.slice(index + 1)); S.qIndex = index; }
     playSong(ids[index]);
   }
   function reshuffleQueueKeepCurrent() {
     const cur = S.current ? S.current.id : null;
-    if (S.shuffle) { const rest = shuffle(S.queueSource.filter((id) => id !== cur)); S.queue = cur ? [cur, ...rest] : rest; S.qIndex = cur ? 0 : -1; }
-    else { S.queue = S.queueSource.slice(); S.qIndex = cur ? S.queue.indexOf(cur) : -1; }
+    const keep = pendingManual(cur);
+    if (S.shuffle) { buildQueue(cur ? [cur] : [], keep, shuffle(S.queueSource.filter((id) => id !== cur))); S.qIndex = cur ? 0 : -1; }
+    else { const i = cur ? S.queueSource.indexOf(cur) : -1; buildQueue(S.queueSource.slice(0, i + 1), keep, S.queueSource.slice(i + 1)); S.qIndex = i; }
     renderQueueIfOpen();
   }
   function playSong(id, { autoplay = true } = {}) {
@@ -898,11 +908,11 @@
     if (engine.currentTime > 3 || S.qIndex <= 0) { engine.seek(0); return; }
     S.qIndex--; playSong(S.queue[S.qIndex]);
   }
-  function playNext(id) { if (S.qIndex < 0) { S.queue = [id]; S.queueSource = [id]; S.qIndex = 0; playSong(id); return; } S.queue.splice(S.qIndex + 1, 0, id); S.queueSource.push(id); toast('playing next'); renderQueueIfOpen(); }
-  function addToQueue(id) { if (S.qIndex < 0) { playNext(id); return; } S.queue.push(id); S.queueSource.push(id); toast('added to queue'); renderQueueIfOpen(); }
+  function playNext(id) { if (S.qIndex < 0) { S.queue = [id]; S.qManual = [false]; S.queueSource = [id]; S.qIndex = 0; playSong(id); return; } S.queue.splice(S.qIndex + 1, 0, id); S.qManual.splice(S.qIndex + 1, 0, true); toast('playing next'); renderQueueIfOpen(); }
+  function addToQueue(id) { if (S.qIndex < 0) { playNext(id); return; } S.queue.push(id); S.qManual.push(true); toast('added to queue'); renderQueueIfOpen(); }
   function jumpTo(i) { if (i < 0 || i >= S.queue.length) return; S.qIndex = i; playSong(S.queue[i]); }
-  function removeFromQueue(i) { if (i === S.qIndex) return; S.queue.splice(i, 1); if (i < S.qIndex) S.qIndex--; renderQueueIfOpen(); }
-  function clearQueue() { const cur = S.queue[S.qIndex]; S.queue = cur ? [cur] : []; S.queueSource = S.queue.slice(); S.qIndex = cur ? 0 : -1; renderQueueIfOpen(); }
+  function removeFromQueue(i) { if (i === S.qIndex) return; S.queue.splice(i, 1); S.qManual.splice(i, 1); if (i < S.qIndex) S.qIndex--; renderQueueIfOpen(); }
+  function clearQueue() { const cur = S.queue[S.qIndex]; S.queue = cur ? [cur] : []; S.qManual = cur ? [false] : []; S.queueSource = S.queue.slice(); S.qIndex = cur ? 0 : -1; renderQueueIfOpen(); }
 
   function sweepGarbage(force) {
     if (typeof window.gc !== 'function') return;

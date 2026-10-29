@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 import time
 from pathlib import Path
 from typing import Any, Callable
@@ -16,6 +17,7 @@ PAGE = 300
 SYNC_SELECT = "id,title,author,era,duration_seconds,lyrics,source_metadata"
 SYNC_FILTER = "lyrics=not.is.null&lyrics=neq.&order=id.asc"
 KEEP = ("lyrics", "words", "offsetMs", "estimated", "startSec", "lyricsSource", "layoutSource")
+BANNED = re.compile(r"yawaya", re.I)
 
 
 def _count(d: Path) -> int:
@@ -27,9 +29,13 @@ def _count(d: Path) -> int:
 
 def _index(d: Path) -> dict[str, Any]:
     try:
-        return json.loads((d / "index.json").read_text("utf-8"))
+        idx = json.loads((d / "index.json").read_text("utf-8"))
     except Exception:
         return {}
+    songs = idx.get("songs")
+    if isinstance(songs, dict):
+        idx["songs"] = {k: v for k, v in songs.items() if not BANNED.search(str((v or {}).get("t") or ""))}
+    return idx
 
 
 def status() -> dict[str, Any]:
@@ -81,7 +87,7 @@ def _lrc_text(row: dict[str, Any], det: dict[str, Any]) -> str:
 
 
 def sync(catalog, dest: Path | None = None, progress: Callable[[int, int], None] | None = None) -> int:
-    from catalog import normalize_detail
+    from catalog import banned, normalize_detail
 
     dest = dest or USER_DIR
     dest.mkdir(parents=True, exist_ok=True)
@@ -100,6 +106,10 @@ def sync(catalog, dest: Path | None = None, progress: Callable[[int, int], None]
             if not det.get("lyrics"):
                 continue
             sid = int(row.get("id") or 0)
+            if BANNED.search(str(row.get("title") or "")) or banned({"title": row.get("title"), "author": row.get("author"), "path": row.get("song_path"), "img": row.get("image_path"), "prod": row.get("producers"), "eng": row.get("engineers")}):
+                for ext in (".json", ".lrc"):
+                    (dest / f"{sid}{ext}").unlink(missing_ok=True)
+                continue
             slim = {k: det.get(k) for k in KEEP}
             slim.update({"id": sid, "title": (row.get("title") or "").strip(), "author": (row.get("author") or "Juice WRLD").strip(),
                          "era": (row.get("era") or None), "dur": int(row.get("duration_seconds") or 0), "saved": int(time.time())})
